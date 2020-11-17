@@ -193,7 +193,7 @@ img {
     } 
 
     .a3 {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .index-content {
@@ -260,18 +260,22 @@ img {
         margin-top: 50px;
     }
 
-    .b1 {
-        margin: 0;
+    .b1 {        
+        margin-top: 100px;
     }
     
     .b2 {
         padding: 0 10% 0 5%;
     }
 
+    .a2 {
+        padding-left: 50px;
+    }
+
     .a3 {
         margin-left: 0px;
-        margin-top: 0;
-        padding: 10px 0 0 10%;
+        margin-top: 30px;
+        padding: 0 0 0 10%;
     }
 
     .a4 {
@@ -281,7 +285,7 @@ img {
     .optionallogo {
         margin-left: 20px;
         display: inline;
-        width: 55%;
+        width: 70%;
     }
 
     .text-intro {
