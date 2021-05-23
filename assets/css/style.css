@@ -55,6 +55,15 @@ img {
     margin-right: 0;
 }
 
+.intro-block-content {
+    background-image:url(../images/divider1.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    background-position: bottom;
+
+}
+
 .b1 {
     margin-top: 20px;
 }
@@ -74,50 +83,46 @@ img {
 .text-intro {
     font-size: 18px;
     font-weight: 500;
-    color:rgb(202, 202, 202);
+    color:rgb(233, 233, 233);
 }
 
 .index-content {
-    margin-top: -33px;
+    margin-top: -1px;
     background-color: rgb(63, 63, 63);
     padding: 0;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
 .index-content-tab {
     padding: 0;
+    height: 250px;
+    margin-bottom:70px;
 }
 
 .index-content-inner {
     padding: 0;
-    margin-bottom: 0;
+
 }
 
 .index-header-text-left {
-    height: 300px;
+
     width: 100%;
-    margin: 0;
-    background-image: url(../images/index-header-left.png);
-    background-repeat: round;
+    height: 250px;
+    background-color: rgb(36, 36, 36);
+
 }
 
 .index-header-text-right {
-    height: 300px;
+
     width: 100%;    
-    margin: 0;
-    background-image: url(../images/index-header-right.png);
-    background-repeat: round;
+    height: 250px;
+    background-color: rgb(36, 36, 36);
+
 }
 
-.index-header-pic-left {
-    margin: 0 0 0 0;
-    padding: 15px 15px 15px 15px;
-}
-  
-.index-header-pic-right {
-    margin: 0 0 0 0;
-    padding: 15px 15px 15px 15px;
+.index-header-pic {
+    display: none;
 }
 
 .right-optional-sm {
@@ -130,16 +135,16 @@ img {
 }
   
 .index-header-text-inner {
-    color: rgb(165, 165, 165);
+    color: rgb(223, 223, 223);
     font-weight: 500;
 }
 
 .index-header-text-inner-left {
-    padding: 10% 20% 0 5% ;
+    padding: 2% 5% 0 5% ;
 }
   
 .index-header-text-inner-right {
-    padding: 10% 5% 0 20%;
+    padding: 2% 5% 0 5%;
 }
   
 .a5 {
@@ -148,16 +153,24 @@ img {
 
 .index-event-block {
     background-color: rgb(41, 41, 41);
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 70px;
 }
 
 .event-text {
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 2em;
-    color: rgb(192, 192, 192);
+    font-size: 20px;
+    color: rgb(235, 235, 235);
+}
+
+.event-text2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(226, 226, 226);
 }
 
 .calendar-block {
@@ -166,11 +179,12 @@ img {
 }
 
 .calendar-iframe {
+    margin-top: 50px;
     height: 600px;
 }
 
 .sponsor-logo-pic-block {
-    margin-bottom: 20px;
+    padding: 30px;
 }
 
 .social-media-block {
@@ -179,7 +193,7 @@ img {
 }
 
 .social-media-logo {
-    padding: 10% 10% 10% 10%;
+    padding: 15px;
 }
 
 .join-content {
@@ -201,8 +215,65 @@ img {
     padding-bottom: 70px;
 }
 
+.about-us-imgblock {
+    height: 300px;
+    background-image: url(../images/about-us.jpg);
+    background-size:cover;
+    background-position-x: center;
+}
 
+.aboutus-divider {
+    height:20px; 
+    width: 100%; 
+    position:absolute; 
+    top: 290px;
+}
 
+.aboutus-text {
+    text-align: center;
+    margin-left: 26%;
+    margin-top: 22%;
+    font-size: 40px;
+    color: rgb(236, 236, 236);
+    font-weight: 550;
+    
+}
+
+.mission-statement-text {
+    width: 100%;    
+    height: max-content;
+
+}
+
+.index-content-tab-enlarge {
+    padding: 0;
+    height: 270px;
+    margin-bottom:300px;  
+    margin-top:0px;
+}
+
+.mission-text {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.aboutus-tab {
+    
+    width: 100%;    
+    height: 300px;
+    background-color: rgb(36, 36, 36);
+
+}
+
+.rmc-imgblock {
+    height: 300px;
+    background-image: url(../images/rmc_lunabotics_patch_2021.png);
+    background-size:contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+/* 
 @media only screen and (min-width: 768px) {
     
     .optionallogo {
@@ -213,9 +284,6 @@ img {
         margin-top: 50px;
     }
 
-    .index-content {
-        margin-top:-70px;
-    }
     
     .index-content-inner {
         padding: 0;
@@ -259,17 +327,16 @@ img {
         margin-left: 5px;
         margin-right: 5px;
     }
-}
+} */
 
   
   
   
   
   
-  
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
     .section_1 {
-        width: 70%;
+        width: 1000px;
     }
     
     .navbar {
@@ -278,6 +345,7 @@ img {
 
     .intro-block-content {
         margin-top: 50px;
+        padding-bottom: 250px;
     }
 
     .b1 {        
@@ -305,50 +373,67 @@ img {
     .optionallogo {
         margin-left: 20px;
         display: inline;
-        width: 70%;
+        width: 100%;
+        margin-top: 70px;
     }
 
     .text-intro {
-        font-size: 1.3em;
+        font-size: 18px;
     }
     
-    .index-content {
-        margin-top:-190px;
-        padding-top:250px;
+    .index-header-pic {
+        display:flex;
+        height: 100%;
+    }
+      
+    .right-optional-sm {
+        display: flex;
     }
 
-    .index-content-tab {
-        margin-bottom: 20px;
+    .index-content {
+        
+        padding-top:0;
     }
 
     .index-header-text-left {
-        height: 500px;    
+        height: 300px;    
+        background-image: url(../images/index-header-left.png);
+        background-repeat: round;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .index-header-text-right {
-        height: 500px;    
+        height: 300px;    
+        background-image: url(../images/index-header-right.png);
+        background-repeat: round;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .index-header-text-inner {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .index-header-text-inner-left {
-        padding-top: 5%;
+        padding: 0 20% 0 5% ;
     }
 
     .index-header-text-inner-right {
-        padding-top: 5%;
+        padding: 5% 5% 0 20%;
     }
 
     .index-header-pic-right {
-        margin-top: 3%;
-        height: 95%;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
     }
     
     .index-header-pic-left {
-        margin-top: 2%;
-        height: 92%;
+
+        padding: 0;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
     }
 
     .a5 {
@@ -356,12 +441,18 @@ img {
     }
     
     .index-event-block {
-        padding-top: 180px;
+        padding-top: 0px;
         padding-bottom: 70px;
     }
 
     .event-text {
-        font-size: 5em;
+        margin-top: 10px;
+        font-size: 30px;
+        margin-top: 200px;
+    }
+
+    .event-text2 {
+        font-size: 30px;
         margin-top: 50px;
     }
 
@@ -374,13 +465,9 @@ img {
         width: 100%;
     }
 
-    .sponsor-logo-list {
-       margin-top: 0;
-       margin-bottom: 20px;
-    }
 
     .sponsor-logo-pic {
-        padding: 10% 10% 10% 10%;
+        padding: 15px;
     }
 
     .social-media-block {
@@ -390,6 +477,73 @@ img {
     .social-media-logo {
         padding: 10px 20px 10px 20px;
     }
+
+    .about-us-imgblock {
+        height: 420px;
+        background-image: url(../images/about-us.jpg);
+        background-size:cover;
+    }
+    
+    .aboutus-divider {
+        height:30px; 
+        width: 100%; 
+        position:absolute; 
+        top: 405px;
+    }
+
+    .aboutus-text {
+        text-align: center;
+        margin-left: 42%;
+        margin-top: 20%;
+        font-size: 45px;
+        color: rgb(236, 236, 236);
+        font-weight: 550;
+    }
+    
+    .mission-statement-text {
+        width: 100%;    
+        height: max-content;
+    }
+    
+    .index-content-tab-enlarge {
+        padding: 0;
+        height: 620px;
+        margin-bottom:100px;  
+        margin-top:0px;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .mission-text {
+        font-size: 19px;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .subteam-img {
+        display: none;
+    }
+
+    .aboutus-tab-text {
+        background-image: url(../images/index-header-left.png);
+        background-repeat: round;
+        background-color: rgba(0, 0, 0, 0);
+        height: 370px; 
+        margin-bottom: 100px;
+    }
+
+    .aboutus-tab {
+        background-color: rgba(0, 0, 0, 0);
+        height: 400px;
+        margin-bottom: 0px;
+    }
+
+    .rmc-imgblock {
+        height: 420px;
+        background-image: url(../images/rmc_lunabotics_patch_2021.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
 }
 
   
