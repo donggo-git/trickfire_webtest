@@ -72,6 +72,10 @@ img {
     display: none;
 }
 
+.optional-logo {
+    display: none;
+}
+
 .a4 {
     margin-top: 50px;
 }
@@ -127,7 +131,7 @@ img {
 
 .right-optional-sm {
     display: none;
-    padding: 0;
+    padding-top: 0px;
 }
   
 .right-optional-md {
@@ -136,7 +140,7 @@ img {
   
 .index-header-text-inner {
     color: rgb(223, 223, 223);
-    font-weight: 500;
+    font-weight: 430;
 }
 
 .index-header-text-inner-left {
@@ -226,6 +230,7 @@ img {
     height:20px; 
     width: 100%; 
     position:absolute; 
+    z-index: 9999;
     top: 290px;
 }
 
@@ -242,19 +247,19 @@ img {
 .mission-statement-text {
     width: 100%;    
     height: max-content;
-
+    background-color: rgb(63, 63, 63);
 }
 
 .index-content-tab-enlarge {
     padding: 0;
-    height: 270px;
-    margin-bottom:300px;  
+    height: auto;
+    margin-bottom:50px;  
     margin-top:0px;
 }
 
 .mission-text {
     font-size: 15px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .aboutus-tab {
@@ -271,6 +276,16 @@ img {
     background-size:contain;
     background-position-x: center;
     background-repeat: no-repeat;
+}
+
+.rover-tab {
+    height: auto;
+    margin-bottom: 0;
+}
+
+.rover-title {
+    color: white; 
+    margin-left: 18px;
 }
 
 /* 
@@ -345,7 +360,7 @@ img {
 
     .intro-block-content {
         margin-top: 50px;
-        padding-bottom: 250px;
+        padding-bottom: 245px;
     }
 
     .b1 {        
@@ -357,13 +372,13 @@ img {
     }
 
     .a2 {
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
     .a3 {
         margin-left: 0px;
         margin-top: 30px;
-        padding: 0 0 0 10%;
+        padding-left: 40px;
     }
 
     .a4 {
@@ -377,21 +392,25 @@ img {
         margin-top: 70px;
     }
 
+    .optional-logo {
+        display: inline;
+    }
+
     .text-intro {
-        font-size: 18px;
+        padding: 10px;
+        font-size: 19px;
     }
     
     .index-header-pic {
-        display:flex;
+        display:inline;
         height: 100%;
     }
       
     .right-optional-sm {
-        display: flex;
+        display:inline;
     }
 
-    .index-content {
-        
+    .index-content {  
         padding-top:0;
     }
 
@@ -414,7 +433,7 @@ img {
     }
 
     .index-header-text-inner-left {
-        padding: 0 20% 0 5% ;
+        padding: 5% 10% 0 5% ;
     }
 
     .index-header-text-inner-right {
@@ -429,7 +448,6 @@ img {
     }
     
     .index-header-pic-left {
-
         padding: 0;
         height: auto;
         width: 100%;
@@ -488,7 +506,7 @@ img {
         height:30px; 
         width: 100%; 
         position:absolute; 
-        top: 405px;
+        top: 415px;
     }
 
     .aboutus-text {
@@ -503,12 +521,14 @@ img {
     .mission-statement-text {
         width: 100%;    
         height: max-content;
+        background-color: black;
     }
     
     .index-content-tab-enlarge {
         padding: 0;
-        height: 620px;
-        margin-bottom:100px;  
+        padding-bottom: 50px;
+        height: auto;
+        margin-bottom:50px;  
         margin-top:0px;
         background-color: rgb(0, 0, 0);
     }
@@ -516,25 +536,34 @@ img {
     .mission-text {
         font-size: 19px;
         padding-left: 50px;
-        padding-top: 20px;
+        padding-top: 0px;
+        margin-top: 20px;
     }
 
     .subteam-img {
         display: none;
+        min-width: 100%;
+        margin:0;
+    }
+
+    .rover-img {
+        display: none;
+        margin: 20px 0 20px 0;
     }
 
     .aboutus-tab-text {
         background-image: url(../images/index-header-left.png);
         background-repeat: round;
         background-color: rgba(0, 0, 0, 0);
-        height: 370px; 
-        margin-bottom: 100px;
+        height: auto; 
+        padding-bottom: 20px;
+        min-height: 355px;
     }
 
     .aboutus-tab {
         background-color: rgba(0, 0, 0, 0);
-        height: 400px;
-        margin-bottom: 0px;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .rmc-imgblock {
@@ -544,6 +573,23 @@ img {
         background-repeat: no-repeat;
     }
 
+    .lunar-pic {
+        margin-top: 70px;
+    }
+
+    .team-text {
+        margin-top: -20px;
+    }
+
+    .aboutus-img-container {
+        padding:26px 0 26px 0;
+        max-height: 355px;
+    }
+
+    .rover-title {
+        padding: 50px 0 0 30px; 
+        margin-bottom: -10px;
+    }
 }
 
   
