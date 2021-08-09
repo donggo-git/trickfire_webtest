@@ -180,6 +180,15 @@ img {
     color: rgb(226, 226, 226);
 }
 
+.event-text3 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(231, 231, 231);
+}
+
 .calendar-block {
     padding: 0;
     margin-bottom: 30px;
@@ -190,8 +199,14 @@ img {
     height: 600px;
 }
 
+.sponsor-logo-list {
+    background-color: rgb(46, 46, 46);
+}
+
 .sponsor-logo-pic-block {
-    padding: 30px;
+    padding: 20px;
+    position: relative;
+    max-height: 220px;
 }
 
 .social-media-block {
@@ -243,8 +258,16 @@ img {
     margin-top: 22%;
     font-size: 40px;
     color: rgb(236, 236, 236);
-    font-weight: 550;
-    
+    font-weight: 550; 
+}
+
+.aboutus-text2 {
+    text-align: center;
+    margin-left: 36%;
+    margin-top: 20%;
+    font-size: 42px;
+    color: rgb(236, 236, 236);
+    font-weight: 550; 
 }
 
 .mission-statement-text {
@@ -254,6 +277,13 @@ img {
 }
 
 .index-content-tab-enlarge {
+    padding: 0;
+    height: min-content;
+    margin-bottom:50px;  
+    margin-top:0px;
+}
+
+.sponsor-block {
     padding: 0;
     height: min-content;
     margin-bottom:50px;  
@@ -279,6 +309,7 @@ img {
     background-size:contain;
     background-position-x: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .rover-tab {
@@ -480,6 +511,12 @@ img {
         margin-top: 50px;
     }
 
+    .event-text3 {
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
     .calendar-block {
         padding: 0 15% 0 15%;
     }
@@ -609,6 +646,24 @@ img {
 
     .firelogo {
         padding-left: 30px;
+    }
+    
+    .sponsor-block {
+        padding: 0;
+        padding-bottom: 50px;
+        height: auto;
+        margin-bottom:50px;  
+        margin-top:0px;
+        background-color: rgb(31, 31, 31);
+    }
+
+    .sponsor-logo-list {
+        margin: 0 5% 0 5%;
+        padding: 0px 5% 0px 5%;
+    }
+    
+    .sponsor-logo-pic-block {
+        padding: 30px;
     }
     
 }
