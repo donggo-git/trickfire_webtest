@@ -102,6 +102,7 @@ img {
     padding: 0;
     height: 250px;
     margin-bottom:70px;
+    width: 100%;
 }
 
 .index-content-inner {
@@ -162,6 +163,7 @@ img {
 }
 
 .event-text {
+    width: 100%;
     margin-top: 70px;
     margin-bottom: 0;
     text-align: center;
@@ -170,6 +172,7 @@ img {
 }
 
 .event-text2 {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
@@ -246,13 +249,13 @@ img {
 
 .mission-statement-text {
     width: 100%;    
-    height: max-content;
+    height: min-content;
     background-color: rgb(63, 63, 63);
 }
 
 .index-content-tab-enlarge {
     padding: 0;
-    height: auto;
+    height: min-content;
     margin-bottom:50px;  
     margin-top:0px;
 }
@@ -377,8 +380,9 @@ img {
 
     .a3 {
         margin-left: 0px;
-        margin-top: 30px;
+        margin-top: 45px;
         padding-left: 40px;
+        padding-right: 45px;
     }
 
     .a4 {
@@ -408,6 +412,7 @@ img {
       
     .right-optional-sm {
         display:inline;
+        padding: 0;
     }
 
     .index-content {  
@@ -452,6 +457,7 @@ img {
         height: auto;
         width: 100%;
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .a5 {
@@ -521,7 +527,7 @@ img {
     .mission-statement-text {
         width: 100%;    
         height: max-content;
-        background-color: black;
+        background-color: rgb(31, 31, 31);
         margin-top: 30px;
     }
     
@@ -531,7 +537,7 @@ img {
         height: auto;
         margin-bottom:50px;  
         margin-top:0px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(31, 31, 31);
     }
     
     .mission-text {
@@ -575,7 +581,8 @@ img {
     }
 
     .lunar-pic {
-        margin-top: 70px;
+        margin-top: 30px;
+        padding: 0;
     }
 
     .team-text {
@@ -591,6 +598,19 @@ img {
         padding: 50px 0 0 30px; 
         margin-bottom: -10px;
     }
+
+    .gimini-right {
+        min-height: 480px; 
+        background-image: url(../images/block_body.png); 
+        background-size: cover;
+        padding: 30px 0 0 80px;
+        line-height: 30px;
+    }
+
+    .firelogo {
+        padding-left: 30px;
+    }
+    
 }
 
   
