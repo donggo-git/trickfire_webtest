@@ -384,9 +384,7 @@ img {
   
   
 @media only screen and (min-width: 1200px) {
-    .section_1 {
-        width: 1000px;
-    }
+
     
     .navbar {
         padding:0;
