@@ -61,6 +61,7 @@ img {
     background-repeat: no-repeat;
     padding-bottom: 100px;
     background-position: bottom;
+    
 
 }
 
@@ -100,21 +101,21 @@ img {
 
 .index-content-tab {
     padding: 0;
-    height: 250px;
+    height: 366px;
     margin-bottom:70px;
     width: 100%;
 }
 
 .index-content-inner {
     padding: 0;
-
+    
 }
 
 .index-header-text-left {
-
     width: 100%;
     height: 250px;
     background-color: rgb(36, 36, 36);
+    margin-top: 50px;
 
 }
 
@@ -123,6 +124,7 @@ img {
     width: 100%;    
     height: 250px;
     background-color: rgb(36, 36, 36);
+    margin-top: 50px;
 
 }
 
@@ -421,7 +423,8 @@ img {
     .optionallogo {
         margin-left: 20px;
         display: inline;
-        width: 100%;
+        width: 80%;
+        height: 80%;
         margin-top: 70px;
     }
 
@@ -449,15 +452,16 @@ img {
     }
 
     .index-header-text-left {
-        height: 300px;    
-        background-image: url(../images/index-header-left.png);
+        height: 366px;    
+        background-image: url(../images/fixed_index_header_left.png);
         background-repeat: round;
         background-color: rgba(0, 0, 0, 0);
+        
     }
 
     .index-header-text-right {
-        height: 300px;    
-        background-image: url(../images/index-header-right.png);
+        height: 366px;    
+        background-image: url(../images/fixed_header_right.png);
         background-repeat: round;
         background-color: rgba(0, 0, 0, 0);
     }
@@ -476,17 +480,18 @@ img {
 
     .index-header-pic-right {
         padding: 0;
-        height: auto;
+        height: 100%;
         width: 100%;
-        margin-top: 20px;
+        height: 366px;
+        margin-top: 50px;
     }
     
     .index-header-pic-left {
         padding: 0;
-        height: auto;
+        height: 100%;
         width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
+        height: 366px;
+        margin-top: 50px;
     }
 
     .a5 {
@@ -662,6 +667,15 @@ img {
     
     .sponsor-logo-pic-block {
         padding: 30px;
+    }
+
+    .trickfire_text{
+        color: aliceblue;
+        font:bold;
+        font-size:150px;
+        margin-left: 50px;
+        
+        
     }
     
 }
