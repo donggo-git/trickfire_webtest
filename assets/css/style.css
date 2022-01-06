@@ -251,10 +251,9 @@ img {
 }
 
 .aboutus-text {
-    text-align: center;
-    margin-left: 26%;
-    margin-top: 22%;
-    font-size: 40px;
+
+    margin-top: 25%;
+    font-size: 42px;
     color: rgb(236, 236, 236);
     font-weight: 550; 
 }
@@ -535,9 +534,10 @@ img {
     }
 
     .about-us-imgblock {
-        height: 420px;
+        height: 10%;
         background-image: url(../images/about-us.jpg);
         background-size:cover;
+        justify-content: center;
     }
     
     .aboutus-divider {
@@ -546,10 +546,8 @@ img {
     }
 
     .aboutus-text {
-        text-align: center;
-        margin-left: 42%;
-        margin-top: 20%;
-        font-size: 45px;
+        margin-top: 5%;
+        font-size: 42px;
         color: rgb(236, 236, 236);
         font-weight: 550;
     }
@@ -635,7 +633,7 @@ img {
     }
 
     .firelogo {
-        padding-left: 30px;
+        padding-left: 200px;
     }
     
     .sponsor-block {
