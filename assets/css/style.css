@@ -212,11 +212,13 @@ img {
 
 .social-media-block {
     background-color: rgb(19, 19, 19);
-    padding: 0px 5% 0px 5%;    
+  
 }
 
 .social-media-logo {
     padding: 15px;
+    height: 50px;
+    width: 50px;
 }
 
 .join-content {
@@ -525,9 +527,6 @@ img {
         padding: 15px;
     }
 
-    .social-media-block {
-        padding: 0 0 0 0;
-    }
 
     .social-media-logo {
         padding: 10px 20px 10px 20px;
