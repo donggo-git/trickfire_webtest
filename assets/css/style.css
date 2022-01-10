@@ -28,7 +28,7 @@ body {
 }
 
 .content-block-1 {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(22, 22, 22);
     z-index: 3;
     position: relative;
     padding: 0;
@@ -61,6 +61,7 @@ img {
     background-repeat: no-repeat;
     padding-bottom: 100px;
     background-position: bottom;
+    
 
 }
 
@@ -99,22 +100,21 @@ img {
 }
 
 .index-content-tab {
-    padding: 0;
-    height: 250px;
     margin-bottom:70px;
+    height: 100%;
     width: 100%;
 }
 
 .index-content-inner {
     padding: 0;
-
+    
 }
 
 .index-header-text-left {
-
     width: 100%;
     height: 250px;
     background-color: rgb(36, 36, 36);
+    margin-top: 50px;
 
 }
 
@@ -123,6 +123,7 @@ img {
     width: 100%;    
     height: 250px;
     background-color: rgb(36, 36, 36);
+    margin-top: 50px;
 
 }
 
@@ -211,11 +212,13 @@ img {
 
 .social-media-block {
     background-color: rgb(19, 19, 19);
-    padding: 0px 5% 0px 5%;    
+  
 }
 
 .social-media-logo {
     padding: 15px;
+    height: 50px;
+    width: 50px;
 }
 
 .join-content {
@@ -245,26 +248,21 @@ img {
 }
 
 .aboutus-divider {
-    height:20px; 
-    width: 100%; 
-    position:absolute; 
-    z-index: 9999;
-    top: 290px;
+    width: 100%;
+    height: 30px;
 }
 
 .aboutus-text {
-    text-align: center;
-    margin-left: 26%;
-    margin-top: 22%;
-    font-size: 40px;
+
+    margin-top: 25%;
+    font-size: 42px;
     color: rgb(236, 236, 236);
     font-weight: 550; 
 }
 
 .aboutus-text2 {
-    text-align: center;
-    margin-left: 36%;
-    margin-top: 20%;
+    
+    margin-top: 5%;
     font-size: 42px;
     color: rgb(236, 236, 236);
     font-weight: 550; 
@@ -291,8 +289,7 @@ img {
 }
 
 .mission-text {
-    font-size: 15px;
-    padding-left: 20px;
+    padding: 5% 0% 0% 10%;
 }
 
 .aboutus-tab {
@@ -421,7 +418,8 @@ img {
     .optionallogo {
         margin-left: 20px;
         display: inline;
-        width: 100%;
+        width: 80%;
+        height: 80%;
         margin-top: 70px;
     }
 
@@ -449,15 +447,17 @@ img {
     }
 
     .index-header-text-left {
-        height: 300px;    
-        background-image: url(../images/index-header-left.png);
+        height: 366px;    
+        background-image: url(../images/fixed_index_header_left.png);
         background-repeat: round;
         background-color: rgba(0, 0, 0, 0);
+
+        
     }
 
     .index-header-text-right {
-        height: 300px;    
-        background-image: url(../images/index-header-right.png);
+        height: 366px;    
+        background-image: url(../images/fixed_header_right.png);
         background-repeat: round;
         background-color: rgba(0, 0, 0, 0);
     }
@@ -467,26 +467,24 @@ img {
     }
 
     .index-header-text-inner-left {
-        padding: 5% 10% 0 5% ;
+        padding: 8% 10% 0 5% ;
+
     }
 
     .index-header-text-inner-right {
-        padding: 5% 5% 0 20%;
+        padding: 8% 5% 0 20%;
     }
 
     .index-header-pic-right {
         padding: 0;
-        height: auto;
-        width: 100%;
-        margin-top: 20px;
+        height: 366px;
+        margin-top: 50px;
     }
     
     .index-header-pic-left {
         padding: 0;
-        height: auto;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
+        height: 366px;
+        margin-top: 50px;
     }
 
     .a5 {
@@ -529,32 +527,26 @@ img {
         padding: 15px;
     }
 
-    .social-media-block {
-        padding: 0 0 0 0;
-    }
 
     .social-media-logo {
         padding: 10px 20px 10px 20px;
     }
 
     .about-us-imgblock {
-        height: 420px;
+        height: 10%;
         background-image: url(../images/about-us.jpg);
         background-size:cover;
+        justify-content: center;
     }
     
     .aboutus-divider {
-        height:30px; 
-        width: 100%; 
-        position:absolute; 
-        top: 415px;
+
+        
     }
 
     .aboutus-text {
-        text-align: center;
-        margin-left: 42%;
-        margin-top: 20%;
-        font-size: 45px;
+        margin-top: 5%;
+        font-size: 42px;
         color: rgb(236, 236, 236);
         font-weight: 550;
     }
@@ -576,10 +568,7 @@ img {
     }
     
     .mission-text {
-        font-size: 19px;
-        padding-left: 50px;
-        padding-top: 0px;
-        margin-top: 20px;
+        padding: 5% 0% 0% 10%;
     }
 
     .subteam-img {
@@ -635,7 +624,7 @@ img {
     }
 
     .gimini-right {
-        min-height: 480px; 
+        height: 629px;
         background-image: url(../images/block_body.png); 
         background-size: cover;
         padding: 30px 0 0 80px;
@@ -643,7 +632,7 @@ img {
     }
 
     .firelogo {
-        padding-left: 30px;
+        padding-left: 200px;
     }
     
     .sponsor-block {
@@ -663,6 +652,35 @@ img {
     .sponsor-logo-pic-block {
         padding: 30px;
     }
+
+    .trickfire_text{
+        color: aliceblue;
+        font:bold;
+        font-size:150px;
+        margin-left: 50px;
+        
+        
+    }
+
+    .top-divider{
+        width: 100%;
+        height: 100%;
+        
+
+    }
+
+
+    .sponsorship-top-logo{
+        background-image: url(../images/VictoryPhoto1.png);
+        height: 20%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size:cover ;
+
+
+        justify-content: center;
+    }
+
     
 }
 
