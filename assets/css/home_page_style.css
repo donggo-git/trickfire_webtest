@@ -107,6 +107,32 @@ nav {
 
 }
 
+.calendar-iframe{
+    height: 50vw;
+    width: 70vw;
+}
+
+.calendar-block{
+    margin: 0 auto;
+}
+
+.dark_gray_background{
+    background-color: rgb(40,40,40);
+}
+
+.black_background{
+    background-color: rgb(0, 0, 0);
+}
+
+.social-media-logo{
+    margin: 1vw;
+
+    height: auto;
+    width: auto;
+
+    max-width: 4vw;
+    max-height: 4vw;
+}
 
 
 
