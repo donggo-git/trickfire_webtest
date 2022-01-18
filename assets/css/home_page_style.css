@@ -81,6 +81,7 @@ nav {
 .index_row_left_to_right{
     padding-top: 20px;
     justify-content:space-between;
+    overflow: hidden;
 
 }
 
@@ -125,8 +126,7 @@ nav {
     top: 0px;
     padding: 2% 0% 0% 8%;
     order: 2;
-    width: 53vw;
-
+    width: 51vw;
     
 }
 
