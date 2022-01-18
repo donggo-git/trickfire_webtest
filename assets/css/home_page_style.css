@@ -173,16 +173,24 @@ nav {
 }
 
 
+/**/
+.space_after_rows{
+    padding-top: 10px;
+}
 
+
+/*calendar*/
 .calendar-block{
     margin: 0 auto;
 }
 
 .calendar-iframe{
     height: 50vw;
-    width: 70vw;
+    width: 90vw;
 }
 
+
+/*social media stuff*/
 .social-media-logo{
     margin: 1vw;
 
@@ -233,7 +241,16 @@ nav {
         order: 1;
     }
 
+    .small_social-media-logo{
+        
+        max-width: 10vw;
+        max-height: 10vw;
+    }
 
+    .small_calendar-iframe{
+        height: 100vw;
+        width: 98vw;
+    }
 
 
 
