@@ -1,6 +1,62 @@
+@import './variables.scss';
 //Styles that are shared between pages
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+img {
+    // display: block;
+    /* margin: 0 auto; */
+    max-height: 100%;
+    max-width: 100%;
+}
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
 p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.photo-section {
+    height: 50vh;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -50% 30%;
+    justify-content: center;
+    position: relative;
+
+    //dividing line
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -50%;
+        height: 300px;
+        width: 100%;
+        background-image: url('../images/Line\ Dash\ Thing.png');
+        background-repeat: repeat-x;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: calc(clamp(3rem, 7vw, 6rem));
+        color: $text-color;
+        font-weight: 550;
+    }
 }

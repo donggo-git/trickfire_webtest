@@ -1,3 +1,12 @@
 h1 {
   color: black;
 }
+
+a {
+  padding: 0;
+  margin: 0;
+}
+
+.sponsorship-photo-section {
+  background-image: url(../images/Outreach_Fire_Trick_Robotics.jpg);
+}
