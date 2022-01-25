@@ -72,53 +72,26 @@ nav {
 
 /*The rows*/
 .index_row_right_to_left{
-    padding-top: 20px;
     justify-content:space-between;
     flex-direction: row-reverse;
-
 }
 
 .index_row_left_to_right{
-    padding-top: 20px;
+
     justify-content:space-between;
     overflow: hidden;
-
 }
 
-
-/*Left row*/
-.index_left_row{
-
-    order: 3;
+.padding_between_rows{
+    padding-top: 50px;
 }
-
 
 .index_left_row_text_setup{
     position: absolute;/* This is absolute to make it overlay on the image*/
+    top: 0px;
     width: 45vw;
     padding: 2% 0% 0% 2%;
     order: 2;
-}
-
-.index_left_row_title{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-
-}
-
-.index_left_row_text{
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-}
-
-
-.index_right_picture{
-    order: 1;
-}
-
-/*Right row*/
-.index_right_row{
-    order: 1;
 }
 
 .index_right_row_text_setup{
@@ -130,10 +103,21 @@ nav {
     
 }
 
+.index_left_row_title{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+}
+
 .index_right_row_title{
     font-size: 40px;
     color: rgb(255, 255, 255);
 
+}
+
+.index_left_row_text{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
 }
 
 .index_right_row_text{
@@ -141,6 +125,10 @@ nav {
     color: rgb(255, 255, 255);
 }
 
+
+.index_right_picture{
+    order: 0;
+}
 
 .index_left_picture{
     order: 0;
@@ -172,10 +160,13 @@ nav {
     position: relative;
 }
 
+.left_row_div{
+    position: relative;
+}
 
 /**/
 .space_after_rows{
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 
