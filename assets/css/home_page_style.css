@@ -88,7 +88,7 @@ nav {
 
 .index_left_row_text_setup{
     position: absolute;/* This is absolute to make it overlay on the image*/
-    top: 0px;
+    left: 0px;
     width: 45vw;
     padding: 2% 0% 0% 2%;
     order: 2;
@@ -97,7 +97,7 @@ nav {
 .index_right_row_text_setup{
     position: absolute;/* This is absolute to make it overlay on the image*/
     top: 0px;
-    padding: 2% 0% 0% 8%;
+    padding: 2% 0% 0% 10%;
     order: 2;
     width: 51vw;
     
@@ -125,14 +125,6 @@ nav {
     color: rgb(255, 255, 255);
 }
 
-
-.index_right_picture{
-    order: 0;
-}
-
-.index_left_picture{
-    order: 0;
-}
 
 .index_right_overlay_text_title{
     position: absolute;/* This is absolute to make it overlay on the image*/
@@ -164,6 +156,13 @@ nav {
     position: relative;
 }
 
+.join_us_button{
+    text-align:center; 
+    font-size: 40px; 
+    text-decoration: underline; 
+    color: aliceblue;
+}
+
 /**/
 .space_after_rows{
     padding-top: 50px;
@@ -193,6 +192,11 @@ nav {
 }
 
 
+@media only screen and (max-width: 1400px) {/*This is a band-aid solution for now to fit in that really large block of text, sorry*/
+    .index_right_row_text_setup{
+        width: 60vw;
+    }
+}
 
 
 
@@ -248,7 +252,7 @@ nav {
 }
 
 /*For the rows of information*/
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1050px){
 
 
     .small_index_row{
@@ -262,19 +266,12 @@ nav {
 
     .small_row_text_setup{
         position: static;
+        text-align: center;
         background-color: rgb(42, 42, 42);
         width: 100%;
         margin-left: 0;
         order: 1;
         padding: 0% 0% 0% 0%;
-    }
-
-    .small_row_title{
-        text-align: center;
-    }
-
-    .small_row_text{
-        text-align: center;
     }
 
 
