@@ -5,8 +5,19 @@
   padding: 0;
 }
 
+nav {
+  background-color: #38d738;
+  /*makes the bootstrap navbar this green color*/
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  color: #ebebeb;
+}
+
 img {
-  /* margin: 0 auto; */
   max-height: 100%;
   max-width: 100%;
 }
