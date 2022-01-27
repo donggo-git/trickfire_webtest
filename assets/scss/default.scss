@@ -22,6 +22,10 @@ nav {
     color: rgb(235, 235, 235);
 }
 
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
 img {
     max-height: 100%;
     max-width: 100%;
@@ -37,7 +41,7 @@ p {
         'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 .photo-section {
-    height: 50vh;
+    height: 70vh;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,12 +54,15 @@ p {
         content: '';
         display: block;
         position: absolute;
-        bottom: -50%;
-        height: 300px;
+        //bottom and height are relative to each other
+        bottom: -20px;
+        height: 38px;
         width: 100%;
         background-image: url('../images/Line\ Dash\ Thing.png');
+        transform: scaleY(80%);
         background-repeat: repeat-x;
     }
+    //Dark gradient on photo
     &::before {
         content: '';
         position: absolute;
@@ -66,11 +73,57 @@ p {
 
     h1 {
         position: absolute;
-        top: 65%;
+        bottom: 35%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
         font-size: calc(clamp(3rem, 7vw, 6rem));
         color: $text-color;
         font-weight: 550;
     }
+}
+.main-showcase {
+    display: flex;
+    align-content: flex-start;
+}
+.parallelogram-textbox-right {
+    height: 629px;
+    background-image: url(../images/block_body.png);
+    background-size: cover;
+    padding: 30px 0 0 80px;
+    line-height: 30px;
+    width: 62vw;
+
+    h1 {
+        color: $text-color;
+        font-weight: 430;
+        z-index: 10000;
+    }
+}
+
+.trapezoid-photo {
+    height: 629px;
+    background: cover;
+    // background-position: ;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // width 37vw;
+    // height: 629px;
+    // padding: 0;
+    // margin: 0;
+    &-right {
+        @extend .trapezoid-photo;
+        background-image: url('../images/lunar-surface-resized.jpg');
+    }
+    &-left {
+        @extend .trapezoid-photo;
+    }
+}
+.test {
+    height: 629px;
+    position: relative;
+    left: 18rem;
+    clip-path: polygon(0 0, 43vw 0, 30vw 100vh, 0 100vh);
+
+    // clip-path: url;
+    // mask: url('../images/right-trapezoid-right.svg');
 }

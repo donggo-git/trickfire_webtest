@@ -17,6 +17,11 @@ nav {
   color: #ebebeb;
 }
 
+body {
+  background-color: #383838;
+  color: #dfdfdf;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;
@@ -31,7 +36,7 @@ p {
 }
 
 .photo-section {
-  height: 50vh;
+  height: 70vh;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,10 +51,12 @@ p {
   content: '';
   display: block;
   position: absolute;
-  bottom: -50%;
-  height: 300px;
+  bottom: -20px;
+  height: 38px;
   width: 100%;
   background-image: url("../images/Line Dash Thing.png");
+  -webkit-transform: scaleY(80%);
+          transform: scaleY(80%);
   background-repeat: repeat-x;
 }
 
@@ -63,11 +70,51 @@ p {
 
 .photo-section h1 {
   position: absolute;
-  top: 65%;
+  bottom: 35%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   font-size: calc(clamp(3rem, 7vw, 6rem));
   color: #dfdfdf;
   font-weight: 550;
+}
+
+.main-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.parallelogram-textbox-right {
+  height: 629px;
+  background-image: url(../images/block_body.png);
+  background-size: cover;
+  padding: 30px 0 0 80px;
+  line-height: 30px;
+  width: 62vw;
+}
+
+.parallelogram-textbox-right h1 {
+  color: #dfdfdf;
+  font-weight: 430;
+  z-index: 10000;
+}
+
+.trapezoid-photo, .trapezoid-photo-right, .trapezoid-photo-left {
+  height: 629px;
+  background: cover;
+}
+
+.trapezoid-photo-right {
+  background-image: url("../images/lunar-surface-resized.jpg");
+}
+
+.test {
+  height: 629px;
+  position: relative;
+  left: 18rem;
+  -webkit-clip-path: polygon(0 0, 43vw 0, 30vw 100vh, 0 100vh);
+          clip-path: polygon(0 0, 43vw 0, 30vw 100vh, 0 100vh);
 }
