@@ -1,7 +1,3 @@
-h1 {
-  color: black;
-}
-
 a {
   padding: 0;
   margin: 0;
@@ -9,4 +5,46 @@ a {
 
 .sponsorship-photo-section {
   background-image: url(../images/Outreach_Fire_Trick_Robotics.jpg);
+  background-position: -50% 30%;
+}
+
+.sponsorship-logo-container {
+  margin: 0 5%;
+  padding: 2rem 5% 2rem 5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sponsorship-logo-container .sponsor-logo-pic-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.sponsorship-logo-container .sponsor-logo-pic-block img {
+  max-height: 220px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sponsorship-logo-container {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #sponsorship-main-showcase-photo-1 {
+    content: url("../images/lunar-surface.jpg");
+  }
+  #sponsorship-main-showcase-photo-2 {
+    content: url("../images/lunar-surface.jpg");
+  }
 }

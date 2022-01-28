@@ -2,22 +2,6 @@
     padding: 0; /*removes the white lines on each side of the screen*/
 }
 
-.dark_background {
-    background-color: rgb(22, 22, 22);
-}
-
-.gray_background {
-    background-color: rgb(63, 63, 63);
-}
-
-.black_background {
-    background-color: rgb(0, 0, 0);
-}
-
-.dark_gray_background {
-    background-color: rgb(40, 40, 40);
-}
-
 /*Homepage*/
 .trickfire_text {
     color: aliceblue;
@@ -129,6 +113,10 @@
 .right_row_div {
     position: relative;
 }
+.right_row_div img {
+    max-height: none;
+    max-width: none;
+}
 
 .left_row_div {
     position: relative;
@@ -154,17 +142,6 @@
 .calendar-iframe {
     height: 50vw;
     width: 90vw;
-}
-
-/*social media stuff*/
-.social-media-logo {
-    margin: 1vw;
-
-    height: auto;
-    width: auto;
-
-    max-width: 4vw;
-    max-height: 4vw;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -198,7 +175,6 @@
 
     .trickfire_logo {
         content: url('../images/front_logo_full.svg');
-
         max-width: 60%;
         max-height: 60%;
         margin-left: 20%;
@@ -219,32 +195,6 @@
 
 /*For the rows of information*/
 @media only screen and (max-width: 1050px) {
-    .small_index_row {
-        flex-direction: column;
-        padding: 2%;
-    }
-
-    .small_row {
-        display: none;
-    }
-
-    .small_row_text_setup {
-        position: static;
-        text-align: center;
-        background-color: rgb(42, 42, 42);
-        width: 100%;
-        margin-left: 0;
-        order: 1;
-        padding: 0% 0% 0% 0%;
-    }
-
-    .small_picture {
-        align-self: center;
-        padding: 2%;
-
-        order: 2;
-    }
-
     #row_one_image {
         content: url('../images/rover_image_1.png');
     }

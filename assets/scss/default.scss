@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
 }
+
+//From "home_page_style.css"
 //Navbar
 nav {
     background-color: rgb(
@@ -22,6 +24,34 @@ nav {
     color: rgb(235, 235, 235);
 }
 
+.dark_background {
+    background-color: rgb(22, 22, 22);
+}
+
+.gray_background {
+    background-color: rgb(63, 63, 63);
+}
+
+.black_background {
+    background-color: rgb(0, 0, 0);
+}
+
+.dark_gray_background {
+    background-color: rgb(40, 40, 40);
+}
+
+/*social media stuff*/
+.social-media-logo {
+    margin: 1vw;
+
+    height: auto;
+    width: auto;
+
+    max-width: 4vw;
+    max-height: 4vw;
+}
+
+//default new
 body {
     background-color: $background-color;
     color: $text-color;
@@ -45,7 +75,6 @@ p {
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -50% 30%;
     justify-content: center;
     position: relative;
 
@@ -55,7 +84,7 @@ p {
         display: block;
         position: absolute;
         //bottom and height are relative to each other
-        bottom: -20px;
+        bottom: -18px;
         height: 38px;
         width: 100%;
         background-image: url('../images/Line\ Dash\ Thing.png');
@@ -81,49 +110,130 @@ p {
         font-weight: 550;
     }
 }
+
 .main-showcase {
     display: flex;
-    align-content: flex-start;
-}
-.parallelogram-textbox-right {
-    height: 629px;
-    background-image: url(../images/block_body.png);
-    background-size: cover;
-    padding: 30px 0 0 80px;
-    line-height: 30px;
-    width: 62vw;
-
-    h1 {
-        color: $text-color;
-        font-weight: 430;
-        z-index: 10000;
+    padding: 4rem 0;
+    justify-content: space-between;
+    img {
+        height: 629px;
+        width: 30vw;
+    }
+    .trapezoid-textbox {
+        //Don't use, just for cohesion
+        height: 629px;
+        background-size: cover;
+        line-height: 30px;
+        width: 70vw;
+        //& is just taking the parent's name which is "trapezoid-textbox"
+        &-right {
+            @extend .trapezoid-textbox;
+            background-image: url(../images/right_block_body.png);
+        }
+        &-left {
+            @extend .trapezoid-textbox;
+            background-image: url(../images/left_block_body.png);
+        }
+        h1,
+        p {
+            position: relative;
+            left: 10rem;
+            top: 3.5rem;
+            color: $text-color;
+            font-weight: 430;
+            //Bandage patch WILL NEED TO BE FIXED
+            width: 45vw;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 25px;
+        }
     }
 }
-
-.trapezoid-photo {
-    height: 629px;
-    background: cover;
-    // background-position: ;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // width 37vw;
-    // height: 629px;
-    // padding: 0;
-    // margin: 0;
-    &-right {
-        @extend .trapezoid-photo;
-        background-image: url('../images/lunar-surface-resized.jpg');
+@media only screen and (max-width: 1050px) {
+    // From "home_page _style.css
+    .small_index_row {
+        flex-direction: column;
+        padding: 2%;
     }
-    &-left {
-        @extend .trapezoid-photo;
+
+    .small_row {
+        display: none;
+    }
+
+    .small_row_text_setup {
+        position: static;
+        text-align: center;
+        background-color: rgb(42, 42, 42);
+        width: 100%;
+        margin-left: 0;
+        order: 1;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .small_picture {
+        align-self: center;
+        padding: 2%;
+
+        order: 2;
+    }
+    //new stuff
+    .main-showcase {
+        display: block;
+        padding: 30px 0;
+        img {
+            height: auto;
+            width: 100%;
+            //change ordering depends if picture is first or text but not yet implemented
+            order: 1;
+        }
+        .trapezoid-textbox {
+            background-image: none;
+            background-color: rgb(42, 42, 42);
+            width: 100%;
+            padding: 3rem 0;
+            height: fit-content;
+            //change ordering depends if picture is first or text but not yet implemented
+            order: 2;
+            h1,
+            p {
+                position: relative;
+                font-weight: 430;
+                left: 0;
+                top: 0;
+                width: 100%;
+                text-align: center;
+            }
+            h1 {
+                font-size: 50px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
     }
 }
-.test {
-    height: 629px;
-    position: relative;
-    left: 18rem;
-    clip-path: polygon(0 0, 43vw 0, 30vw 100vh, 0 100vh);
-
-    // clip-path: url;
-    // mask: url('../images/right-trapezoid-right.svg');
-}
+// In progress: large screens
+// .trapezoid-photo {
+//     height: 629px;
+//     background: cover;
+//     background-position: ;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     width 37vw;
+//     height: 629px;
+//     padding: 0;
+//     margin: 0;
+//     &-right {
+//         @extend .trapezoid-photo;
+//         background-image: url('../images/lunar-surface-resized.jpg');
+//     }
+//     &-left {
+//         @extend .trapezoid-photo;
+//     }
+// }
