@@ -154,6 +154,13 @@ p {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .small_social-media-logo {
+        max-width: 10vw;
+        max-height: 10vw;
+    }
+}
 @media only screen and (max-width: 1050px) {
     // From "home_page _style.css
     .small_index_row {
@@ -181,6 +188,7 @@ p {
 
         order: 2;
     }
+
     //new stuff
     .main-showcase {
         display: block;
@@ -190,6 +198,7 @@ p {
             width: 100%;
             //change ordering depends if picture is first or text but not yet implemented
             order: 1;
+            z-index: -1;
         }
         .trapezoid-textbox {
             background-image: none;

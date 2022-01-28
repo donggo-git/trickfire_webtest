@@ -158,6 +158,13 @@ p {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .small_social-media-logo {
+    max-width: 10vw;
+    max-height: 10vw;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
   .small_index_row {
     -webkit-box-orient: vertical;
@@ -199,6 +206,7 @@ p {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    z-index: -1;
   }
   .main-showcase .trapezoid-textbox, .main-showcase .trapezoid-textbox-right, .main-showcase .trapezoid-textbox-left {
     background-image: none;
