@@ -1,41 +1,11 @@
-nav {
-    background-color: rgb(56, 215, 56);/*makes the bootstrap navbar this green color*/
-}
-
-
-.nav-link {
-    font-size:18px;
-    font-weight: 500;
-    margin: 0 10px;
-    color:rgb(235, 235, 235);
-}
-
 .container-fill-screen {
-    padding: 0;/*removes the white lines on each side of the screen*/
+    padding: 0; /*removes the white lines on each side of the screen*/
 }
-
-
-.dark_background {
-    background-color: rgb(22, 22, 22);
-}
-
-.gray_background{
-    background-color: rgb(63, 63, 63);
-}
-
-.black_background{
-    background-color: rgb(0, 0, 0);
-}
-
-.dark_gray_background{
-    background-color: rgb(40,40,40);
-}
-
 
 /*Homepage*/
-.trickfire_text{
+.trickfire_text {
     color: aliceblue;
-    font:bold;
+    font: bold;
     font-size: 7vw;
     white-space: normal;
 }
@@ -43,14 +13,13 @@ nav {
 .text-intro {
     font-size: 20px;
     font-weight: 500;
-    color:rgb(233, 233, 233);
+    color: rgb(233, 233, 233);
 }
 
-.trickfire_logo_left_text{
+.trickfire_logo_left_text {
     margin-left: 10%;
     order: 1;
     margin-top: 5%;
-
 }
 
 .trickfire_logo {
@@ -61,73 +30,66 @@ nav {
     order: 2;
 }
 
-.top-divider{
+.top-divider {
     width: 100%;
     height: 100%;
 
     order: 3;
 }
 
-
-
 /*The rows*/
-.index_row_right_to_left{
-    justify-content:space-between;
+.index_row_right_to_left {
+    justify-content: space-between;
     flex-direction: row-reverse;
 }
 
-.index_row_left_to_right{
-
-    justify-content:space-between;
+.index_row_left_to_right {
+    justify-content: space-between;
     overflow: hidden;
 }
 
-.padding_between_rows{
+.padding_between_rows {
     padding-top: 50px;
 }
 
-.index_left_row_text_setup{
-    position: absolute;/* This is absolute to make it overlay on the image*/
+.index_left_row_text_setup {
+    position: absolute; /* This is absolute to make it overlay on the image*/
     left: 0px;
     width: 45vw;
     padding: 2% 0% 0% 2%;
     order: 2;
 }
 
-.index_right_row_text_setup{
-    position: absolute;/* This is absolute to make it overlay on the image*/
+.index_right_row_text_setup {
+    position: absolute; /* This is absolute to make it overlay on the image*/
     top: 0px;
     padding: 2% 0% 0% 10%;
     order: 2;
     width: 51vw;
-    
 }
 
-.index_left_row_title{
+.index_left_row_title {
     font-size: 40px;
     color: rgb(255, 255, 255);
-
 }
 
-.index_right_row_title{
+.index_right_row_title {
     font-size: 40px;
     color: rgb(255, 255, 255);
-
 }
 
-.index_left_row_text{
+.index_left_row_text {
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
-.index_right_row_text{
+.index_right_row_text {
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
-
-.index_right_overlay_text_title{
-    position: absolute;/* This is absolute to make it overlay on the image*/
+.index_right_overlay_text_title {
+    position: absolute; /* This is absolute to make it overlay on the image*/
     width: 45vw;
     color: white;
     font-size: 2vw;
@@ -137,98 +99,82 @@ nav {
     padding: 2% 0% 0% 8%;
 }
 
-.index_right_overlay_text{
-    position: absolute;/* This is absolute to make it overlay on the image*/
+.index_right_overlay_text {
+    position: absolute; /* This is absolute to make it overlay on the image*/
     width: 45vw;
     color: white;
     font-size: 1vw;
 
-    margin-left: 49vw;/*move it to the right side of the screen*/
+    margin-left: 49vw; /*move it to the right side of the screen*/
 
     padding: 5% 0% 0% 8%;
 }
 
-.right_row_div{
+.right_row_div {
+    position: relative;
+}
+.right_row_div img {
+    max-height: none;
+    max-width: none;
+}
+
+.left_row_div {
     position: relative;
 }
 
-.left_row_div{
-    position: relative;
-}
-
-.join_us_button{
-    text-align:center; 
-    font-size: 40px; 
-    text-decoration: underline; 
+.join_us_button {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
     color: aliceblue;
 }
 
 /**/
-.space_after_rows{
+.space_after_rows {
     padding-top: 50px;
 }
 
-
 /*calendar*/
-.calendar-block{
+.calendar-block {
     margin: 0 auto;
 }
 
-.calendar-iframe{
+.calendar-iframe {
     height: 50vw;
     width: 90vw;
 }
 
-
-/*social media stuff*/
-.social-media-logo{
-    margin: 1vw;
-
-    height: auto;
-    width: auto;
-
-    max-width: 4vw;
-    max-height: 4vw;
-}
-
-
-@media only screen and (max-width: 1400px) {/*This is a band-aid solution for now to fit in that really large block of text, sorry*/
-    .index_right_row_text_setup{
+@media only screen and (max-width: 1400px) {
+    /*This is a band-aid solution for now to fit in that really large block of text, sorry*/
+    .index_right_row_text_setup {
         width: 60vw;
     }
 }
 
-
-
 /*For the title screen*/
 @media only screen and (max-width: 767px) {
-
-    .trickfire_text{
+    .trickfire_text {
         color: aliceblue;
-        font:bold;
+        font: bold;
         font-size: 50px;
         text-align: center;
-
     }
 
     .text-intro {
         font-size: 20px;
         font-weight: 500;
-        color:rgb(233, 233, 233);
+        color: rgb(233, 233, 233);
         text-align: center;
     }
 
-    .trickfire_logo_left_text{
+    .trickfire_logo_left_text {
         margin-left: 0%;
         margin-top: 0%;
         order: 2;
-
     }
 
-    .trickfire_logo{
-
-        content:url("../images/front_logo_full.svg");
-
+    .trickfire_logo {
+        content: url('../images/front_logo_full.svg');
         max-width: 60%;
         max-height: 60%;
         margin-left: 20%;
@@ -236,71 +182,23 @@ nav {
         order: 1;
     }
 
-    .small_social-media-logo{
-        
-        max-width: 10vw;
-        max-height: 10vw;
-    }
-
-    .small_calendar-iframe{
+    .small_calendar-iframe {
         height: 100vw;
         width: 98vw;
     }
-
-
-
 }
 
 /*For the rows of information*/
-@media only screen and (max-width: 1050px){
-
-
-    .small_index_row{
-        flex-direction:column;   
-        padding: 2%;     
+@media only screen and (max-width: 1050px) {
+    #row_one_image {
+        content: url('../images/rover_image_1.png');
     }
 
-    .small_row{
-        display: none;
+    #row_two_image {
+        content: url('../images/unslanted_drilling_full.png');
     }
 
-    .small_row_text_setup{
-        position: static;
-        text-align: center;
-        background-color: rgb(42, 42, 42);
-        width: 100%;
-        margin-left: 0;
-        order: 1;
-        padding: 0% 0% 0% 0%;
+    #row_three_image {
+        content: url('../images/unslanted_join_us.png');
     }
-
-
-    .small_picture{
-        align-self: center;
-        padding: 2%;
-
-        order: 2;
-    }
-
-    #row_one_image{
-        content:url("../images/rover_image_1.png");
-    }
-
-    #row_two_image{
-        content: url("../images/unslanted_drilling_full.png");
-    }
-
-    #row_three_image{
-        content: url("../images/unslanted_join_us.png");
-    }
-
-    
-
-
 }
-
-
-
-
-
-
