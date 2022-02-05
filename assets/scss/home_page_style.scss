@@ -209,22 +209,60 @@
 
 //Start work on the scss things:
 
+.row-padding{
+    padding-top: 50px;
+}
+
 .row-pic-right{
     justify-content: space-between;
     flex-direction: row-reverse;
+
+    .words-on-background{
+    
+        img{
+            object-fit: cover;
+            object-position: 100%;
+        }
+    
+        //Title
+        h1{
+            padding: 5% 0% 0% 5%; 
+    
+        }
+    
+        //Text
+        p{
+            padding: 15% 10% 0% 5%;
+    
+        }
+    }
 }
 
 .row-pic-left{
     justify-content: space-between;
     overflow: hidden;
+
+    .words-on-background{
+    
+        //Title
+        h1{
+            padding: 5% 0% 0% 10%; 
+    
+        }
+    
+        //Text
+        p{
+            padding: 15% 10% 0% 10%; 
+    
+        }
+    }
 }
+
 
 .words-on-background{
     position: relative;
 
     img{
-        object-fit: cover;
-        object-position: 100%;
         min-width: 100%;
         min-height: 100%;
     }
@@ -232,7 +270,6 @@
     //Title
     h1{
         position: absolute; /* This is absolute to make it overlay on the image*/
-        padding: 5% 0% 0% 5%; 
         font-size: 70px;
         top: 0px;
 
@@ -241,10 +278,11 @@
     //Text
     p{
         position: absolute; /* This is absolute to make it overlay on the image*/
-        padding: 15% 10% 0% 5%; 
 
         font-size: 20px;
         top: 0px;
 
     }
 }
+
+

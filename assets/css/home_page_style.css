@@ -218,6 +218,10 @@
   }
 }
 
+.row-padding {
+  padding-top: 50px;
+}
+
 .row-pic-right {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -228,6 +232,21 @@
           flex-direction: row-reverse;
 }
 
+.row-pic-right .words-on-background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100%;
+     object-position: 100%;
+}
+
+.row-pic-right .words-on-background h1 {
+  padding: 5% 0% 0% 5%;
+}
+
+.row-pic-right .words-on-background p {
+  padding: 15% 10% 0% 5%;
+}
+
 .row-pic-left {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -235,15 +254,19 @@
   overflow: hidden;
 }
 
+.row-pic-left .words-on-background h1 {
+  padding: 5% 0% 0% 10%;
+}
+
+.row-pic-left .words-on-background p {
+  padding: 15% 10% 0% 10%;
+}
+
 .words-on-background {
   position: relative;
 }
 
 .words-on-background img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100%;
-     object-position: 100%;
   min-width: 100%;
   min-height: 100%;
 }
@@ -251,7 +274,6 @@
 .words-on-background h1 {
   position: absolute;
   /* This is absolute to make it overlay on the image*/
-  padding: 5% 0% 0% 5%;
   font-size: 70px;
   top: 0px;
 }
@@ -259,7 +281,6 @@
 .words-on-background p {
   position: absolute;
   /* This is absolute to make it overlay on the image*/
-  padding: 15% 10% 0% 5%;
   font-size: 20px;
   top: 0px;
 }
