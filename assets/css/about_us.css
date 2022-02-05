@@ -1,3 +1,19 @@
 .about-us-photo-section {
   background-image: url("../images/Outreach_photo.jpeg");
 }
+
+.row-pic-left {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.row-pic-left .words-on-background h1 {
+  padding: 2% 0% 0% 15% !important;
+}
+
+.row-pic-left .words-on-background p {
+  padding: 10% 2% 0% 15% !important;
+  text-align: start;
+}
