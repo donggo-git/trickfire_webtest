@@ -69,6 +69,9 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .photo-section::after {
@@ -94,10 +97,6 @@ p {
 
 .photo-section h1 {
   position: absolute;
-  bottom: 35%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   font-size: calc(clamp(3rem, 7vw, 6rem));
   color: #dfdfdf;
   font-weight: 550;
