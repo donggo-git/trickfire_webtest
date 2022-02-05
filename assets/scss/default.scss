@@ -227,6 +227,129 @@ p {
         }
     }
 }
+
+
+//ROW STUFF
+
+//small row
+@media only screen and (max-width: 1100px) {
+    .row-pic-right{
+        display: none;
+    }
+
+    .row-pic-left{
+        display: none;
+    }
+
+    .small-stacked-row{
+        text-align: center;
+        background-color: $row-background-color;
+        
+        img{
+            padding: 5%;
+        }
+
+        h1{
+            padding-top: 5%;
+            font-size: 70px;
+        }
+
+        p{
+            padding: 0% 5% 0% 5%;
+        }
+    }
+}
+
+//To hide the rows when they are not needed
+@media only screen and (min-width: 1100px) {
+    .small-stacked-row{
+        display: none;
+    
+    }
+}
+
+
+
+.row-padding{
+    padding-top: 50px;
+}
+
+.row-pic-right{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    .words-on-background{
+    
+        img{
+            object-fit: cover;
+            object-position: 100%;
+        }
+    
+        //Title
+        h1{
+            padding: 1% 0% 0% 2%;
+    
+        }
+    
+        //Text
+        p{
+            padding: 10% 10% 0% 2%;
+    
+        }
+    }
+}
+
+.row-pic-left{
+    justify-content: space-between;
+    overflow: hidden;
+
+    .words-on-background{
+    
+        //Title
+        h1{
+            padding: 1% 0% 0% 10%;
+    
+        }
+    
+        //Text
+        p{
+            padding: 10% 2% 0% 10%;
+            text-align: start;
+    
+        }
+    }
+}
+
+
+.words-on-background{
+    position: relative;
+
+    img{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    //Title
+    h1{
+        position: absolute; /* This is absolute to make it overlay on the image*/
+        font-size: 70px;
+        top: 0px;
+
+    }
+
+    //Text
+    p{
+        position: absolute; /* This is absolute to make it overlay on the image*/
+
+        font-size: 20px;
+        top: 0px;
+
+    }
+}
+
+
+
+
 // In progress: large screens
 // .trapezoid-photo {
 //     height: 629px;
