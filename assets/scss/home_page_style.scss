@@ -146,15 +146,15 @@
     width: 90vw;
 }
 
-/*
+
 @media only screen and (max-width: 1400px) {
-    /*This is a band-aid solution for now to fit in that really large block of text, sorry
+    /*This is a band-aid solution for now to fit in that really large block of text, sorry*/
     .index_right_row_text_setup {
         width: 60vw;
     }
 }
 
-/*For the title screen
+/*For the title screen*/
 @media only screen and (max-width: 767px) {
     .trickfire_text {
         color: aliceblue;
@@ -191,7 +191,7 @@
     }
 }
 
-/*For the rows of information
+/*For the rows of information*/
 @media only screen and (max-width: 1050px) {
     #row_one_image {
         content: url('../images/rover_image_1.png');
@@ -205,12 +205,12 @@
         content: url('../images/unslanted_join_us.png');
     }
 }
-*/
+
 
 //Start work on the scss things:
 
 .row-pic-right{
-    //justify-content: space-between;
+    justify-content: space-between;
     flex-direction: row-reverse;
 }
 
@@ -220,5 +220,31 @@
 }
 
 .words-on-background{
-    //position: relative;
+    position: relative;
+
+    img{
+        object-fit: cover;
+        object-position: 100%;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    //Title
+    h1{
+        position: absolute; /* This is absolute to make it overlay on the image*/
+        padding: 5% 0% 0% 5%; 
+        font-size: 70px;
+        top: 0px;
+
+    }
+
+    //Text
+    p{
+        position: absolute; /* This is absolute to make it overlay on the image*/
+        padding: 15% 10% 0% 5%; 
+
+        font-size: 20px;
+        top: 0px;
+
+    }
 }
