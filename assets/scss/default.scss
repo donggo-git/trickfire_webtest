@@ -249,7 +249,7 @@ p {
         background-color: $row-background-color;
         
         img{
-            padding: 5%;
+            padding: 0% 5% 5% 5%;
         }
 
         h1{
@@ -258,7 +258,7 @@ p {
         }
 
         p{
-            padding: 0% 5% 0% 5%;
+            padding: 0% 5% 5% 5%;
         }
     }
 }
@@ -290,13 +290,17 @@ p {
     
         //Title
         h1{
-            padding: 1% 0% 0% 2%;
+            padding: 0% 10% 0% 0%;
+            left: 20px;
+
     
         }
     
         //Text
         p{
-            padding: 10% 10% 0% 2%;
+            padding: 0% 10% 0% 0%;
+            left: 20px;
+            top: 120px;
     
         }
     }
@@ -308,17 +312,25 @@ p {
 
     .words-on-background{
     
+        img{
+            object-fit: cover;
+            object-position: 0%;
+        }
+
         //Title
         h1{
-            padding: 1% 0% 0% 10%;
+            padding: 0% 2% 0% 0%;
+            top: 20px;
+            left: 120px;
     
         }
     
         //Text
         p{
-            padding: 10% 2% 0% 10%;
+            padding: 0% 2% 0% 0%;
+            left: 120px;
+            top: 120px;
             text-align: start;
-    
         }
     }
 }

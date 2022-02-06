@@ -1,25 +1,10 @@
+@import './variables.scss';
 .about-us-photo-section{
     background-image: url("../images/Outreach_photo.jpeg");
 }
 
-
-.row-pic-left{
-    justify-content: space-between;
-    overflow: hidden;
-
-    .words-on-background{
-    
-        //Title
-        h1{
-            padding: 2% 0% 0% 15% !important; 
-    
-        }
-    
-        //Text
-        p{
-            padding: 10% 2% 0% 15% !important;
-            text-align: start;
-    
-        }
-    }
+.space-after-rows {
+    padding-top: 50px;
 }
+
+

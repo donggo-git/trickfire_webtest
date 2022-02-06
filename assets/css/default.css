@@ -254,14 +254,14 @@ p {
     background-color: #2a2a2a;
   }
   .small-stacked-row img {
-    padding: 5%;
+    padding: 0% 5% 5% 5%;
   }
   .small-stacked-row h1 {
     padding-top: 5%;
     font-size: 70px;
   }
   .small-stacked-row p {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 5% 5% 5%;
   }
 }
 
@@ -293,11 +293,14 @@ p {
 }
 
 .row-pic-right .words-on-background h1 {
-  padding: 1% 0% 0% 2%;
+  padding: 0% 10% 0% 0%;
+  left: 20px;
 }
 
 .row-pic-right .words-on-background p {
-  padding: 10% 10% 0% 2%;
+  padding: 0% 10% 0% 0%;
+  left: 20px;
+  top: 120px;
 }
 
 .row-pic-left {
@@ -307,12 +310,23 @@ p {
   overflow: hidden;
 }
 
+.row-pic-left .words-on-background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0%;
+     object-position: 0%;
+}
+
 .row-pic-left .words-on-background h1 {
-  padding: 1% 0% 0% 10%;
+  padding: 0% 2% 0% 0%;
+  top: 20px;
+  left: 120px;
 }
 
 .row-pic-left .words-on-background p {
-  padding: 10% 2% 0% 10%;
+  padding: 0% 2% 0% 0%;
+  left: 120px;
+  top: 120px;
   text-align: start;
 }
 
