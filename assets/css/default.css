@@ -311,7 +311,7 @@ p {
 .row-pic-right .words-on-background p {
   padding: 0% 10% 0% 0%;
   left: 20px;
-  top: 120px;
+  top: 90px;
 }
 
 .row-pic-left {
@@ -337,7 +337,7 @@ p {
 .row-pic-left .words-on-background p {
   padding: 0% 2% 0% 0%;
   left: 120px;
-  top: 120px;
+  top: 90px;
   text-align: start;
 }
 
