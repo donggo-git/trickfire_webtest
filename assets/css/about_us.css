@@ -11,7 +11,7 @@
   height: 100%;
 }
 
-.trickfire-logo-image {
-  -o-object-position: 0%;
-     object-position: 0%;
+.small-trickfire-logo {
+  max-width: 30vw;
+  padding: 5% 5% 0% 5% !important;
 }
