@@ -78,6 +78,9 @@ p {
     justify-content: center;
     position: relative;
 
+    display: grid;
+    place-items: center;
+
     //dividing line
     &::after {
         content: '';
@@ -102,9 +105,9 @@ p {
 
     h1 {
         position: absolute;
-        bottom: 35%;
-        left: 50%;
-        transform: translate(-50%, 0);
+        //bottom: 35%;
+        //left: 50%;
+        //transform: translate(-50%, 0);
         font-size: calc(clamp(3rem, 7vw, 6rem));
         color: $text-color;
         font-weight: 550;
@@ -232,7 +235,7 @@ p {
 //ROW STUFF
 
 //small row
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
     .row-pic-right{
         display: none;
     }
@@ -246,7 +249,7 @@ p {
         background-color: $row-background-color;
         
         img{
-            padding: 5%;
+            padding: 0% 5% 5% 5%;
         }
 
         h1{
@@ -255,17 +258,29 @@ p {
         }
 
         p{
-            padding: 0% 5% 0% 5%;
+            padding: 0% 5% 5% 5%;
         }
+    }
+
+    .small-row-padding{
+        padding-top: 50px;
     }
 }
 
 //To hide the rows when they are not needed
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1151px) {
     .small-stacked-row{
         display: none;
     
     }
+
+    .small-row-padding{
+        display: none;
+    }
+}
+
+.space-after-rows {
+    padding-top: 50px;
 }
 
 
@@ -287,13 +302,17 @@ p {
     
         //Title
         h1{
-            padding: 1% 0% 0% 2%;
+            padding: 0% 10% 0% 0%;
+            left: 20px;
+
     
         }
     
         //Text
         p{
-            padding: 10% 10% 0% 2%;
+            padding: 0% 10% 0% 0%;
+            left: 20px;
+            top: 90px;
     
         }
     }
@@ -305,17 +324,25 @@ p {
 
     .words-on-background{
     
+        img{
+            object-fit: cover;
+            object-position: 0%;
+        }
+
         //Title
         h1{
-            padding: 1% 0% 0% 10%;
+            padding: 0% 2% 0% 0%;
+
+            left: 120px;
     
         }
     
         //Text
         p{
-            padding: 10% 2% 0% 10%;
+            padding: 0% 2% 0% 0%;
+            left: 120px;
+            top: 90px;
             text-align: start;
-    
         }
     }
 }
@@ -332,7 +359,7 @@ p {
     //Title
     h1{
         position: absolute; /* This is absolute to make it overlay on the image*/
-        font-size: 70px;
+        font-size: calc(clamp(3rem, 4vw, 6rem));;
         top: 0px;
 
     }
