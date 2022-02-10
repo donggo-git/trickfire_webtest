@@ -77,7 +77,6 @@ p {
     background-size: cover;
     justify-content: center;
     position: relative;
-
     display: grid;
     place-items: center;
 
@@ -108,7 +107,7 @@ p {
         //bottom: 35%;
         //left: 50%;
         //transform: translate(-50%, 0);
-        font-size: calc(clamp(3rem, 7vw, 6rem));
+        font-size: calc(clamp(3rem, 10vw, 6rem));
         color: $text-color;
         font-weight: 550;
     }
@@ -116,18 +115,21 @@ p {
 
 .main-showcase {
     display: flex;
-    padding: 4rem 0;
+    margin: 4rem 0;
     justify-content: space-between;
+
     img {
-        height: 629px;
-        width: 30vw;
+        height: 618px;
+        width: auto;
     }
+    //Don't use only .trapezoid-textbox, just for cohesion
     .trapezoid-textbox {
-        //Don't use, just for cohesion
-        height: 629px;
-        background-size: cover;
+        // background-size: cover;
         line-height: 30px;
-        width: 70vw;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+
         //& is just taking the parent's name which is "trapezoid-textbox"
         &-right {
             @extend .trapezoid-textbox;
@@ -136,6 +138,7 @@ p {
         &-left {
             @extend .trapezoid-textbox;
             background-image: url(../images/left_block_body.png);
+            background-position: 100% 0;
         }
         h1,
         p {
@@ -231,50 +234,48 @@ p {
     }
 }
 
-
 //ROW STUFF
 
 //small row
 @media only screen and (max-width: 1150px) {
-    .row-pic-right{
+    .row-pic-right {
         display: none;
     }
 
-    .row-pic-left{
+    .row-pic-left {
         display: none;
     }
 
-    .small-stacked-row{
+    .small-stacked-row {
         text-align: center;
         background-color: $row-background-color;
-        
-        img{
+
+        img {
             padding: 0% 5% 5% 5%;
         }
 
-        h1{
+        h1 {
             padding-top: 5%;
             font-size: 70px;
         }
 
-        p{
+        p {
             padding: 0% 5% 5% 5%;
         }
     }
 
-    .small-row-padding{
+    .small-row-padding {
         padding-top: 50px;
     }
 }
 
 //To hide the rows when they are not needed
 @media only screen and (min-width: 1151px) {
-    .small-stacked-row{
+    .small-stacked-row {
         display: none;
-    
     }
 
-    .small-row-padding{
+    .small-row-padding {
         display: none;
     }
 }
@@ -283,62 +284,54 @@ p {
     padding-top: 50px;
 }
 
-
-
-.row-padding{
+.row-padding {
     padding-top: 50px;
 }
 
-.row-pic-right{
+.row-pic-right {
     justify-content: space-between;
     flex-direction: row-reverse;
 
-    .words-on-background{
-    
-        img{
+    .words-on-background {
+        img {
             object-fit: cover;
             object-position: 100%;
         }
-    
+
         //Title
-        h1{
+        h1 {
             padding: 0% 10% 0% 0%;
             left: 20px;
-
-    
         }
-    
+
         //Text
-        p{
+        p {
             padding: 0% 10% 0% 0%;
             left: 20px;
             top: 90px;
-    
         }
     }
 }
 
-.row-pic-left{
+.row-pic-left {
     justify-content: space-between;
     overflow: hidden;
 
-    .words-on-background{
-    
-        img{
+    .words-on-background {
+        img {
             object-fit: cover;
             object-position: 0%;
         }
 
         //Title
-        h1{
+        h1 {
             padding: 0% 2% 0% 0%;
 
             left: 120px;
-    
         }
-    
+
         //Text
-        p{
+        p {
             padding: 0% 2% 0% 0%;
             left: 120px;
             top: 90px;
@@ -347,35 +340,29 @@ p {
     }
 }
 
-
-.words-on-background{
+.words-on-background {
     position: relative;
 
-    img{
+    img {
         min-width: 100%;
         min-height: 100%;
     }
 
     //Title
-    h1{
+    h1 {
         position: absolute; /* This is absolute to make it overlay on the image*/
-        font-size: calc(clamp(3rem, 4vw, 6rem));;
+        font-size: calc(clamp(3rem, 4vw, 6rem));
         top: 0px;
-
     }
 
     //Text
-    p{
+    p {
         position: absolute; /* This is absolute to make it overlay on the image*/
 
         font-size: 20px;
         top: 0px;
-
     }
 }
-
-
-
 
 // In progress: large screens
 // .trapezoid-photo {

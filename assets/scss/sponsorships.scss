@@ -8,7 +8,7 @@ a {
 
 .sponsorship-photo-section {
     background-image: url(../images/Outreach_Fire_Trick_Robotics.jpg);
-    // background-position: -50% 30%;
+    background-position: 0 30%;
 }
 
 .sponsorship-logo-container {
@@ -23,9 +23,6 @@ a {
         img {
             max-height: 220px;
             padding: 20px;
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
         }
     }
 }
