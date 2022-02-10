@@ -69,6 +69,9 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .photo-section::after {
@@ -94,10 +97,6 @@ p {
 
 .photo-section h1 {
   position: absolute;
-  bottom: 35%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   font-size: calc(clamp(3rem, 7vw, 6rem));
   color: #dfdfdf;
   font-weight: 550;
@@ -241,4 +240,124 @@ p {
   .main-showcase .trapezoid-textbox-left p {
     font-size: 25px;
   }
+}
+
+@media only screen and (max-width: 1150px) {
+  .row-pic-right {
+    display: none;
+  }
+  .row-pic-left {
+    display: none;
+  }
+  .small-stacked-row {
+    text-align: center;
+    background-color: #2a2a2a;
+  }
+  .small-stacked-row img {
+    padding: 0% 5% 5% 5%;
+  }
+  .small-stacked-row h1 {
+    padding-top: 5%;
+    font-size: 70px;
+  }
+  .small-stacked-row p {
+    padding: 0% 5% 5% 5%;
+  }
+  .small-row-padding {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1151px) {
+  .small-stacked-row {
+    display: none;
+  }
+  .small-row-padding {
+    display: none;
+  }
+}
+
+.space-after-rows {
+  padding-top: 50px;
+}
+
+.row-padding {
+  padding-top: 50px;
+}
+
+.row-pic-right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.row-pic-right .words-on-background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100%;
+     object-position: 100%;
+}
+
+.row-pic-right .words-on-background h1 {
+  padding: 0% 10% 0% 0%;
+  left: 20px;
+}
+
+.row-pic-right .words-on-background p {
+  padding: 0% 10% 0% 0%;
+  left: 20px;
+  top: 90px;
+}
+
+.row-pic-left {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.row-pic-left .words-on-background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0%;
+     object-position: 0%;
+}
+
+.row-pic-left .words-on-background h1 {
+  padding: 0% 2% 0% 0%;
+  left: 120px;
+}
+
+.row-pic-left .words-on-background p {
+  padding: 0% 2% 0% 0%;
+  left: 120px;
+  top: 90px;
+  text-align: start;
+}
+
+.words-on-background {
+  position: relative;
+}
+
+.words-on-background img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.words-on-background h1 {
+  position: absolute;
+  /* This is absolute to make it overlay on the image*/
+  font-size: calc(clamp(3rem, 4vw, 6rem));
+  top: 0px;
+}
+
+.words-on-background p {
+  position: absolute;
+  /* This is absolute to make it overlay on the image*/
+  font-size: 20px;
+  top: 0px;
 }
