@@ -305,12 +305,13 @@ p {
 .row-pic-right .words-on-background h1 {
   padding: 0% 10% 0% 0%;
   left: 20px;
+  top: 10px;
 }
 
 .row-pic-right .words-on-background p {
   padding: 0% 10% 0% 0%;
   left: 20px;
-  top: 90px;
+  top: 100px;
 }
 
 .row-pic-left {
@@ -330,13 +331,13 @@ p {
 .row-pic-left .words-on-background h1 {
   padding: 0% 2% 0% 0%;
   left: 120px;
+  top: 10px;
 }
 
 .row-pic-left .words-on-background p {
   padding: 0% 2% 0% 0%;
   left: 120px;
-  top: 90px;
-  text-align: start;
+  top: 100px;
 }
 
 .words-on-background {
@@ -351,7 +352,7 @@ p {
 .words-on-background h1 {
   position: absolute;
   /* This is absolute to make it overlay on the image*/
-  font-size: calc(clamp(3rem, 4vw, 6rem));
+  font-size: calc(clamp(3rem, 5vw, 5rem));
   top: 0px;
 }
 
