@@ -21,9 +21,10 @@
 }
 
 .trickfire_logo {
-    max-width: 30%;
+    max-width: 22%;
     max-height: 30%;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-left: 5%;
 
     order: 2;
 }
@@ -81,10 +82,10 @@
     }
 
     .trickfire_logo {
-        content: url('../images/front_logo_full.svg');
-        max-width: 60%;
+        content: url('../images/front_logo.svg');
+        max-width: 20%;
         max-height: 60%;
-        margin-left: 20%;
+        margin-left: 40%;
 
         order: 1;
     }
