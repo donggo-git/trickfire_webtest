@@ -43,7 +43,7 @@ nav {
 }
 
 body {
-  background-color: #383838;
+  background-color: #3f3f3f;
   color: #dfdfdf;
 }
 
@@ -97,7 +97,7 @@ p {
 
 .photo-section h1 {
   position: absolute;
-  font-size: calc(clamp(3rem, 7vw, 6rem));
+  font-size: calc(clamp(3rem, 10vw, 6rem));
   color: #dfdfdf;
   font-weight: 550;
 }
@@ -106,22 +106,22 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4rem 0;
+  margin: 4rem 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .main-showcase img {
-  height: 629px;
-  width: 30vw;
+  height: 618px;
+  width: auto;
 }
 
 .main-showcase .trapezoid-textbox, .main-showcase .trapezoid-textbox-right, .main-showcase .trapezoid-textbox-left {
-  height: 629px;
-  background-size: cover;
   line-height: 30px;
-  width: 70vw;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
 .main-showcase .trapezoid-textbox-right {
@@ -130,6 +130,7 @@ p {
 
 .main-showcase .trapezoid-textbox-left {
   background-image: url(../images/left_block_body.png);
+  background-position: 100% 0;
 }
 
 .main-showcase .trapezoid-textbox h1, .main-showcase .trapezoid-textbox-right h1, .main-showcase .trapezoid-textbox-left h1,
