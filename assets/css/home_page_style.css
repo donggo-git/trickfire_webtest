@@ -2,8 +2,12 @@
 .trickfire_text {
   color: #dfdfdf;
   font: bold;
-  font-size: 7vw;
+  font-size: calc(clamp(3rem, 7vw, 6rem));
   white-space: normal;
+}
+
+.trickfire-green {
+  background-color: #38d738;
 }
 
 .text-intro {
@@ -51,8 +55,8 @@
 }
 
 .calendar-iframe {
-  height: 50vw;
-  width: 90vw;
+  height: calc(clamp(3rem, 50vw, 60rem));
+  width: calc(clamp(3rem, 90vw, 100rem));
 }
 
 /*For the title screen*/

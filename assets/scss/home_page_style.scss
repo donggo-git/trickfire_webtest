@@ -4,9 +4,11 @@
 .trickfire_text {
     color: $text-color;
     font: bold;
-    font-size: 7vw;
+    font-size: calc(clamp(3rem, 7vw, 6rem));
     white-space: normal;
 }
+
+
 
 .text-intro {
     font-size: 20px;
@@ -51,8 +53,11 @@
 }
 
 .calendar-iframe {
-    height: 50vw;
-    width: 90vw;
+    //height: 50vw;
+    //width: 90vw;calc(clamp(3rem, 4vw, 6rem));
+    height: calc(clamp(3rem, 50vw, 60rem));
+    width: calc(clamp(3rem, 90vw, 100rem));
+
 }
 
 
