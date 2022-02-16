@@ -395,8 +395,12 @@ p {
     background-color: $primary-color;
 }
 
-.bottom-divider {
-    width: 100%;
-    height: 100%;
+.bottom-divider {//This also supports widescreens
+    height: fit-content;
+    height:100px;
+    translate: 0px 10px;//Janky, but it works
+
+    background-image: url("../images/line_divider_svg.svg");
+    background-repeat: repeat-x;
 
 }
