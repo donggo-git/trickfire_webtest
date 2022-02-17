@@ -23,10 +23,10 @@
 }
 
 .trickfire_logo {
-    max-width: 22%;
-    max-height: 30%;
     margin-top: 50px;
     margin-left: 5%;
+
+    max-width: calc(clamp(25rem, 40vw, 25rem));
 
     order: 2;
 }
