@@ -385,7 +385,7 @@ p {
 
 
 .wide-screen-support{
-    max-width: 2000px;
+    max-width: $widescreen-min-width;
     justify-content: center;
     padding: 0px;//prevent the padding on the left and right that comes with bootstrap
     

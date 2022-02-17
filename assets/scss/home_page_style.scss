@@ -31,13 +31,6 @@
     order: 2;
 }
 
-.top-divider {
-    width: 100%;
-    height: 100%;
-
-    order: 3;
-}
-
 
 .join-us-button {
     text-align: center;
@@ -99,6 +92,20 @@
         height: 100vw;
         width: 98vw;
     }
+}
+
+.top-divider-edges-image{
+    background-image: url("../images/divider1_tip.png");
+
+}
+
+.bottom-divider-edges-image{
+    background-image: url("../images/divider2_tip.png");
+}
+
+.divider-edges{
+    width: calc((100vw - 2000px) / 2);//2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
+    background-repeat: repeat-x;
 }
 
 
