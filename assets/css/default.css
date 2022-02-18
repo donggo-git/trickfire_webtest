@@ -365,7 +365,7 @@ p {
 }
 
 .wide-screen-support {
-  max-width: 2000px;
+  max-width: 1600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
