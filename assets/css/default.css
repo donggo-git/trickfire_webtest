@@ -38,8 +38,8 @@ nav {
   margin: 1vw;
   height: auto;
   width: auto;
-  max-width: 4vw;
-  max-height: 4vw;
+  max-width: calc(clamp(3rem, 4vw, 6rem));
+  max-height: calc(clamp(3rem, 4vw, 6rem));
 }
 
 body {
@@ -362,4 +362,26 @@ p {
   /* This is absolute to make it overlay on the image*/
   font-size: 20px;
   top: 0px;
+}
+
+.wide-screen-support {
+  max-width: 1600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+}
+
+.trickfire-green {
+  background-color: #38d738;
+}
+
+.bottom-divider {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  height: 100px;
+  translate: 0px 10px;
+  background-image: url("../images/line_divider_svg.svg");
+  background-repeat: repeat-x;
 }
