@@ -97,7 +97,7 @@ p {
 
 .photo-section h1 {
   position: absolute;
-  font-size: calc(clamp(3rem, 10vw, 6rem));
+  font-size: calc(clamp(2rem, 10vw, 6rem));
   color: #dfdfdf;
   font-weight: 550;
 }
@@ -259,7 +259,7 @@ p {
   }
   .small-stacked-row h1 {
     padding-top: 5%;
-    font-size: 70px;
+    font-size: calc(clamp(3rem, 5vw, 10rem));
   }
   .small-stacked-row p {
     padding: 0% 5% 5% 5%;
@@ -312,7 +312,7 @@ p {
 .row-pic-right .words-on-background p {
   padding: 0% 10% 0% 0%;
   left: 20px;
-  top: 100px;
+  top: 110px;
 }
 
 .row-pic-left {
@@ -338,7 +338,7 @@ p {
 .row-pic-left .words-on-background p {
   padding: 0% 2% 0% 0%;
   left: 120px;
-  top: 100px;
+  top: 110px;
 }
 
 .words-on-background {
