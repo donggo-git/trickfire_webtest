@@ -96,3 +96,11 @@
   width: calc((100vw - 2000px) / 2);
   background-repeat: repeat-x;
 }
+
+.team-calendar-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
