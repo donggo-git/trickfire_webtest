@@ -385,3 +385,8 @@ p {
   background-image: url("../images/line_divider_svg.svg");
   background-repeat: repeat-x;
 }
+
+.link-in-text {
+  text-decoration: underline;
+  color: aliceblue;
+}
