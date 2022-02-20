@@ -28,7 +28,7 @@
 
     width: 100%;
     height: 100%;
-    max-width: calc(clamp(15rem, 20vw, 25rem));
+    max-width: calc(clamp(15rem, 20vw, 18rem));
     order: 2;
 }
 
@@ -36,8 +36,6 @@
 .join-us-button {
     text-align: center;
     font-size: 40px;
-    text-decoration: underline;
-    color: aliceblue;
 }
 
 
@@ -107,6 +105,12 @@
 .divider-edges{
     width: calc((100vw - 2000px) / 2);//2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
     background-repeat: repeat-x;
+}
+
+.team-calendar-text{
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
 }
 
 
