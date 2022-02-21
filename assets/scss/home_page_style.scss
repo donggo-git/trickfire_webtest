@@ -8,8 +8,6 @@
     white-space: normal;
 }
 
-
-
 .text-intro {
     font-size: 20px;
     font-weight: 500;
@@ -32,12 +30,10 @@
     order: 2;
 }
 
-
 .join-us-button {
     text-align: center;
     font-size: 40px;
 }
-
 
 /*calendar*/
 .calendar-block {
@@ -49,12 +45,7 @@
     //width: 90vw;calc(clamp(3rem, 4vw, 6rem));
     height: calc(clamp(3rem, 50vw, 60rem));
     width: calc(clamp(3rem, 90vw, 100rem));
-
 }
-
-
-
-
 
 /*For the title screen*/
 @media only screen and (max-width: 767px) {
@@ -93,25 +84,23 @@
     }
 }
 
-.top-divider-edges-image{
-    background-image: url("../images/divider1_tip.png");
-
+.top-divider-edges-image {
+    background-image: url('../images/divider1_tip.png');
 }
 
-.bottom-divider-edges-image{
-    background-image: url("../images/divider2_tip.png");
+.bottom-divider-edges-image {
+    background-image: url('../images/divider2_tip.png');
 }
 
-.divider-edges{
-    width: calc((100vw - 2000px) / 2);//2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
+.divider-edges {
+    width: calc(
+        (100vw - 2000px) / 2
+    ); //2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
     background-repeat: repeat-x;
 }
 
-.team-calendar-text{
+.team-calendar-text {
     justify-content: center;
     text-align: center;
     font-size: 50px;
 }
-
-
-

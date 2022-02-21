@@ -110,54 +110,6 @@ p {
     }
 }
 
-.main-showcase {
-    display: flex;
-    margin: 4rem 0;
-    justify-content: space-between;
-
-    img {
-        height: 618px;
-        width: auto;
-    }
-    //Don't use only .trapezoid-textbox, just for cohesion
-    .trapezoid-textbox {
-        // background-size: cover;
-        line-height: 30px;
-        background-repeat: no-repeat;
-        width: 100%;
-        background-size: cover;
-
-        //& is just taking the parent's name which is "trapezoid-textbox"
-        &-right {
-            @extend .trapezoid-textbox;
-            background-image: url(../images/right_block_body.png);
-        }
-        &-left {
-            @extend .trapezoid-textbox;
-            background-image: url(../images/left_block_body.png);
-            background-position: 100% 0;
-        }
-        h1,
-        p {
-            position: relative;
-            left: 10rem;
-            top: 3.5rem;
-            color: $text-color;
-            font-weight: 430;
-            //Bandage patch WILL NEED TO BE FIXED
-            width: 45vw;
-        }
-        h1 {
-            font-size: 50px;
-            font-weight: 500;
-        }
-        p {
-            margin-top: 20px;
-            font-size: 25px;
-        }
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .small_social-media-logo {
         max-width: 10vw;
@@ -191,44 +143,6 @@ p {
 
         order: 2;
     }
-
-    //new stuff
-    .main-showcase {
-        display: block;
-        padding: 30px 0;
-        img {
-            height: auto;
-            width: 100%;
-            //change ordering depends if picture is first or text but not yet implemented
-            order: 1;
-            z-index: -1;
-        }
-        .trapezoid-textbox {
-            background-image: none;
-            background-color: rgb(42, 42, 42);
-            width: 100%;
-            padding: 3rem 0;
-            height: fit-content;
-            //change ordering depends if picture is first or text but not yet implemented
-            order: 2;
-            h1,
-            p {
-                position: relative;
-                font-weight: 430;
-                left: 0;
-                top: 0;
-                width: 100%;
-                text-align: center;
-            }
-            h1 {
-                font-size: 50px;
-                font-weight: 500;
-            }
-            p {
-                font-size: 25px;
-            }
-        }
-    }
 }
 
 //ROW STUFF
@@ -249,8 +163,13 @@ p {
 
         img {
             padding: 0% 5% 5% 5%;
+            max-height: 400px;
         }
-
+        .main-image {
+            width: 100%;
+            padding: 0;
+            object-fit: cover;
+        }
         h1 {
             padding-top: 5%;
             font-size: calc(clamp(3rem, 5vw, 10rem));
@@ -360,49 +279,27 @@ p {
     }
 }
 
-// In progress: large screens
-// .trapezoid-photo {
-//     height: 629px;
-//     background: cover;
-//     background-position: ;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     width 37vw;
-//     height: 629px;
-//     padding: 0;
-//     margin: 0;
-//     &-right {
-//         @extend .trapezoid-photo;
-//         background-image: url('../images/lunar-surface-resized.jpg');
-//     }
-//     &-left {
-//         @extend .trapezoid-photo;
-//     }
-// }
-
-
-.wide-screen-support{
+.wide-screen-support {
     max-width: $widescreen-min-width;
     justify-content: center;
-    padding: 0px;//prevent the padding on the left and right that comes with bootstrap
-    
+    padding: 0px; //prevent the padding on the left and right that comes with bootstrap
 }
 
-.trickfire-green{
+.trickfire-green {
     background-color: $primary-color;
 }
 
-.bottom-divider {//This also supports widescreens
+.bottom-divider {
+    //This also supports widescreens
     height: fit-content;
-    height:100px;
-    translate: 0px 10px;//Janky, but it works
+    height: 100px;
+    translate: 0px 10px; //Janky, but it works
 
-    background-image: url("../images/line_divider_svg.svg");
+    background-image: url('../images/line_divider_svg.svg');
     background-repeat: repeat-x;
-
 }
 
-.link-in-text{
+.link-in-text {
     text-decoration: underline;
     color: aliceblue;
 }
