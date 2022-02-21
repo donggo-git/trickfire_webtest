@@ -104,10 +104,7 @@ p {
 
     h1 {
         position: absolute;
-        //bottom: 35%;
-        //left: 50%;
-        //transform: translate(-50%, 0);
-        font-size: calc(clamp(3rem, 10vw, 6rem));
+        font-size: calc(clamp(2rem, 10vw, 6rem));
         color: $text-color;
         font-weight: 550;
     }
@@ -175,7 +172,7 @@ p {
         }
         h1 {
             padding-top: 5%;
-            font-size: 70px;
+            font-size: calc(clamp(3rem, 5vw, 10rem));
         }
 
         p {
@@ -228,7 +225,7 @@ p {
         p {
             padding: 0% 10% 0% 0%;
             left: 20px;
-            top: 100px;
+            top: 110px;
         }
     }
 }
@@ -254,7 +251,7 @@ p {
         p {
             padding: 0% 2% 0% 0%;
             left: 120px;
-            top: 100px;
+            top: 110px;
         }
     }
 }
@@ -300,4 +297,9 @@ p {
 
     background-image: url('../images/line_divider_svg.svg');
     background-repeat: repeat-x;
+}
+
+.link-in-text {
+    text-decoration: underline;
+    color: aliceblue;
 }
