@@ -8,20 +8,59 @@
 }
 
 //From "home_page_style.css"
+
+.dark_background {
+    background-color: rgb(22, 22, 22);
+}
+
+.gray_background {
+    background-color: rgb(63, 63, 63);
+}
+
+.black_background {
+    background-color: rgb(0, 0, 0);
+}
+
+.dark_gray_background {
+    background-color: rgb(40, 40, 40);
+}
+
+//default new
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+h2,
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+a {
+    &:hover {
+        color: $accent-text-color;
+    }
+    &:active {
+        color: inherit;
+    }
+}
+
 //Navbar
 nav {
-    background-color: rgb(
-        56,
-        215,
-        56
-    ); /*makes the bootstrap navbar this green color*/
+    background-color: $primary-color;
+    /*makes the bootstrap navbar this green color*/
+    min-height: 59px;
 }
 
 .nav-link {
     font-size: 18px;
     font-weight: 500;
     margin: 0 10px;
-    color: rgb(235, 235, 235);
+    color: $text-color;
 }
 
 footer {
@@ -50,28 +89,37 @@ footer {
             list-style: none;
             height: calc(clamp(35px, 3vw, 70px));
             width: calc(clamp(35px, 3vw, 70px));
-            border-radius: 50%;
-            background-color: $background-color;
-            line-height: 0;
-            display: flex;
-            align-items: center;
+            position: relative;
+            a {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 50%;
+                background-color: $background-color;
+                line-height: 0;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    background-color: $text-color;
+                    svg {
+                        fill: $background-color;
+                    }
+                }
+                //dynamically changes color when hovering and clicked on
+                &:active {
+                    background-color: $background-color;
+                    svg {
+                        fill: inherit;
+                    }
+                }
+            }
             svg {
                 height: 50%;
                 width: 50%;
                 fill: $text-color;
                 margin: auto;
-            }
-            //dynamically changes color when hovering and clicked on
-            &:hover {
-                background-color: $text-color;
-                svg {
-                    fill: $background-color;
-                }
-            }
-            a:active {
-                svg {
-                    fill: $text-color;
-                }
             }
         }
     }
@@ -79,53 +127,6 @@ footer {
         color: $background-color;
         font-weight: 500;
     }
-}
-
-.dark_background {
-    background-color: rgb(22, 22, 22);
-}
-
-.gray_background {
-    background-color: rgb(63, 63, 63);
-}
-
-.black_background {
-    background-color: rgb(0, 0, 0);
-}
-
-.dark_gray_background {
-    background-color: rgb(40, 40, 40);
-}
-
-/*social media stuff*/
-.social-media-logo {
-    margin: 1vw;
-
-    height: auto;
-    width: auto;
-
-    max-width: calc(clamp(3rem, 4vw, 6rem));
-    max-height: calc(clamp(3rem, 4vw, 6rem));
-}
-
-//default new
-body {
-    background-color: $background-color;
-    color: $text-color;
-}
-img {
-    max-height: 100%;
-    max-width: 100%;
-}
-h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 .photo-section {
     height: 70vh;
