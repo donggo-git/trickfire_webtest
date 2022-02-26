@@ -24,6 +24,63 @@ nav {
     color: rgb(235, 235, 235);
 }
 
+footer {
+    height: 40vh;
+    min-height: 200px;
+    background-color: $dark-background-color;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    //The dividing line
+    &::after {
+        content: '';
+        position: absolute;
+        top: -45px;
+        left: 0;
+        height: 90px;
+        width: 100%;
+        background-image: url('../images/line_divider_svg.svg');
+        background-repeat: repeat-x;
+    }
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        li {
+            list-style: none;
+            height: calc(clamp(35px, 3vw, 70px));
+            width: calc(clamp(35px, 3vw, 70px));
+            border-radius: 50%;
+            background-color: $background-color;
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            svg {
+                height: 50%;
+                width: 50%;
+                fill: $text-color;
+                margin: auto;
+            }
+            //dynamically changes color when hovering and clicked on
+            &:hover {
+                background-color: $text-color;
+                svg {
+                    fill: $background-color;
+                }
+            }
+            a:active {
+                svg {
+                    fill: $text-color;
+                }
+            }
+        }
+    }
+    #copyright-text {
+        color: $background-color;
+        font-weight: 500;
+    }
+}
+
 .dark_background {
     background-color: rgb(22, 22, 22);
 }
@@ -140,7 +197,6 @@ p {
     .small_picture {
         align-self: center;
         padding: 2%;
-
         order: 2;
     }
 }
@@ -197,7 +253,7 @@ p {
 }
 
 .space-after-rows {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .row-padding {
@@ -287,16 +343,6 @@ p {
 
 .trickfire-green {
     background-color: $primary-color;
-}
-
-.bottom-divider {
-    //This also supports widescreens
-    height: fit-content;
-    height: 100px;
-    translate: 0px 10px; //Janky, but it works
-
-    background-image: url('../images/line_divider_svg.svg');
-    background-repeat: repeat-x;
 }
 
 .link-in-text {
