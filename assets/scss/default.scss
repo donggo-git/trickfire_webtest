@@ -53,7 +53,7 @@ a {
 nav {
     background-color: $primary-color;
     /*makes the bootstrap navbar this green color*/
-    height: 59px;
+    min-height: 59px;
 }
 
 .nav-link {
