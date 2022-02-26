@@ -19,6 +19,7 @@ nav {
 
 footer {
   height: 40vh;
+  min-height: 200px;
   background-color: #161616;
   text-align: center;
   position: relative;
@@ -28,13 +29,12 @@ footer {
 footer::after {
   content: '';
   position: absolute;
-  top: -50px;
-  left: 0;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  height: 100px;
-  width: 100%;
+  top: calc( clamp( -45px, -2.5vw, -15px ));
+  left: 25%;
+  height: calc( clamp( 30px, 5vw, 90px ));
+  width: 100vw;
+  -webkit-transform: scaleX(150%);
+          transform: scaleX(150%);
   background-image: url("../images/line_divider_svg.svg");
   background-repeat: repeat-x;
 }

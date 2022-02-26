@@ -52,13 +52,18 @@
             </ul>
             <p id="copyright-text">
                 Copyright &copy;
-                <!-- Gets current year so its responsive -->
-                <!-- cannot document.write on JQ load so will figure it out later -->
-                <!-- <script>
-                    document.write(new Date().getFullYear());
-                </script> -->
+                <!-- If change 2022, also change it in the script tag  -->
                 2022 TrickFire Robotics. All rights reserved. | Bothell, WA
             </p>
         </div>
+        <script>
+            console.log(document.getElementById('copyright-text').innerText);
+            let copyrightTextElement =
+                document.getElementById('copyright-text');
+            let currentYear = new Date().getFullYear();
+            console.log(currentYear);
+            copyrightTextElement.innerText =
+                copyrightTextElement.innerText.replace('2022', currentYear);
+        </script>
     </section>
 </body>
