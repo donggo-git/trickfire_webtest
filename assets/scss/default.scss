@@ -35,30 +35,10 @@ footer {
     &::after {
         content: '';
         position: absolute;
-        //top and height are relative;
-        //variables to make it easier to change
-        $footer-min-dividing-height: 30px;
-        $footer-grow-by-dividing-height: 5vw;
-        $footer-max-dividing-height: 90px;
-
-        top: calc(
-            clamp(
-                #{$footer-max-dividing-height/2 * -1},
-                #{$footer-grow-by-dividing-height/2 * -1},
-                #{$footer-min-dividing-height/2 * -1}
-            )
-        );
-
-        left: 25%;
-        height: calc(
-            clamp(
-                #{$footer-min-dividing-height},
-                #{$footer-grow-by-dividing-height},
-                #{$footer-max-dividing-height}
-            )
-        );
-        width: 100vw;
-        transform: scaleX(150%);
+        top: -45px;
+        left: 0;
+        height: 90px;
+        width: 100%;
         background-image: url('../images/line_divider_svg.svg');
         background-repeat: repeat-x;
     }

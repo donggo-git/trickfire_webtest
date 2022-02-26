@@ -29,12 +29,10 @@ footer {
 footer::after {
   content: '';
   position: absolute;
-  top: calc( clamp( -45px, -2.5vw, -15px ));
-  left: 25%;
-  height: calc( clamp( 30px, 5vw, 90px ));
-  width: 100vw;
-  -webkit-transform: scaleX(150%);
-          transform: scaleX(150%);
+  top: -45px;
+  left: 0;
+  height: 90px;
+  width: 100%;
   background-image: url("../images/line_divider_svg.svg");
   background-repeat: repeat-x;
 }
