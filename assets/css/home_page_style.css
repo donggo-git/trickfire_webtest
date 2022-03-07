@@ -42,12 +42,12 @@
 }
 
 .calendar-iframe {
-  height: calc(clamp(3rem, 50vw, 60rem));
-  width: calc(clamp(3rem, 90vw, 100rem));
+  height: calc(clamp(5rem, 40vw, 60rem));
+  width: calc(clamp(5em, 60vw, 100rem));
 }
 
 /*For the title screen*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .trickfire_text {
     color: aliceblue;
     font: bold;
@@ -100,5 +100,5 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 50px;
+  font-size: calc(clamp(2rem, 10vw, 6rem));
 }
