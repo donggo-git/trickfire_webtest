@@ -48,7 +48,8 @@
 }
 
 /*For the title screen*/
-@media only screen and (max-width: 768px) {
+//SOMEHOW MAKING IT 767.5px fixes the 767 problem
+@media only screen and (max-width: 767.5px) {
     .trickfire_text {
         color: aliceblue;
         font: bold;

@@ -181,7 +181,7 @@ footer #copyright-text {
   font-weight: 550;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .small_social-media-logo {
     max-width: 10vw;
     max-height: 10vw;
