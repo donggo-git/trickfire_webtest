@@ -40,14 +40,22 @@ p {
         'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
         'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-a {
-    &:hover {
-        color: $accent-text-color;
-    }
-    &:active {
-        color: inherit;
+
+.nav-item {
+    a {
+        
+        &:hover {
+            color: $accent-text-color;
+        }
+        &:active {
+            color: inherit;
+        }
+        
     }
 }
+
+
+
 
 //Navbar
 nav {
@@ -60,7 +68,7 @@ nav {
     font-size: 18px;
     font-weight: 500;
     margin: 0 10px;
-    color: $text-color;
+    color: $navbar-text-color;
 }
 
 footer {
