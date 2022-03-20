@@ -31,16 +31,15 @@ It is recommended to use **Visual Studio Code** as your text editor
 
 ### What if I just want to suggest changes to the text/images on the website?
 
-> Contact the current maintainers about the changes
-> <br>If you want to do it anonymously, use this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0l2s9_fTgfJAq7u6aZSNf2pUREZIMk1QRExVWVJMTVFMTFM0R1IxRTJOWC4u)
+> Contact the current maintainers about the changes. If you want to do it anonymously, use this [form](https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0l2s9_fTgfJAq7u6aZSNf2pUREZIMk1QRExVWVJMTVFMTFM0R1IxRTJOWC4u)
 
 ### Who owns/has access to the domain?
 
-> Currently Michael V, a past member owns it but eventually will migrate to the team. Adam C and Vlad K currently have access to the Google Domain
+> Currently Michael V, a past member owns it but eventually will migrate to the team. However, it doesn't look like @uw.edu emails can own google domains, so Adam C and Vlad K currently have access to the Google Domain with their personal emails.
 
 ### Who pays for the domain?
 
-> Michael V paid until around April and the team probably will need to pay the $24 per year for both domains
+> Michael V paid until around April and the team probably will need to pay the $24 per year for both domains going forward
 
 # Current Maintainers
 

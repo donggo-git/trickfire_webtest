@@ -42,8 +42,8 @@
 }
 
 .calendar-iframe {
-  height: calc(clamp(5rem, 40vw, 60rem));
-  width: calc(clamp(5em, 60vw, 100rem));
+  height: calc(clamp(30rem, calc(30vw +30vh), 70rem));
+  width: calc(clamp(50rem, 60vw, 100rem));
 }
 
 /*For the title screen*/
@@ -77,8 +77,8 @@
             order: 1;
   }
   .small_calendar-iframe {
-    height: 100vw;
-    width: 98vw;
+    height: calc(max(5rem, 100vw));
+    width: calc(max(5rem, 98vw));
   }
 }
 
