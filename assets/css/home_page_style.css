@@ -42,12 +42,12 @@
 }
 
 .calendar-iframe {
-  height: calc(clamp(3rem, 50vw, 60rem));
-  width: calc(clamp(3rem, 90vw, 100rem));
+  height: calc(clamp(37rem, 50vh, 70rem));
+  width: calc(clamp(40rem, 70vw, 100rem));
 }
 
 /*For the title screen*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.5px) {
   .trickfire_text {
     color: aliceblue;
     font: bold;
@@ -77,8 +77,8 @@
             order: 1;
   }
   .small_calendar-iframe {
-    height: 100vw;
-    width: 98vw;
+    height: calc(max(5rem, 70vw));
+    width: calc(max(5rem, 95vw));
   }
 }
 
@@ -100,5 +100,5 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 50px;
+  font-size: calc(clamp(2rem, 10vw, 6rem));
 }

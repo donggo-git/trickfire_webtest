@@ -34,11 +34,12 @@ img {
     max-height: 100%;
     max-width: 100%;
 }
+h1,
 h2,
+h3,
+h4,
 p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: $text-font;
 }
 a {
     &:hover {
@@ -168,7 +169,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .small_social-media-logo {
         max-width: 10vw;
         max-height: 10vw;
