@@ -42,7 +42,7 @@
 }
 
 .calendar-iframe {
-  height: calc(clamp(30rem, 50vh, 70rem));
+  height: calc(clamp(37rem, 50vh, 70rem));
   width: calc(clamp(40rem, 70vw, 100rem));
 }
 
