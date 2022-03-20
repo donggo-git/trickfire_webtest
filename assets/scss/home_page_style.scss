@@ -44,7 +44,7 @@
     //height: 50vw;
     //width: 90vw;calc(clamp(3rem, 4vw, 6rem));
     height: calc(clamp(30rem, 50vh, 70rem));
-    width: calc(clamp(50rem, 50vw, 100rem));
+    width: calc(clamp(40rem, 70vw, 100rem));
 }
 
 /*For the title screen*/
@@ -80,7 +80,7 @@
     }
 
     .small_calendar-iframe {
-        height: calc(max(5rem, 90vw));
+        height: calc(max(5rem, 70vw));
         width: calc(max(5rem, 95vw));
     }
 }
