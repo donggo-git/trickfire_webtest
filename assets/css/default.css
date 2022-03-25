@@ -39,16 +39,16 @@ p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-a:hover {
-  color: #c3c3c3;
+.nav-item a:hover {
+  color: white;
 }
 
-a:active {
+.nav-item a:active {
   color: inherit;
 }
 
 nav {
-  background-color: #38d738;
+  background-color: #34c934;
   /*makes the bootstrap navbar this green color*/
   min-height: 59px;
 }
@@ -57,7 +57,7 @@ nav {
   font-size: 18px;
   font-weight: 500;
   margin: 0 10px;
-  color: #dfdfdf;
+  color: black;
 }
 
 footer {

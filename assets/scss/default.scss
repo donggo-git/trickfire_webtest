@@ -41,18 +41,26 @@ h4,
 p {
     font-family: $text-font;
 }
-a {
-    &:hover {
-        color: $accent-text-color;
-    }
-    &:active {
-        color: inherit;
+
+.nav-item {
+    a {
+        
+        &:hover {
+            color: $accent-text-color;
+        }
+        &:active {
+            color: inherit;
+        }
+        
     }
 }
 
+
+
+
 //Navbar
 nav {
-    background-color: $primary-color;
+    background-color: $navbar-background-color;
     /*makes the bootstrap navbar this green color*/
     min-height: 59px;
 }
@@ -61,7 +69,7 @@ nav {
     font-size: 18px;
     font-weight: 500;
     margin: 0 10px;
-    color: $text-color;
+    color: $navbar-text-color;
 }
 
 footer {
@@ -346,6 +354,8 @@ footer {
 .trickfire-green {
     background-color: $primary-color;
 }
+
+
 
 .link-in-text {
     text-decoration: underline;
