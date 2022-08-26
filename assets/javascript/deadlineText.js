@@ -20,7 +20,6 @@ fetch(
         return res.text();
     })
     .then(text => {
-        console.log(text + 'ADAM');
         let indexBeg = text.indexOf(DELIMITER_BEG) + DELIMITER_BEG.length;
         let indexEnd = Math.min(
             text.indexOf(DELIMITER_END1, indexBeg),
