@@ -27,7 +27,6 @@ let app = Vue.createApp({
             section.index = index;
             return section
         })
-        console.log(sectionsDisplay)
         return {
             sectionsDisplay
         }
@@ -46,7 +45,7 @@ let app = Vue.createApp({
 
                         <p class="trickfire_text">
                             <b><i>TRICKFIRE</i></b>
-                            </br>
+                            <br>
                             <b><i>ROBOTICS</i></b>
                         </p>
 
@@ -110,5 +109,6 @@ app.component('underlineArrow', {
     props: ['image'],
     template: underlineArrowTemplate
 })
+
 
 app.mount('body')
