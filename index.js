@@ -1,21 +1,23 @@
-import { sectionsTemplate } from "./UI/sectionsTemplate.js";
+/*import { sectionsTemplate } from "./UI/sectionsTemplate.js";
 import { underlineArrowTemplate } from './UI/underlineArrowTemplate.js'
 const { createApp } = Vue
 
-let sections = [{
+const sections = [{
     title: "What We Do",
     content: "Throughout the year, the team develops a number of different skills as members research, design, and build the robot. Other members learn the skills of team management, financial responsibilities, and public relations. But most importantly, everyone gains the skills of professionalism that prepares them for their future work.",
-    image: "https://github.com/TrickfireRobotics/TrickfireRobotics.github.io/blob/master/assets/images/slanted_rover_image_1.png?raw=true"
+    image: "./assets/images/slanted_rover_image_1.png"
 
 }, {
     title: "Meet the Team",
     content: "The team is composed of five major sub-teams. The mechanical team is responsible for building and designing the robot. The electrical team is responsible for properly wiring the up whilst working closely with the mechanical team. The software team is responsible for making the robot function through autonomous or through teleoperated controls. The financial team is responsible for keeping the team logistically functional and securing funding. The outreach team is responsible for advertising TrickFire to the world through advertisements, social media, or through community participation.",
-    image: "https://github.com/TrickfireRobotics/TrickfireRobotics.github.io/blob/master/assets/images/slanted_team_photo_rmc_2017.png?raw=true"
+    image: "./assets/images/slanted_team_photo_rmc_2017.png"
 },
 {
     title: "How to Join",
     content: "We accept everyone and anyone who wants to join the team. As long as you have the will to learn, you will succeed. To join, simply fill out a form and we will get back to you. ",
-    image: "https://github.com/TrickfireRobotics/TrickfireRobotics.github.io/blob/master/assets/images/slanted_teaching_new_member.png?raw=true"
+    image: "./assets/images/slanted_teaching_new_member.png",
+    linkName: "Join Us Here",
+    link: './components/join_us.html'
 }
 ];
 let app = Vue.createApp({
@@ -24,9 +26,9 @@ let app = Vue.createApp({
 
         let sectionsDisplay = sections.map((section, index) => {
             section.isImageRight = index % 2 == 0
-            section.index = index;
             return section
         })
+        console.log(sectionsTemplate)
         return {
             sectionsDisplay
         }
@@ -111,4 +113,9 @@ app.component('underlineArrow', {
 })
 
 
-app.mount('body')
+app.mount('body')*/
+import { createApp } from 'vue'
+import App from './App.vue'
+
+createApp(App).mount('#app')
+
