@@ -1,7 +1,6 @@
 <script>
-//setup lang="ts">
 
-import SectionsTemplate from './components/SectionsTemplate.vue';
+import SectionsTemplate from './components/sectionsTemplate.vue';
 import navbar from './UI/navbar.vue';
 import footerUI from './UI/footerUI.vue';
 import underlineArrowTemplate from './UI/underlineArrowTemplate.vue';

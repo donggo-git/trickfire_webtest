@@ -50,7 +50,19 @@ let footerData = [
     }
 ]
 
-let homePageSectionData = [{
+interface sectionsDisplayObject {
+    title: string,
+    content: string,
+    image: string,
+    linkName?: string,
+    link?: string,
+    order?: number,
+    imageOrder?: string,
+    contentOrder?: string
+}
+//homePageSectionData = Array<sectionItemObject>
+
+const homePageSectionData: sectionsDisplayObject[] = [{
     title: "What We Do",
     content: "Throughout the year, the team develops a number of different skills as members research, design, and build the robot. Other members learn the skills of team management, financial responsibilities, and public relations. But most importantly, everyone gains the skills of professionalism that prepares them for their future work.",
     image: "./assets/images/slanted_rover_image_1.png"
