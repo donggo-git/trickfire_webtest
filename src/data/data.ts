@@ -1,26 +1,28 @@
 let navData = [
     {
         linkTitle: 'Home',
-        href: '',
+        linkName: 'home',
+        href: '/',
         defaultHref: './index.html',
         componentHref: '../index.html'
     },
     {
         linkTitle: 'About Us',
-        href: '',
+        linkName: 'about_us',
+        href: '/about_us',
         defaultHref: './components/about_us.html',
         componentHref: './about_us.html'
     },
     {
         linkTitle: 'Projects',
-        href: '',
+        href: '/projects',
         defaultHref: './components/projects.html',
         componentHref: './projects.html'
 
     },
     {
         linkTitle: 'Join Us',
-        href: '',
+        href: '/join_us',
         defaultHref: './components/join_us.html',
         componentHref: './join_us.html'
     },

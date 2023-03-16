@@ -18,8 +18,12 @@ import { navData } from '../data/data';
                     <div class="navbar-nav"></div>
                     <ul class="navbar-nav">
                         <!--<navLink  v-bind:linkTitle="link.linkTitle" v-bind:href="link.href" />-->
-                        <li class="nav-item" v-for="link in navData">
-                            <a class="nav-link" v-bind:href="link.href"><b>{{ link.linkTitle }}</b></a>
+                        <li class="nav-item" v-for="link in navData" :key="link.linkTitle">
+                            <router-link :to="{ name: link.linkName }" class="nav-link" :key="link.linkTitle">
+                                <b>{{
+                                    link.linkTitle
+                                }}</b>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
