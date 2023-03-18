@@ -16,12 +16,14 @@ let navData = [
     {
         linkTitle: 'Projects',
         href: '/projects',
+        linkName: 'projects',
         defaultHref: './components/projects.html',
         componentHref: './projects.html'
 
     },
     {
         linkTitle: 'Join Us',
+        linkName: 'join_us',
         href: '/join_us',
         defaultHref: './components/join_us.html',
         componentHref: './join_us.html'
@@ -29,6 +31,7 @@ let navData = [
     {
         linkTitle: 'Sponsorships',
         href: '',
+        linkName: 'sponsorships',
         defaultHref: './components/sponsorships.html',
         componentHref: './sponsorships.html'
     },

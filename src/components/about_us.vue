@@ -56,8 +56,6 @@ Link my css
 
 
 <template>
-    <nav id="navbar"></nav>
-
     <section>
         <div class="container-fluid photo-section about-us-photo-section">
             <h1>ABOUT US</h1>
@@ -69,10 +67,10 @@ Link my css
 
         <div class="container-fluid wide-screen-support">
             <div class="row flex-nowrap row-pic-left row-padding">
-                <img src="./assets/images/slanted_trickfire_logo.png" />
+                <img src="../assets/images/slanted_trickfire_logo.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/right_block_body_2.png" />
+                    <img src="../assets/images/right_block_body_2.png" />
 
                     <h1>Mission Statement</h1>
 
@@ -109,8 +107,7 @@ Link my css
 
             <div class="row-padding">
                 <div class="small-stacked-row">
-                    <img src="./assets/images/trickfire_logo_rectangle.png
-                                                                " class="small-trickfire-logo" />
+                    <img src="../assets/images/trickfire_logo_rectangle.png" class="small-trickfire-logo" />
 
                     <h1>Mission Statement</h1>
 
@@ -146,10 +143,10 @@ Link my css
             <!--HORIZONTAL ROWS-->
 
             <div class="row flex-nowrap row-pic-right row-padding">
-                <img src="./assets/images/slanted_drilling_right.png" />
+                <img src="../assets/images/slanted_drilling_right.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/fixed_index_header_left.png" />
+                    <img src="../assets/images/fixed_index_header_left.png" />
 
                     <h1>Mechanical</h1>
 
@@ -166,10 +163,10 @@ Link my css
             </div>
 
             <div class="row flex-nowrap row-pic-right row-padding">
-                <img src="./assets/images/slanted_software.png" />
+                <img src="../assets/images/slanted_software.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/fixed_index_header_left.png" />
+                    <img src="../assets/images/fixed_index_header_left.png" />
 
                     <h1>Software</h1>
 
@@ -185,10 +182,10 @@ Link my css
             </div>
 
             <div class="row flex-nowrap row-pic-right row-padding">
-                <img src="./assets/images/slanted_electrical.png" />
+                <img src="../assets/images/slanted_electrical.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/fixed_index_header_left.png" />
+                    <img src="../assets/images/fixed_index_header_left.png" />
 
                     <h1>Electrical</h1>
 
@@ -206,10 +203,10 @@ Link my css
             </div>
 
             <div class="row flex-nowrap row-pic-right row-padding">
-                <img src="./assets/images/slanted_finance.png" />
+                <img src="../assets/images/slanted_finance.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/fixed_index_header_left.png" />
+                    <img src="../assets/images/fixed_index_header_left.png" />
 
                     <h1>Finance</h1>
 
@@ -226,10 +223,10 @@ Link my css
             </div>
 
             <div class="row flex-nowrap row-pic-right row-padding">
-                <img src="./assets/images/slanted_outreach_2016.png" />
+                <img src="../assets/images/slanted_outreach_2016.png" />
 
                 <div class="words-on-background">
-                    <img src="./assets/images/fixed_index_header_left.png" />
+                    <img src="../assets/images/fixed_index_header_left.png" />
 
                     <h1>Outreach</h1>
 
@@ -267,7 +264,7 @@ Link my css
                         weight composites with elegant design.
                     </p>
 
-                    <img src="./assets/images/unslanted_drilling_full.png" />
+                    <img src="../assets/images/unslanted_drilling_full.png" />
                 </div>
             </div>
 
@@ -284,7 +281,7 @@ Link my css
                         navigational algorithms, this team does a lot!
                     </p>
 
-                    <img src="./assets/images/unslanted_software.png" />
+                    <img src="../assets/images/unslanted_software.png" />
                 </div>
             </div>
 
@@ -303,7 +300,7 @@ Link my css
                         control is seamless.
                     </p>
 
-                    <img src="./assets/images/unslanted_electrical.png" />
+                    <img src="../assets/images/unslanted_electrical.png" />
                 </div>
             </div>
 
@@ -321,7 +318,7 @@ Link my css
                         applying for grants or finding industry sponsors.
                     </p>
 
-                    <img src="./assets/images/unslanted_finance.png" />
+                    <img src="../assets/images/unslanted_finance.png" />
                 </div>
             </div>
 
@@ -345,7 +342,7 @@ Link my css
                         •Keeping our social media up to date
                     </p>
 
-                    <img src="./assets/images/unslanted_outreach_2016.jpg" />
+                    <img src="../assets/images/unslanted_outreach_2016.jpg" />
                 </div>
             </div>
         </div>
@@ -353,8 +350,11 @@ Link my css
         <div class="space-after-rows"></div>
     </section>
 
-    <footer id="footer"></footer>
+
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-                            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-                        </script>-->
+                                                                                                    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+                                                                                                </script>-->
 </template>
+<style>
+@import "../assets/css/about_us.css";
+</style>
