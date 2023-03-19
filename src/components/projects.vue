@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import SectionsTemplate from './SectionsTemplate.vue'
+import headerTemplate from '../UI/headerTemplate.vue';
 import { projectsSectionData } from '../data/data';
 
 </script>
 <template>
-    <section>
-        <div class="container-fluid photo-section projects-photo-section">
-            <h1>PROJECTS</h1>
-        </div>
-    </section>
+    <headerTemplate title="PROJECTS" image="./src/assets/images/photo_section/wood_compressed.jpg" />
 
     <div class="container-fluid wide-screen-support">
         <section class="container-fluid gray_background">
@@ -48,7 +45,7 @@ import { projectsSectionData } from '../data/data';
 
             <div class="small-row-padding">
                 <div class="small-stacked-row">
-                    <img src="../assets/images/unslanted_lunar_surface.jpg" class="main-image" />
+                    <img src="./src/assets/images/unslanted_lunar_surface.jpg" class="main-image" />
                     <h1>Overview of Rovers</h1>
 
                     <p>
@@ -95,7 +92,7 @@ import { projectsSectionData } from '../data/data';
                         redesign of the arms kinematics.
                     </p>
 
-                    <img src="../assets/images/unslanted_houdini.png" />
+                    <img src="./src/assets/images/unslanted_houdini.png" />
                 </div>
             </div>
 
@@ -115,7 +112,7 @@ import { projectsSectionData } from '../data/data';
                         reduction to prior iterations.
                     </p>
 
-                    <img src="../assets/images/unslanted_atlas.png" />
+                    <img src="./src/assets/images/unslanted_atlas.png" />
                 </div>
             </div>
 
@@ -136,7 +133,7 @@ import { projectsSectionData } from '../data/data';
                         of 80 kilograms.
                     </p>
 
-                    <img src="../assets/images/unslanted_grimlock.png" />
+                    <img src="./src/assets/images/unslanted_grimlock.png" />
                 </div>
             </div>
 
@@ -152,7 +149,7 @@ import { projectsSectionData } from '../data/data';
                         weighing in at 71 kilograms.
                     </p>
 
-                    <img src="../assets/images/unslanted_daybreak.png" />
+                    <img src="./src/assets/images/unslanted_daybreak.png" />
                 </div>
             </div>
 

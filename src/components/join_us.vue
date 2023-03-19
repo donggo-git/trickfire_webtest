@@ -1,15 +1,11 @@
 
 <script setup lang="ts">
-
+import headerTemplate from '@/UI/headerTemplate.vue';
 </script>
 
 
 <template>
-    <section>
-        <div class="photo-section join-us-photo-section">
-            <h1>JOIN US</h1>
-        </div>
-    </section>
+    <headerTemplate title="JOIN US" image="./src/assets/images/photo_section/team_photo_2020_compressed.jpg" />
     <section class="container-fluid gray_background">
         <div class="container-fluid wide-screen-support">
             <div class="row flex-nowrap row-pic-left row-padding">

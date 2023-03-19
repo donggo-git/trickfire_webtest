@@ -1,17 +1,14 @@
 
 <script setup lang="ts">
 import SectionsTemplate from './SectionsTemplate.vue';
+import headerTemplate from '../UI/headerTemplate.vue';
 import { aboutUsSectionData } from '../data/data';
 
 </script>
 
 
 <template>
-    <section>
-        <div class="container-fluid photo-section about-us-photo-section">
-            <h1>ABOUT US</h1>
-        </div>
-    </section>
+    <headerTemplate title="ABOUT US" image="./src/assets/images/photo_section/robot_parts_compressed.jpg" />
 
     <section class="container-fluid gray_background">
         <!--HORIZONTAL ROW MISSION STATEMENT-->
@@ -89,17 +86,17 @@ import { aboutUsSectionData } from '../data/data';
                         Washington Bothell.
                     </p>
                 </div>
-            </div>
+        </div>
 
-        <!--HORIZONTAL ROWS-->
+            <!--HORIZONTAL ROWS-->
             <SectionsTemplate :sectionsDisplay="aboutUsSectionData" />
         </div>
     </section>
 
 
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-                                                                                                                                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-                                                                                                                            </script>-->
+                                                                                                                                                                    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+                                                                                                                                                                </script>-->
 </template>
 <style>
 @import "../assets/css/about_us.css";

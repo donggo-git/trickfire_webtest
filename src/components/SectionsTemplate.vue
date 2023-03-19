@@ -24,7 +24,7 @@ const props = defineProps<{
         <div class="row flex-nowrap row-padding d-flex" :class="'row-pic-' + section.contentOrder">
             <img v-bind:src="section.image" :class="'order-' + section.order" />
             <div v-if="section.order != undefined" class="words-on-background" :class="'order-' + (2 - section.order)">
-                <img :src="'../assets/images/fixed_index_header_' + section.imageOrder + '.png'">
+                <img :src="'./src/assets/images/fixed_index_header_' + section.imageOrder + '.png'">
                 <h1>{{ section.title }}</h1>
                 <p>{{ section.content }}
                 <div v-if="section.link">
