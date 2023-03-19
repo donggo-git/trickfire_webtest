@@ -1,25 +1,11 @@
 <script setup lang="ts">
 
 import SectionsTemplate from './SectionsTemplate.vue';
-import navbar from '../UI/navbar.vue';
-import footerUI from '../UI/footerUI.vue';
 import underlineArrowTemplate from '../UI/underlineArrowTemplate.vue';
 import { homePageSectionData } from '../data/data';
 
 
-/*export default {
 
-    components: {
-        navbar,
-        SectionsTemplate,
-        footerUI,
-        underlineArrowTemplate
-    },
-    data() {
-        return { homePageSectionData };
-    },
-    //components: { Navbar }
-}*/
 </script>
 <template>
     <section class="container-fluid dark_background">
