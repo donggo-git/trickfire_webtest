@@ -1,20 +1,3 @@
-nav {
-    background-color: rgb(56, 215, 56);
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.nav-link {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 10px;
-    color: rgb(235, 235, 235);
-}
-
-.nav-link:hover {
-    color: white;
-}
-
 .container-full {
     margin: 0;
     padding: 0;
@@ -40,6 +23,7 @@ body {
 .container-full {
     min-width: 100%;
 }
+
 /* Eventually will delete this and put in default */
 img {
     padding: 0;

@@ -2,7 +2,10 @@
 <script setup lang="ts">
 import SectionsTemplate from './SectionsTemplate.vue';
 import headerTemplate from '../UI/headerTemplate.vue';
+import SectionsTemplateResponsive from './SectionsTemplateResponsive.vue';
 import { aboutUsSectionData } from '../data/data';
+
+const isResponsive = screen.width <= 1000
 
 </script>
 
@@ -85,18 +88,20 @@ import { aboutUsSectionData } from '../data/data';
                         3. A strong community within the University of
                         Washington Bothell.
                     </p>
-                </div>
+            </div>
         </div>
 
             <!--HORIZONTAL ROWS-->
-            <SectionsTemplate :sectionsDisplay="aboutUsSectionData" />
+            <SectionsTemplate v-if="!isResponsive" :sectionsDisplay="aboutUsSectionData" />
+            <!--VERTIAL ROWS-->
+            <SectionsTemplateResponsive v-else v-bind:sectionsDisplay="aboutUsSectionData" />
         </div>
     </section>
 
 
     <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-                                                                                                                                                                    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-                                                                                                                                                                </script>-->
+                                                                                                                                                                                        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+                                                                                                                                                                                    </script>-->
 </template>
 <style>
 @import "../assets/css/about_us.css";

@@ -94,9 +94,7 @@
 }
 
 .divider-edges {
-    width: calc(
-        (100vw - 2000px) / 2
-    ); //2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
+    width: calc((100vw - 2000px) / 2); //2000px because that is the length of the middle image. Purposely matches the widescreen support pixel width
     background-repeat: repeat-x;
 }
 

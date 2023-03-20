@@ -1,10 +1,20 @@
 <script setup lang="ts">
 import { navData } from '../data/data';
-/*export default {
-    data() {
-        return { navData }
+
+//navigation animation for scrolling
+let prevScroll = window.pageYOffset;
+window.onscroll = function () {
+    let currentScroll = window.pageYOffset;
+    let navbar = document.getElementById("navbar");
+
+    if (prevScroll > currentScroll) {
+        navbar.style.top = "0";
+    } else {
+        navbar.style.top = "-59px";
     }
-}*/
+    prevScroll = currentScroll;
+}
+
 </script>
 <template>
     <nav id="navbar">
@@ -31,3 +41,40 @@ import { navData } from '../data/data';
         </div>
     </nav>
 </template>
+
+<style>
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item a:active {
+    color: inherit;
+}
+
+nav {
+    background-color: #34c934;
+    /*makes the bootstrap navbar this green color*/
+    min-height: 59px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: top 0.3s;
+
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    color: black;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-dark:focus {
+    outline: none;
+}
+</style>

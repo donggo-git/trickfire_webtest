@@ -6,7 +6,8 @@ interface sectionsDisplayObject {
     link?: string,
     order?: number,
     imageOrder?: string,
-    contentOrder?: string
+    contentOrder?: string,
+    imageResponsive?: string
 }
 
 export type { sectionsDisplayObject }

@@ -1,14 +1,16 @@
 <script setup lang="ts">
 
 import SectionsTemplate from './SectionsTemplate.vue';
+import SectionsTemplateResponsive from './SectionsTemplateResponsive.vue';
 import underlineArrowTemplate from '../UI/underlineArrowTemplate.vue';
 import { homePageSectionData } from '../data/data';
 
+let isResponsive = screen.width <= 1000
 
 
 </script>
 <template>
-    <section class="container-fluid dark_background">
+    <section class="container-fluid dark_background homePage_container">
 
         <div class="container-fluid wide-screen-support">
             <div class="row">
@@ -44,7 +46,9 @@ import { homePageSectionData } from '../data/data';
 
     <div class="container-fluid wide-screen-support">
         <section class="container-fluid gray_background" id="sections">
-            <SectionsTemplate v-bind:sectionsDisplay="homePageSectionData" />
+            <SectionsTemplate v-if="!isResponsive" v-bind:sectionsDisplay="homePageSectionData" />
+            <SectionsTemplateResponsive v-else v-bind:sectionsDisplay="homePageSectionData" />
+
         </section>
     </div>
 
@@ -69,111 +73,11 @@ import { homePageSectionData } from '../data/data';
     </section>
 </template>
 <style>
-.trickfire_text {
-    color: #dfdfdf;
-    font: bold;
-    font-size: calc(clamp(3rem, 7vw, 6rem));
-    white-space: normal;
-}
+@import "../assets/css/home_page_style.css";
 
-.text-intro {
-    font-size: 20px;
-    font-weight: 500;
-    color: #dfdfdf;
-}
-
-.trickfire_logo_left_text {
-    margin-left: 10%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    margin-top: 5%;
-}
-
-.trickfire_logo {
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 100%;
-    height: 100%;
-    max-width: calc(clamp(15rem, 20vw, 18rem));
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-}
-
-.join-us-button {
-    text-align: center;
-    font-size: 40px;
-}
-
-/*calendar*/
-.calendar-block {
-    margin: 0 auto;
-}
-
-.calendar-iframe {
-    height: calc(clamp(37rem, 50vh, 70rem));
-    width: calc(clamp(40rem, 70vw, 100rem));
-}
-
-/*For the title screen*/
 @media only screen and (max-width: 767.5px) {
-    .trickfire_text {
-        color: aliceblue;
-        font: bold;
-        font-size: 50px;
-        text-align: center;
+    .homePage_container {
+        padding-top: 59px;
     }
-
-    .text-intro {
-        font-size: 20px;
-        font-weight: 500;
-        color: #e9e9e9;
-        text-align: center;
-    }
-
-    .trickfire_logo_left_text {
-        margin-left: 0%;
-        margin-top: 0%;
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-    }
-
-    .trickfire_logo {
-        content: url("../images/front_logo.svg");
-        max-width: 20%;
-        max-height: 60%;
-        margin-left: 40%;
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-    }
-
-    .small_calendar-iframe {
-        height: calc(max(5rem, 70vw));
-        width: calc(max(5rem, 95vw));
-    }
-}
-
-.top-divider-edges-image {
-    background-image: url("../images/divider1_tip.png");
-}
-
-.bottom-divider-edges-image {
-    background-image: url("../images/divider2_tip.png");
-}
-
-.divider-edges {
-    width: calc((100vw - 2000px) / 2);
-    background-repeat: repeat-x;
-}
-
-.team-calendar-text {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    font-size: calc(clamp(2rem, 10vw, 6rem));
 }
 </style>

@@ -10,12 +10,9 @@ interface sectionsDisplayObject {
     contentOrder?: string
 }
 
-const props = defineProps<{
+defineProps<{
     sectionsDisplay: Array<sectionsDisplayObject>
 }>()
-/*export default {
-    data() { return {} }
-}*/
 
 </script>
 
@@ -29,9 +26,9 @@ const props = defineProps<{
                 <p>{{ section.content }}
                 <div v-if="section.link">
                     <br>
-                    <a class="join-us-button link-in-text" v-bind:href="section.link">
+                    <router-link v-if="section.link" class="link-in-text section_button" :to="'join_us'">
                         {{ section.linkName }}
-                    </a>
+                    </router-link>
                 </div>
                 </p>
 
@@ -43,4 +40,8 @@ const props = defineProps<{
     <div class="space-after-rows"></div>
 </template>
 
-<style></style>
+<style>
+.section_button {
+    font-size: 2rem;
+}
+</style>
