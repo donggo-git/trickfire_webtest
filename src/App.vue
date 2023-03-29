@@ -1,15 +1,15 @@
 <script setup lang="ts">
-
-import navbar from './UI/navbar.vue';
-import footerUI from './UI/footerUI.vue';
+import homePage from './components/homePage.vue';
+import navbar from './components/navbar.vue'
+import './scss/main.scss'
 
 </script>
 
 <template>
-    <navbar />
-
-    <router-view />
-
-    <footerUI id="footer"></footerUI>
+    <div>
+        <navbar />
+        <homePage />
+    </div>
 </template>
+
 <style></style>

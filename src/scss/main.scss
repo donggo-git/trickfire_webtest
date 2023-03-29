@@ -1,0 +1,8 @@
+@import './variable.scss';
+
+#app {
+    background-color: $primary-black;
+    width: 100%;
+    min-height: 100vh;
+    color: $white;
+}
