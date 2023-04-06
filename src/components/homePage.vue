@@ -1,7 +1,11 @@
-<script setup lang="ts">
+<script lang="ts">
 import '../scss/homePage.scss';
+export default {
 
-
+    data() {
+        return {}
+    }
+}
 </script>
 
 <template>

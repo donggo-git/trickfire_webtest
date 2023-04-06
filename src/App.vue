@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import homePage from './components/homePage.vue';
-import navbar from './components/navbar.vue'
+import navbar from './UI/navbar.vue'
 import './scss/main.scss'
+
 
 </script>
 
 <template>
     <div>
         <navbar />
-        <homePage />
+        <RouterView></RouterView>
     </div>
 </template>
 
