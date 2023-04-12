@@ -5,7 +5,7 @@ const isResponsive = window.innerWidth < 1000
 const navLinkList = [
     {
         linkTitle: 'HOME',
-        linkRouteName: 'home'
+        linkRouteName: '/'
     },
     {
         linkTitle: 'ABOUT US',
@@ -27,12 +27,14 @@ const navLinkList = [
 export default {
 
     data() {
+
         return {
             isResponsive,
             navLinkList
-
         }
     },
+
+    //handle link
     computed: {
         currentRouteName() {
             return this.$route.name;
@@ -40,8 +42,9 @@ export default {
     },
     newData: {
         currentRouteName() { }
-    }
-    //console.log(currentRouteName())
+    },
+
+
 }
 
 </script>
@@ -56,8 +59,9 @@ export default {
         <!--nav link-->
         <ul class="m-0 p-0" :class="isResponsive ? 'collapse' : ''" id="navBar__link">
 
-            <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3"
-                :class="currentRouteName == navLink.linkRouteName ? 'navBar-activePage' : ''">
+            <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3" :class="
+                (currentRouteName == navLink.linkRouteName) ||
+                    (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage' : ''">
                 <router-link :to="navLink.linkRouteName">
                     {{ navLink.linkTitle }}
                 </router-link>
