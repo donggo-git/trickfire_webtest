@@ -1,24 +1,39 @@
 <script lang="ts">
 import '../scss/homePage.scss';
 import fetchData from '@/ultility/fetchData';
+import calendar from './calendar.vue'
 
-//const getData = await fetchData('https://docs.google.com/spreadsheets/d/1xWeLfTkvXT0XyZYd1beOC25Ykp8rG9pdsav7u7VS4A0/gviz/tq?sheet=SHEET1&range=D2:E6')
-//console.log(getData)
+const SHEET_ID = '1rmibTT-UsrZfB9X58mcfgwKb8inYeoKoxYo3RletQ_s'
+const SHEET_TITLE = 'Sheet1'
+const SHEET_RANGE = 'A6:E10'
+const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`
+
 const scrollBtnHandle = () => {
-    console.log("Hello")
     window.scrollBy(0, 100);
 }
 
-const windowWidth = window.innerWidth
+const windowHeight = window.innerHeight
+
 export default {
+    components: { calendar },
     data() {
 
-        return {}
+        return { calendarSchedule: null }
     },
     methods: {
+        //handle scroll down button on the header
         scrollBtnHandle() {
-            window.scrollBy(0, windowWidth);
+            window.scrollBy(0, windowHeight);
+        },
+
+        //fetch data from google sheet
+        async fetchData() {
+            this.calendarSchedule = await fetchData(FULL_URL)
         }
+    },
+
+    mounted() {
+        this.fetchData()
     }
 }
 
@@ -61,7 +76,10 @@ export default {
                 </div>
             </div>
         </header>
+
         <!--calendar-->
+        <calendar v-if="calendarSchedule" :calendarSchedule="calendarSchedule" />
+
     </div>
 </template>
 
