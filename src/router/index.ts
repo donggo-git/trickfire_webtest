@@ -1,4 +1,4 @@
-/*import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 //import HomeView from '../views/HomeView.vue'
 import about_us from '../components/about_us.vue'
 import homePage from '../components/homePage.vue'
@@ -12,7 +12,8 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: homePage
+      component: homePage,
+      props: true
     },
     {
       path: '/about_us',
@@ -37,4 +38,4 @@ const router = createRouter({
   ]
 })
 
-export default router*/
+export default router
