@@ -52,10 +52,13 @@ export default {
                 this.navTop = '0%'
             }
             else {
-                this.navTop = '-100%'
+                this.navTop = '-80px'
             }
             this.prevScrollPos = currentScrollPos;
         }
+    },
+    created() {
+        window.addEventListener('scroll', this.showHideNavHandle)
     }
 
 

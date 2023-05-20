@@ -4,6 +4,7 @@ nav {
     background-color: $primary-green;
     width: 100%;
     z-index: 2;
+    transition: all 0.4s;
 
     .nav__burger {
         display: none;

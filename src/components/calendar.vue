@@ -1,17 +1,19 @@
 <script lang="ts">
 import '../scss/calendar.scss'
 
+let date = new Date()
+
 const dateInWeeks = ["Sunday", 'Monday', "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 const dayInWeeks = dateInWeeks.map(date => date.slice(0, 3))
 const months = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
-const currentMonthAndDateInWeek = `${dateInWeeks[new Date().getDay()]}, ${months[new Date().getMonth()]}`
-const currentDate = `${new Date().getDate()}${new Date().getDate() == 1 ? "ST" :
-    new Date().getDate() == 2 ? "ND" :
-        new Date().getDate() == 3 ? "RD" :
+const currentMonthAndDateInWeek = `${dateInWeeks[date.getDay()]}, ${months[date.getMonth()]}`
+const currentDate = `${date.getDate()}${date.getDate() == 1 ? "ST" :
+    date.getDate() == 2 ? "ND" :
+        date.getDate() == 3 ? "RD" :
             "TH"
     }`;
 
-let date = new Date()
+
 let currentYear = date.getFullYear();
 let currentMonth = date.getMonth();
 let monthW = months[currentMonth]
@@ -74,7 +76,7 @@ export default {
             let firstDateofMonth = new Date(this.currentYear, currentMonth, 1).getDay()//get first date of month
             let lastDateofMonth = new Date(this.currentYear, currentMonth + 1, 0).getDate()//get last date of month
             let lastDateofLastMonth = new Date(this.currentYear, currentMonth, 0).getDate()//get last date of last month
-            let lastDayofMonth = new Date(this.currentYear, currentMonth, lastDateofMonth).getDay()
+            let lastDayofMonth = new Date(this.currentYear, currentMonth, lastDateofMonth).getDay() //last date show in calendar
             this.calendar = []
 
             for (let i = firstDateofMonth; i > 0; i--) {
@@ -106,7 +108,7 @@ export default {
             console.log(this.calendar)
         },
 
-        handleCalendarBtn() {
+        handleShowCalendarBtn() {
             this.isCalendarShow = !this.isCalendarShow
         }
     },
@@ -130,11 +132,12 @@ export default {
 <template>
     <div class="mt-2 d-flex calendar__container">
         <!--calendar button-->
-        <div class="calendar__btn align-items-center justify-content-center fs-2" @click="handleCalendarBtn" v-bind:style="{
-            right: isCalendarShow ? '100%' : 0,
-            transform: isCalendarShow ? 'translateX(100%)' : 'translateX(0%)',
-            'background-color': isCalendarShow ? '#00B733' : 'black'
-        }">
+        <div class="calendar__btn align-items-center justify-content-center fs-2" @click="handleShowCalendarBtn"
+            v-bind:style="{
+                right: isCalendarShow ? '100%' : 0,
+                transform: isCalendarShow ? 'translateX(100%)' : 'translateX(0%)',
+                'background-color': isCalendarShow ? '#00B733' : 'black'
+            }">
             <font-awesome-icon :icon="['fas', 'arrow-right']" v-if="!isCalendarShow" />
             <font-awesome-icon :icon="['fas', 'arrow-left']" v-if="isCalendarShow" />
         </div>
