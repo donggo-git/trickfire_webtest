@@ -73,12 +73,6 @@ section {
         margin-bottom: 100px;
     }
 
-    .green-outline-container {
-        z-index: -10;
-        background-color: rgb(39, 198, 39);
-        transform: skew(-16deg);
-    }
-
     .image__container {
         display: grid;
         position: relative;
@@ -168,24 +162,10 @@ section {
         margin-top: 50px;
     }
 
-
-
-    .green_outline {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
     .second-block.responsive {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .responsive-text {
-        display: none;
     }
 
     .image__container.responsive {
@@ -236,16 +216,6 @@ section {
             display: flex;
             flex-direction: column;
             box-shadow: 20px 20px 1px rgb(39, 198, 39);
-        }
-
-
-
-        .default-text {
-            display: none;
-        }
-
-        .responsive-text {
-            display: block;
         }
 
         .words-on-background {
