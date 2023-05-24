@@ -46,13 +46,12 @@ export default {
     },
     methods: {
         showHideNavHandle() {
-            console.log('scroll')
             let currentScrollPos = window.pageYOffset;
-            if (this.prevScrollPos > currentScrollPos) {
-                this.navTop = '0%'
+            if (this.prevScrollPos <= currentScrollPos && window.innerWidth > 1000) {
+                this.navTop = '-80px'
             }
             else {
-                this.navTop = '-80px'
+                this.navTop = '0%'
             }
             this.prevScrollPos = currentScrollPos;
         }
@@ -78,13 +77,14 @@ export default {
         <!--nav link-->
         <ul class="m-0 p-0" :class="isResponsive ? 'collapse' : ''" id="navBar__link">
 
-            <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3" :class="(currentRouteName == navLink.linkRouteName) ||
+            <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3" :key="navLink.linkTitle" :class="(currentRouteName == navLink.linkRouteName) ||
                 (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage' : ''">
                 <router-link :to="navLink.linkRouteName">
                     {{ navLink.linkTitle }}
                 </router-link>
             </li>
         </ul>
+
     </nav>
 </template>
 
