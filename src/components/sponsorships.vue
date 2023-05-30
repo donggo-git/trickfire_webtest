@@ -3,7 +3,28 @@ import '../scss/sponsorship.scss'
 export default {
 
     data() {
-        return {}
+        let sponsorshipList = [
+            '/src/assets/images/sponsors/boeing.png',
+            '/src/assets/images/sponsors/ieee.png',
+            '/src/assets/images/sponsors/electroimpact.png',
+            '/src/assets/images/sponsors/ultra-motion-logo.png',
+
+            '/src/assets/images/sponsors/tmobile.jpg',
+            '/src/assets/images/sponsors/STFC-Full-logo-(1).png',
+            '/src/assets/images/sponsors/meadow.jpg',
+            '/src/assets/images/sponsors/igus.png',
+
+            '/src/assets/images/sponsors/download.jpg',
+            '/src/assets/images/sponsors/dp.jpg',
+            '/src/assets/images/sponsors/nvidia.png',
+            '/src/assets/images/sponsors/SAF.png',
+
+
+
+        ]
+        return {
+            sponsorshipList
+        }
     }
 }
 </script>
@@ -27,6 +48,29 @@ export default {
             </div>
         </div>
     </header>
+
+    <div class="sponsorship__howToSponsor">
+        <h3 class="text-primary my-3 ms-5">How to Sponsor</h3>
+        <div class="d-flex justify-content-between sponsorship__howToSponsor__content ms-5">
+            <p class="fs-5 ">
+                Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated
+                funds
+                go through our UW Foundation fund. Donate by going to <a href="">UW's Make a Gift page</a> and searching for
+                the “UW
+                Bothell Robotics Program Support Fund”.
+            </p>
+            <img src="../assets/images/howToSponsor logo.png" />
+        </div>
+    </div>
+
+    <div class="pb-5 sponsorship__ourPartner">
+        <h3 class="text-primary my-3 ms-5">Our partner</h3>
+        <div class="justify-content-around sponsorship__ourPartner__sponsorList">
+
+            <img :src="sponsor" v-for="sponsor in sponsorshipList" class="my-2" />
+
+        </div>
+    </div>
 </template>
 
 <style lang="scss"></style>

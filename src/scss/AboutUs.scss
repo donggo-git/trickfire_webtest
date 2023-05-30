@@ -46,17 +46,19 @@ header {
         @media screen and (max-width:1000px) {
             margin-left: 0;
         }
-    }
 
-    h1 {
-        transform: translate(33%, -10%);
+        h1 {
+            transform: translate(33%, -10%);
 
-        /*phone*/
-        @media screen and (max-width:850px) {
-            width: 400px;
-            transform: translate(13%, -10%);
+            /*phone*/
+            @media screen and (max-width:850px) {
+                width: 400px;
+                transform: translate(13%, -10%);
+            }
         }
     }
+
+
 
 }
 

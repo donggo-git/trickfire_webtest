@@ -46,6 +46,75 @@
                 }
             }
 
+            p {
+                @media screen and (max-width:1000px) {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+.sponsorship__howToSponsor {
+    width: 100%;
+
+    h3 {
+        width: fit-content;
+    }
+
+    .sponsorship__howToSponsor__content {
+        width: calc(100% - 6rem);
+
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto !important;
+        }
+
+        p {
+            width: 50%;
+
+            @media screen and (max-width:800px) {
+                width: 100%;
+                text-align: center;
+                order: 2;
+            }
+        }
+
+        img {
+            height: 12rem;
+
+            @media screen and (max-width:800px) {
+                height: auto;
+                width: 100%;
+                order: 1;
+            }
+        }
+    }
+}
+
+.sponsorship__ourPartner {
+    .sponsorship__ourPartner__sponsorList {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width:1000px) {
+            grid-template-columns: 150px 150px 150px;
+            width: 90%;
+        }
+
+        @media screen and (max-width:800px) {
+            grid-template-columns: 150px 150px;
+            width: 90%;
+        }
+
+        img {
+            max-height: 150px;
+            max-width: 150px;
         }
     }
 }
