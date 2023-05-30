@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#about-us-header {
+#projects-header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -12,7 +12,7 @@
     height: 100vh;
 
     .header__background {
-        background-image: url(../assets/images/unslanted_team_photo_rmc_2017.jpg);
+        background-image: url(../assets/images/unslanted_lunar_surface.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -38,9 +38,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
         z-index: 1;
-        margin-left: 50px;
 
         /*tablet*/
         @media screen and (max-width:1000px) {
@@ -54,13 +52,13 @@
         /*phone*/
         @media screen and (max-width:850px) {
             width: 400px;
-            transform: translate(13%, -10%);
+            transform: translate(33%, -10%);
         }
     }
 
 }
 
-section {
+#projects-section {
 
     .rows {
         display: grid;
@@ -70,7 +68,7 @@ section {
         margin-top: 70px;
         justify-content: center;
         align-content: center;
-        margin-bottom: 100px;
+        margin-bottom: 0;
     }
 
     .image__container {
@@ -159,7 +157,7 @@ section {
     }
 
     .text-container p {
-        margin-top: 40px;
+        margin-top: 50px;
         width: 700px;
         font-size: large;
     }
