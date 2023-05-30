@@ -43,15 +43,15 @@ export default {
 
 <template>
     <div class="page">
-        <header>
+        <header class="homePage__header">
             <!--header content-->
-            <div class="header__content">
+            <div class="homePage__header__content">
 
                 <h1 class="m-0 d-flex flex-column justify-content-center">
                     <span class="text-primary my-1">TRICKFIRE</span>
                     ROBOTICS
                 </h1>
-                <img src="../images/android-chrome-512x512.png" class=" header__image" />
+                <img src="../images/android-chrome-512x512.png" class="homePage__header__image" />
                 <p class="fs-5 m-0">
                     TrickFire Robotics is a student-led robotics team focused on providing a unique educational experience
                     through hands-on work on large scale projects. Since 2016 the team has traveled to the Kennedy Space
@@ -63,16 +63,16 @@ export default {
                 </p>
             </div>
             <!--header scroll down button-->
-            <div class="d-flex flex-column header__scrollBtn" @click="scrollBtnHandle">
+            <div class="d-flex flex-column homePage__header__scrollBtn" @click="scrollBtnHandle">
 
-                <div class="d-flex header__scrollGreen">
-                    <div class="bg-primary header__btn header__scroll--left"></div>
-                    <div class="bg-primary header__btn header__scroll--right"></div>
+                <div class="d-flex homePage__header__scrollGreen">
+                    <div class="bg-primary homePage__header__btn header__scroll--left"></div>
+                    <div class="bg-primary homePage__header__btn header__scroll--right"></div>
                 </div>
 
-                <div class="d-flex header__scrollWhite">
-                    <div class="bg-white header__btn header__scroll--left"></div>
-                    <div class="bg-white header__btn header__scroll--right"></div>
+                <div class="d-flex homePage__header__scrollWhite">
+                    <div class="bg-white homePage__header__btn header__scroll--left"></div>
+                    <div class="bg-white homePage__header__btn header__scroll--right"></div>
                 </div>
             </div>
         </header>
