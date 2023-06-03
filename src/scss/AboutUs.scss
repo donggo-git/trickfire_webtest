@@ -78,9 +78,6 @@
         justify-self: center;
         align-self: center;
 
-        /*tablet*/
-        @media screen and (max-width:1000px) {}
-
         /*phone*/
         @media screen and (max-width:850px) {
             margin-top: 20px;
@@ -108,16 +105,6 @@
     .image__left img {
         width: 363px;
         height: 319px;
-
-
-        /*tablet*/
-        @media screen and (max-width:1000px) {
-            width: 400px;
-            height: 319px;
-        }
-
-        /*phone*/
-        @media screen and (max-width:850px) {}
     }
 
     .image__left.responsive {
@@ -168,7 +155,7 @@
     }
 
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1277px) {
         .image__left.responsive {
             display: block;
             align-items: center;
