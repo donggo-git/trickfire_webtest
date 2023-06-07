@@ -2,6 +2,7 @@
 import { aboutUsSectionData } from '../data/about_us_data';
 import '../scss/row_blocks.scss';
 
+
 export default {
     name: "aboutUs",
     props: {
