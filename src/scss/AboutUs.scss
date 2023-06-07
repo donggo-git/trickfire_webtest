@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+#about_us_header {
+    display: flex;
     position: relative;
     height: 100vh;
 
-    .header__background {
+    #about_us_header__background {
         background-image: url(../assets/images/unslanted_team_photo_rmc_2017.jpg);
         background-size: cover;
         background-position: center;
@@ -24,45 +22,42 @@ header {
         &::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
             height: 100%;
             width: 100%;
-            background-color: $fadeBlack;
+            background: $fadeBlack;
         }
     }
 
-
-
-    .header__content {
+    #about_us_header__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
+        flex-direction: column;
+
+        height: auto;
+        width: 70%;
         align-items: center;
         justify-content: center;
-        height: 100%;
-        z-index: 1;
-        margin-left: 50px;
+
 
         /*tablet*/
         @media screen and (max-width:1000px) {
-            margin-left: 0;
+            text-align: center;
         }
     }
 
     h1 {
-        transform: translate(33%, -10%);
-
-        /*phone*/
-        @media screen and (max-width:850px) {
-            width: 400px;
-            transform: translate(13%, -10%);
-        }
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 
 }
 
-section {
+#about_us_section {
 
-    .rows {
+    #about_us_rows {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
@@ -82,9 +77,6 @@ section {
         grid-auto-flow: column;
         justify-self: center;
         align-self: center;
-
-        /*tablet*/
-        @media screen and (max-width:1000px) {}
 
         /*phone*/
         @media screen and (max-width:850px) {
@@ -113,16 +105,6 @@ section {
     .image__left img {
         width: 363px;
         height: 319px;
-
-
-        /*tablet*/
-        @media screen and (max-width:1000px) {
-            width: 400px;
-            height: 319px;
-        }
-
-        /*phone*/
-        @media screen and (max-width:850px) {}
     }
 
     .image__left.responsive {
@@ -173,7 +155,7 @@ section {
     }
 
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1277px) {
         .image__left.responsive {
             display: block;
             align-items: center;
