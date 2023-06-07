@@ -19,15 +19,12 @@ export default {
 
 <template>
     <div class="page">
-        <header id="projects-header" class="header">
-            <div class="header__background">
-                <div class="header__content">
-                    <h1>
-                        <p class="m-0 d-flex flex-column justify-content-center">
-                            <span class="fs-1" style="color: white;">PROJECT</span>
-                        </p>
+        <header id="projects_header">
+            <div id="projects_header__background">
+                <div id="projects_header__content">
+                    <h1>PROJECT
                     </h1>
-                    <p class="fs-4 m-0" style="color: white;">
+                    <p class="fs-4" style="color: white;">
                         In six years, we have built four rovers for the NASA Robotics Mining
                         Competition - A competition hosted by NASA, where fifty teams across
                         the United States compete to build the best rover that can mine under a
@@ -41,8 +38,8 @@ export default {
             </div>
         </header>
 
-        <section id="projects-section">
-            <div class="rows">
+        <section id="projects_section">
+            <div id="projects_rows">
 
                 <!--Houdini-->
                 <aboutUs :image__left="projectsSectionData[0].image" :title="projectsSectionData[0].title"
