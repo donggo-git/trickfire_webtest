@@ -24,7 +24,7 @@ export default {
                 <div id="projects_header__content">
                     <h1>PROJECT
                     </h1>
-                    <p class="fs-4" style="color: white;">
+                    <p style="color: white;">
                         In six years, we have built four rovers for the NASA Robotics Mining
                         Competition - A competition hosted by NASA, where fifty teams across
                         the United States compete to build the best rover that can mine under a
