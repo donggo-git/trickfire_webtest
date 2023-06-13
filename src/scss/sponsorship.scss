@@ -59,36 +59,54 @@
 .sponsorship__howToSponsor {
     width: 100%;
 
+
     h3 {
         width: fit-content;
     }
 
-    .sponsorship__howToSponsor__content {
+    .sponsorship__howToSponsor__content__wrapper {
         width: calc(100% - 6rem);
+        background-color: $black;
+        transform: skew(-16deg);
+        border-radius: 5px;
+        position: relative;
 
         @media screen and (max-width:800px) {
-            flex-direction: column;
-            align-items: center;
-            margin: 0 auto !important;
+            transform: skew(0);
         }
 
-        p {
-            width: 50%;
+
+
+        .sponsorship__howToSponsor__content {
+
+            transform: skew(16deg);
 
             @media screen and (max-width:800px) {
-                width: 100%;
-                text-align: center;
-                order: 2;
+                transform: skew(0);
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto !important;
             }
-        }
 
-        img {
-            height: 12rem;
+            p {
+                width: 60%;
 
-            @media screen and (max-width:800px) {
-                height: auto;
-                width: 100%;
-                order: 1;
+                @media screen and (max-width:800px) {
+                    margin-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    order: 2;
+                }
+            }
+
+            img {
+                height: 12rem;
+
+                @media screen and (max-width:800px) {
+                    height: auto;
+                    width: 100%;
+                    order: 1;
+                }
             }
         }
     }

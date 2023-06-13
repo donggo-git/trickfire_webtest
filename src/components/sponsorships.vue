@@ -51,15 +51,18 @@ export default {
 
     <div class="sponsorship__howToSponsor">
         <h3 class="text-primary my-3 ms-5">How to Sponsor</h3>
-        <div class="d-flex justify-content-between sponsorship__howToSponsor__content ms-5">
-            <p class="fs-5 ">
-                Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated
-                funds
-                go through our UW Foundation fund. Donate by going to <a href="">UW's Make a Gift page</a> and searching for
-                the “UW
-                Bothell Robotics Program Support Fund”.
-            </p>
-            <img src="../assets/images/howToSponsor logo.png" />
+        <div class="ms-5 p-4 sponsorship__howToSponsor__content__wrapper">
+            <div class=" d-flex justify-content-evenly align-items-center sponsorship__howToSponsor__content ">
+                <p class="fs-5 ">
+                    Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated
+                    funds
+                    go through our UW Foundation fund. Donate by going to <a href="">UW's Make a Gift page</a> and searching
+                    for
+                    the “UW
+                    Bothell Robotics Program Support Fund”.
+                </p>
+                <img src="../assets/images/howToSponsor logo.png" />
+            </div>
         </div>
     </div>
 
