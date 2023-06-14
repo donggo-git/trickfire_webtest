@@ -36,7 +36,7 @@ export default {
                 <h1 class="m-0" style="color: white;">
                     Sponsorship
                 </h1>
-                <p class="fs-5 my-3" style="color: white;">
+                <p class="fs-5 my-5" style="color: white;">
                     TrickFire relies on generous donations to purchase the necessary materials and equipment to build the
                     rover and travel to competitions. Your donations will directly impact the development of our students.
                     In-kind sponsorships are also a tax-favored solution to help our team get much-needed resources and
