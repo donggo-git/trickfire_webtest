@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-#about_us_header {
+#join_us_header {
     display: flex;
     position: relative;
     height: 100vh;
 
-    #about_us_header__background {
-        background-image: url(../assets/images/unslanted_team_photo_rmc_2017.jpg);
+    #join_us_header__background {
+        background-image: url(../assets/images/unslanted_join_us.png);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -28,14 +28,13 @@
         }
     }
 
-    #about_us_header__content {
+    #join_us_header__content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
-
         height: auto;
         width: 70%;
         align-items: center;
@@ -47,28 +46,28 @@
             text-align: center;
             font-size: 16px;
         }
-
+    }
 
     h1 {
         margin: 0 auto;
         margin-bottom: 50px;
     }
 
+    #join_us_button {
+        background-color: $primary-green;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
 
-
-}
-
-#about_us_section {
-
-    #about_us_rows {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-gap: 130px;
-        margin-top: 70px;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 100px;
+    #join_us_button a {
+        color: white;
+        text-decoration: none;
     }
 
 }
