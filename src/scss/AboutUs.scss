@@ -49,26 +49,27 @@
         }
 
 
-    h1 {
-        margin: 0 auto;
-        margin-bottom: 50px;
+        h1 {
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+
+
     }
 
+    #about_us_section {
 
+        #about_us_rows {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, auto);
+            grid-gap: 130px;
+            margin-top: 70px;
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 100px;
+        }
 
-}
-
-#about_us_section {
-
-    #about_us_rows {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-gap: 130px;
-        margin-top: 70px;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 100px;
     }
-
 }
