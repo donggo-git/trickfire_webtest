@@ -1,6 +1,7 @@
 <script lang="ts">
 import { aboutUsSectionData } from '../data/about_us_data';
-import '../scss/AboutUs.scss';
+import '../scss/row_blocks.scss';
+
 
 export default {
     name: "aboutUs",
@@ -37,7 +38,7 @@ export default {
             <img src="../assets/images/fixed_index_header_left.png" />
 
             <div class="text-container">
-                <span class="fs-2">{{ title }}</span>
+                <span class="fs-3">{{ title }}</span>
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>
                     <ul>
@@ -55,22 +56,14 @@ export default {
     </div>
 
     <div class="image__container responsive">
-        <div class="first-block responsive">
+        <div class="block responsive">
             <div class="image__left responsive">
                 <img :src="image__left__responsive">
             </div>
 
             <div class="words-on-background responsive">
-                <span class="fs-2">{{ title }}</span>
-            </div>
-        </div>
+                <span class="fs-3">{{ title }}</span>
 
-        <div class="second-block responsive">
-            <div class="image__left responsive">
-                <img :src="image__left__responsive">
-            </div>
-
-            <div class="span__container responsive">
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>
                     <ul>
@@ -80,6 +73,7 @@ export default {
                         </li>
                     </ul>
                 </template>
+
                 <template v-else>
                     <p>{{ text }}</p>
                 </template>
