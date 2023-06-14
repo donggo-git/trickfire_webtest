@@ -25,7 +25,7 @@ export default {
                     <h1>MEET OUR TEAM
 
                     </h1>
-                    <p class="fs-4" style="color: white;">
+                    <p style="color: white;">
 
                         Our team is composed of five major sub-teams including
                         mechanical team, electrical team, software team, financial team,
