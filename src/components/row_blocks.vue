@@ -1,10 +1,6 @@
 <script lang="ts">
 import { aboutUsSectionData } from '../data/about_us_data';
-<<<<<<< HEAD
-import '../scss/row_blocks.scss';
-=======
 import '../scss/AboutUs.scss';
->>>>>>> 7cce1515b72f88d4412469eb251086a41d363933
 
 export default {
     name: "aboutUs",

@@ -19,17 +19,6 @@ export default {
 
 <template>
     <div class="page">
-<<<<<<< HEAD
-        <header id="about-us-header" class="header">
-            <div class="header__background">
-                <div class="header__content">
-                    <h1>
-                        <p class="m-0 d-flex flex-column justify-content-center">
-                            <span class="fs-1" style="color: white;">MEET OUR TEAM</span>
-                        </p>
-                    </h1>
-                    <p class="fs-4 m-0" style="color: white;">
-=======
         <header id="about_us_header">
             <div id="about_us_header__background">
                 <div id="about_us_header__content">
@@ -37,7 +26,6 @@ export default {
 
                     </h1>
                     <p class="fs-4" style="color: white;">
->>>>>>> 7cce1515b72f88d4412469eb251086a41d363933
                         Our team is composed of five major sub-teams including
                         mechanical team, electrical team, software team, financial team,
                         and outreach team. Our mission is to provide the technical and
