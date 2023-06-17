@@ -49,8 +49,10 @@ export default {
         </div>
     </header>
 
+
     <div class="sponsorship__howToSponsor">
         <h3 class="text-primary my-3 ms-5">How to Sponsor</h3>
+
         <div class="ms-5 p-4 sponsorship__howToSponsor__content__wrapper">
             <div class=" d-flex justify-content-evenly align-items-center sponsorship__howToSponsor__content ">
                 <p class="fs-5 ">
@@ -64,7 +66,10 @@ export default {
                 <img src="../assets/images/howToSponsor logo.png" />
             </div>
         </div>
+
     </div>
+
+
 
     <div class="pb-5 sponsorship__ourPartner">
         <h3 class="text-primary my-3 ms-5">Our partner</h3>
