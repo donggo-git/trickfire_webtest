@@ -21,11 +21,6 @@ export default {
         return { calendarSchedule: null }
     },
     methods: {
-        //handle scroll down button on the header
-        scrollBtnHandle() {
-            window.scrollBy(0, windowHeight);
-        },
-
         //fetch data from google sheet
         async fetchData() {
             this.calendarSchedule = await fetchData(FULL_URL)
@@ -43,7 +38,7 @@ export default {
 
 <template>
     <div class="page">
-        <header class="homePage__header">
+        <header class="bg-black mb-5 homePage__header">
             <!--header content-->
             <div class="homePage__header__content">
 
@@ -63,7 +58,7 @@ export default {
                 </p>
             </div>
             <!--header scroll down button-->
-            <div class="d-flex flex-column homePage__header__scrollBtn" @click="scrollBtnHandle">
+            <a class="d-flex flex-column homePage__header__scrollBtn" href="#calendar">
 
                 <div class="d-flex homePage__header__scrollGreen">
                     <div class="bg-primary homePage__header__btn header__scroll--left"></div>
@@ -74,11 +69,11 @@ export default {
                     <div class="bg-white homePage__header__btn header__scroll--left"></div>
                     <div class="bg-white homePage__header__btn header__scroll--right"></div>
                 </div>
-            </div>
+            </a>
         </header>
 
         <!--calendar-->
-        <calendar v-if="calendarSchedule" :calendarSchedule="calendarSchedule" />
+        <calendar v-if="calendarSchedule" :calendarSchedule="calendarSchedule" id="calendar" />
 
     </div>
 </template>

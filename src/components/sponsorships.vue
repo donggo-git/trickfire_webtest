@@ -71,7 +71,7 @@ export default {
 
 
 
-    <div class="pb-5 sponsorship__ourPartner">
+    <div class="pb-5 sponsorship__ourPartner mt-5">
         <h3 class="text-primary my-3 ms-5">Our partner</h3>
         <div class="justify-content-around sponsorship__ourPartner__sponsorList">
 

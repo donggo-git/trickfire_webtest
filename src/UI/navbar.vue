@@ -79,7 +79,7 @@ export default {
 
             <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3" :key="navLink.linkTitle" :class="(currentRouteName == navLink.linkRouteName) ||
                 (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage' : ''">
-                <router-link :to="navLink.linkRouteName">
+                <router-link :to="navLink.linkRouteName" class="text-black">
                     {{ navLink.linkTitle }}
                 </router-link>
             </li>
