@@ -6,7 +6,7 @@
     height: 100vh;
 
     .sponsorship__header__background {
-        background-image: url(../assets/images/photo_section/outreach_trickfire_robotics.jpg);
+        background-image: url(../assets/Trickfire_image/original_image/sponsorship/outreach_trickfire_robotics.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -47,8 +47,11 @@
             }
 
             p {
+                font-size: 22px;
+
                 @media screen and (max-width:1000px) {
                     text-align: center;
+                    font-size: 20px;
                 }
             }
 

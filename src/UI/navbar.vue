@@ -70,7 +70,7 @@ export default {
         top: navTop
     }">
         <!--burger icon button-->
-        <div class="pt-3 pb-2 px-1 mx-3 fs-2 nav__burger" data-toggle="collapse" data-target="#navBar__link">
+        <div class="pt-3 pb-2 px-1 mx-3 fs-2 nav__burger text-black" data-toggle="collapse" data-target="#navBar__link">
             <font-awesome-icon :icon="['fas', 'bars']" />
         </div>
 

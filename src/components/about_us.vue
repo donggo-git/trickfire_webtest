@@ -22,8 +22,8 @@ export default {
         <header id="about_us_header">
             <div id="about_us_header__background">
                 <div id="about_us_header__content">
-                    <h1>MEET OUR TEAM
-
+                    <h1 class="fw-semibold">
+                        MEET OUR TEAM
                     </h1>
                     <p style="color: white;">
 

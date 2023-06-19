@@ -138,8 +138,8 @@ export default {
                 transform: isCalendarShow ? 'translateX(100%)' : 'translateX(0%)',
                 'background-color': isCalendarShow ? '#00B733' : 'black'
             }">
-            <font-awesome-icon :icon="['fas', 'arrow-right']" v-if="!isCalendarShow" class="text-black" />
-            <font-awesome-icon :icon="['fas', 'arrow-left']" v-if="isCalendarShow" />
+            <font-awesome-icon :icon="['fas', 'arrow-right']" v-if="!isCalendarShow" />
+            <font-awesome-icon :icon="['fas', 'arrow-left']" v-if="isCalendarShow" class="text-black" />
         </div>
 
         <div class="bg-primary calendar--left d-flex flex-column align-items-center justify-content-center" v-bind:style="!isCalendarShow && isResponsive ?

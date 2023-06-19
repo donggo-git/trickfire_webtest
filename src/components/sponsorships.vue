@@ -1,30 +1,16 @@
 <script lang="ts">
 import '../scss/sponsorship.scss'
+import row_blocks from './row_blocks.vue'
+import { sponsorshipLogos } from '@/data/sponsorship_data'
 export default {
 
     data() {
-        let sponsorshipList = [
-            '/src/assets/images/sponsors/boeing.png',
-            '/src/assets/images/sponsors/ieee.png',
-            '/src/assets/images/sponsors/electroimpact.png',
-            '/src/assets/images/sponsors/ultra-motion-logo.png',
-
-            '/src/assets/images/sponsors/tmobile.jpg',
-            '/src/assets/images/sponsors/STFC-Full-logo-(1).png',
-            '/src/assets/images/sponsors/meadow.jpg',
-            '/src/assets/images/sponsors/igus.png',
-
-            '/src/assets/images/sponsors/download.jpg',
-            '/src/assets/images/sponsors/dp.jpg',
-            '/src/assets/images/sponsors/nvidia.png',
-            '/src/assets/images/sponsors/SAF.png',
-
-
-
-        ]
         return {
-            sponsorshipList
+            sponsorshipLogos
         }
+    },
+    components: {
+        row_blocks
     }
 }
 </script>
@@ -33,10 +19,10 @@ export default {
     <header class="sponsorship__header">
         <div class="sponsorship__header__background">
             <div class="d-flex flex-column justify-content-center align-items-center sponsorship__header__content">
-                <h1 class="m-0" style="color: white;">
-                    Sponsorship
+                <h1 class="m-0 fw-semibold" style="color: white;">
+                    SPONSORSHIP
                 </h1>
-                <p class="fs-5 my-5" style="color: white;">
+                <p class="my-5" style="color: white;">
                     TrickFire relies on generous donations to purchase the necessary materials and equipment to build the
                     rover and travel to competitions. Your donations will directly impact the development of our students.
                     In-kind sponsorships are also a tax-favored solution to help our team get much-needed resources and
@@ -53,21 +39,14 @@ export default {
     <div class="sponsorship__howToSponsor">
         <h3 class="text-primary my-3 ms-5">How to Sponsor</h3>
 
-        <div class="ms-5 p-4 sponsorship__howToSponsor__content__wrapper">
-            <div class=" d-flex justify-content-evenly align-items-center sponsorship__howToSponsor__content ">
-                <p class="fs-5 ">
-                    Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated
-                    funds
-                    go through our UW Foundation fund. Donate by going to <a href="">UW's Make a Gift page</a> and searching
-                    for
-                    the “UW
-                    Bothell Robotics Program Support Fund”.
-                </p>
-                <img src="../assets/images/howToSponsor logo.png" />
-            </div>
-        </div>
+        <row_blocks image__left="./src/assets/Trickfire_image/slanted_image/sponsorship/slanted_teaching_new_member.png"
+            image__right="./src/assets/Trickfire_image/original_image/sponsorship/slanted_teaching_new_member.png"
+            text="Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated funds go through our UW Foundation fund. Donate by going to the link below and searching for the “UW Bothell Robotics Program Support Fund”."
+            link="https://www.washington.edu/giving/make-a-gift/" linkName="UW's Make a Gift page" />
 
     </div>
+
+
 
 
 
@@ -75,7 +54,7 @@ export default {
         <h3 class="text-primary my-3 ms-5">Our partner</h3>
         <div class="justify-content-around sponsorship__ourPartner__sponsorList">
 
-            <img :src="sponsor" v-for="sponsor in sponsorshipList" class="my-2" />
+            <img :src="sponsor" v-for="sponsor in sponsorshipLogos" class="my-2" />
 
         </div>
     </div>

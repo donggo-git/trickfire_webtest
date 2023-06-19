@@ -9,8 +9,9 @@ const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?she
 export default {
 
     data() {
+        let applicationDeadline: string = 'deadline'
         return {
-            applicationDeadline: String
+            applicationDeadline
         }
     },
     methods: {
@@ -32,7 +33,7 @@ export default {
     <header id="join_us_header">
         <div id="join_us_header__background">
             <div id="join_us_header__content">
-                <h1>
+                <h1 class="fw-semibold">
                     WHY JOIN?
                 </h1>
                 <p style="color: white;">
@@ -40,11 +41,14 @@ export default {
                     skills in software, mechanical and electrical engineering, and business
                     skills, which will prepare students for their resumes, and they will be
                     able to talk about their work in TrickFire, while having fun along the way!
-                    No previous robotic experience is needed. <b>{{ applicationDeadline }}</b>
+                    No previous robotic experience is needed. <b>{{ applicationDeadline || 'deadline' }}</b>
                 </p>
-                <button id="join_us_button"><a id="join_us_link"
-                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0i7wGfH_Ef9MlM3y37_kRLpUMEVVSDJTTFFOU0RNOEhNVVYyWUI2TjdOTyQlQCN0PWcu">Application
-                        Link</a>
+                <button id="join_us_button">
+                    <a id="join_us_link"
+                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=W9229i_wGkSZoBYqxQYL0i7wGfH_Ef9MlM3y37_kRLpUMEVVSDJTTFFOU0RNOEhNVVYyWUI2TjdOTyQlQCN0PWcu"
+                        class="text-black">
+                        Application Link
+                    </a>
                 </button>
             </div>
         </div>

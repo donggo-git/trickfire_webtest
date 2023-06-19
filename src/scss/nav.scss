@@ -36,6 +36,7 @@ nav {
         /* the underline of active page*/
         .navBar-activePage {
             position: relative;
+            font-weight: 600;
         }
 
         .navBar-activePage::before {

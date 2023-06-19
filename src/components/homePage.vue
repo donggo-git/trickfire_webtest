@@ -42,12 +42,13 @@ export default {
             <!--header content-->
             <div class="homePage__header__content">
 
-                <h1 class="m-0 d-flex flex-column justify-content-center">
-                    <span class="text-primary my-1">TRICKFIRE</span>
+                <h1 class="m-0 d-flex flex-column justify-content-center fw-bold fst-italic">
+                    <span class="text-primary ">TRICKFIRE</span>
                     ROBOTICS
                 </h1>
-                <img src="../images/android-chrome-512x512.png" class="homePage__header__image" />
-                <p class="fs-5 m-0">
+                <img src="../assets/Trickfire_image/original_image/logo/android-chrome-512x512.png"
+                    class="homePage__header__image" />
+                <p class="m-0 text-white">
                     TrickFire Robotics is a student-led robotics team focused on providing a unique educational experience
                     through hands-on work on large scale projects. Since 2016 the team has traveled to the Kennedy Space
                     Center
