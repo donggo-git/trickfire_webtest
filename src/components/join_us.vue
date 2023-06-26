@@ -1,31 +1,15 @@
 <script lang="ts">
 import '../scss/JoinUs.scss';
 
-const SHEET_ID = '1rmibTT-UsrZfB9X58mcfgwKb8inYeoKoxYo3RletQ_s'
-const SHEET_TITLE = 'Sheet1'
-const SHEET_RANGE = 'A2:A2'
-const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`
 
 export default {
-
+    props: {
+        deadline: String
+    },
     data() {
-        let applicationDeadline: string = 'deadline'
-        return {
-            applicationDeadline
-        }
+        return {}
     },
-    methods: {
-        async fetchData(fullURL: string) {
-            const rawData = await fetch(fullURL)
-            const data = await rawData.text()
-            let returnData = JSON.parse(data.substr(47).slice(0, -2)).table.rows[0].c[0].v
-            console.log(returnData)
-            this.applicationDeadline = returnData
-        }
-    },
-    mounted() {
-        this.fetchData(FULL_URL)
-    }
+
 }
 
 </script>
@@ -41,7 +25,7 @@ export default {
                     skills in software, mechanical and electrical engineering, and business
                     skills, which will prepare students for their resumes, and they will be
                     able to talk about their work in TrickFire, while having fun along the way!
-                    No previous robotic experience is needed. <b>{{ applicationDeadline || 'deadline' }}</b>
+                    No previous robotic experience is needed. <b>{{ deadline || 'deadline' }}</b>
                 </p>
                 <button id="join_us_button">
                     <a id="join_us_link"

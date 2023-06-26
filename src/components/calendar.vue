@@ -105,7 +105,7 @@ export default {
             for (let i = 0; i < this.calendar.length; i++) {
                 this.calendar[i].color = teamScheduleInWeek.get(i % 7)
             }
-            console.log(this.calendar)
+            //console.log(this.calendar)
         },
 
         handleShowCalendarBtn() {

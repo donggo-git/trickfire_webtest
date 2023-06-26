@@ -65,7 +65,7 @@ export default {
             </div>
 
             <div class="words-on-background responsive">
-                <span class="fs-3">{{ title }}</span>
+                <span class="fs-3 my-3">{{ title }}</span>
 
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>

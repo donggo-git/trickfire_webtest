@@ -1,35 +1,22 @@
 <script lang="ts">
 import '../scss/homePage.scss';
-import fetchData from '@/ultility/fetchData';
 import calendar from './calendar.vue'
 
-const SHEET_ID = '1rmibTT-UsrZfB9X58mcfgwKb8inYeoKoxYo3RletQ_s'
-const SHEET_TITLE = 'Sheet1'
-const SHEET_RANGE = 'A6:E10'
-const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`
-
-const scrollBtnHandle = () => {
-    window.scrollBy(0, 100);
-}
-
-const windowHeight = window.innerHeight
-
 export default {
+    props: {
+        calendarSchedule: await Array<{
+            team: String,
+            dayInWeek: String,
+            time: String,
+            description: String,
+            color: String
+        }>
+    },
     components: { calendar },
     data() {
-
-        return { calendarSchedule: null }
-    },
-    methods: {
-        //fetch data from google sheet
-        async fetchData() {
-            this.calendarSchedule = await fetchData(FULL_URL)
-        }
+        return {}
     },
 
-    mounted() {
-        this.fetchData()
-    }
 }
 
 

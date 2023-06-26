@@ -6,7 +6,7 @@
     height: 100vh;
 
     .sponsorship__header__background {
-        background-image: url(../assets/Trickfire_image/original_image/sponsorship/outreach_trickfire_robotics.jpg);
+        background-image: url(../assets/Trickfire_image/original_image/sponsorship/club_fair.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -59,73 +59,7 @@
     }
 }
 
-.sponsorship__howToSponsor {
-    width: 100%;
 
-
-    h3 {
-        width: fit-content;
-    }
-
-    .sponsorship__howToSponsor__content__wrapper {
-        width: calc(100% - 6rem);
-        background-color: $black;
-        transform: skew(-16deg);
-        border-radius: 5px;
-        position: relative;
-
-        @media screen and (max-width:800px) {
-            transform: skew(0);
-        }
-
-
-
-        .sponsorship__howToSponsor__content {
-
-            transform: skew(16deg);
-
-            @media screen and (max-width:800px) {
-                transform: skew(0);
-                flex-direction: column;
-                align-items: center;
-                margin: 0 auto !important;
-            }
-
-            p {
-                width: 60%;
-
-                @media screen and (max-width:800px) {
-                    margin-top: 20px;
-                    width: 100%;
-                    text-align: center;
-                    order: 2;
-                }
-            }
-
-            img {
-                height: 12rem;
-
-                @media screen and (max-width:800px) {
-                    height: auto;
-                    width: 100%;
-                    order: 1;
-                }
-            }
-        }
-    }
-}
-
-.sponsorship__howToSponsor__content__wrapper::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: skew(0deg);
-    z-index: -10;
-    box-shadow: 20px 20px 1px rgb(39, 198, 39);
-}
 
 .sponsorship__ourPartner {
     .sponsorship__ourPartner__sponsorList {
