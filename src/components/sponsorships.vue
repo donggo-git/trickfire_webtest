@@ -36,7 +36,7 @@ export default {
     </header>
 
 
-    <div class="my-5 sponsorship__howToSponsor">
+    <div class="my-5 mx-auto sponsorship__howToSponsor">
 
         <row_blocks image__left="./src/assets/Trickfire_image/slanted_image/sponsorship/slanted_teaching_new_member.png"
             image__left__responsive="./src/assets/Trickfire_image/original_image/unused/unslanted_teaching_new_member.jpg"
