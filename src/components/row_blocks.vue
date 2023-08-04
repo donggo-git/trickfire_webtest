@@ -10,6 +10,8 @@ export default {
         title: String,
         text: String,
         image__left__responsive: String,
+        link: String,
+        linkName: String
     },
     computed: {
         // bullet points in the last block
@@ -35,10 +37,10 @@ export default {
         </div>
 
         <div class="words-on-background">
-            <img src="../assets/images/fixed_index_header_left.png" />
+            <img src="../assets/Trickfire_image/slanted_image/row_block/fixed_index_header_left.png" />
 
             <div class="text-container">
-                <span class="fs-3">{{ title }}</span>
+                <span class="fs-3" v-if="title">{{ title }}</span>
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>
                     <ul>
@@ -50,6 +52,7 @@ export default {
                 </template>
                 <template v-else>
                     <p>{{ text }}</p>
+                    <a v-if="link" :href="link">{{ linkName }}</a>
                 </template>
             </div>
         </div>
@@ -62,7 +65,7 @@ export default {
             </div>
 
             <div class="words-on-background responsive">
-                <span class="fs-3">{{ title }}</span>
+                <span class="fs-3 my-3">{{ title }}</span>
 
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>

@@ -10,7 +10,7 @@
     height: 100vh;
 
     #about_us_header__background {
-        background-image: url(../assets/images/unslanted_team_photo_rmc_2017.jpg);
+        background-image: url(../assets/Trickfire_image/original_image/about_us/lab_presentation2.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -54,6 +54,13 @@
         margin-bottom: 50px;
     }
 
+    p {
+        font-size: 22px;
+
+        @media screen and (max-width:1000px) {
+            font-size: 18px;
+        }
+    }
 }
 
 #about_us_section {

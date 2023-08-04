@@ -1,40 +1,22 @@
 <script lang="ts">
 import '../scss/homePage.scss';
-import fetchData from '@/ultility/fetchData';
 import calendar from './calendar.vue'
 
-const SHEET_ID = '1rmibTT-UsrZfB9X58mcfgwKb8inYeoKoxYo3RletQ_s'
-const SHEET_TITLE = 'Sheet1'
-const SHEET_RANGE = 'A6:E10'
-const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`
-
-const scrollBtnHandle = () => {
-    window.scrollBy(0, 100);
-}
-
-const windowHeight = window.innerHeight
-
 export default {
+    props: {
+        calendarSchedule: await Array<{
+            team: String,
+            dayInWeek: String,
+            time: String,
+            description: String,
+            color: String
+        }>
+    },
     components: { calendar },
     data() {
-
-        return { calendarSchedule: null }
-    },
-    methods: {
-        //handle scroll down button on the header
-        scrollBtnHandle() {
-            window.scrollBy(0, windowHeight);
-        },
-
-        //fetch data from google sheet
-        async fetchData() {
-            this.calendarSchedule = await fetchData(FULL_URL)
-        }
+        return {}
     },
 
-    mounted() {
-        this.fetchData()
-    }
 }
 
 
@@ -43,16 +25,17 @@ export default {
 
 <template>
     <div class="page">
-        <header class="homePage__header">
+        <header class="bg-black mb-5 homePage__header">
             <!--header content-->
             <div class="homePage__header__content">
 
-                <h1 class="m-0 d-flex flex-column justify-content-center">
-                    <span class="text-primary my-1">TRICKFIRE</span>
+                <h1 class="m-0 d-flex flex-column justify-content-center fw-bold fst-italic">
+                    <span class="text-primary ">TRICKFIRE</span>
                     ROBOTICS
                 </h1>
-                <img src="../images/android-chrome-512x512.png" class="homePage__header__image" />
-                <p class="fs-5 m-0">
+                <img src="../assets/Trickfire_image/original_image/logo/android-chrome-512x512.png"
+                    class="homePage__header__image" />
+                <p class="m-0 text-white">
                     TrickFire Robotics is a student-led robotics team focused on providing a unique educational experience
                     through hands-on work on large scale projects. Since 2016 the team has traveled to the Kennedy Space
                     Center
@@ -63,7 +46,7 @@ export default {
                 </p>
             </div>
             <!--header scroll down button-->
-            <div class="d-flex flex-column homePage__header__scrollBtn" @click="scrollBtnHandle">
+            <a class="d-flex flex-column homePage__header__scrollBtn" href="#calendar">
 
                 <div class="d-flex homePage__header__scrollGreen">
                     <div class="bg-primary homePage__header__btn header__scroll--left"></div>
@@ -74,11 +57,11 @@ export default {
                     <div class="bg-white homePage__header__btn header__scroll--left"></div>
                     <div class="bg-white homePage__header__btn header__scroll--right"></div>
                 </div>
-            </div>
+            </a>
         </header>
 
         <!--calendar-->
-        <calendar v-if="calendarSchedule" :calendarSchedule="calendarSchedule" />
+        <calendar v-if="calendarSchedule" :calendarSchedule="calendarSchedule" id="calendar" />
 
     </div>
 </template>

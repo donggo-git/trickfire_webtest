@@ -4,6 +4,7 @@ import footerComponent from './UI/footerComponent.vue';
 import './scss/main.scss'
 
 
+
 </script>
 
 <template>

@@ -105,7 +105,7 @@ export default {
             for (let i = 0; i < this.calendar.length; i++) {
                 this.calendar[i].color = teamScheduleInWeek.get(i % 7)
             }
-            console.log(this.calendar)
+            //console.log(this.calendar)
         },
 
         handleShowCalendarBtn() {
@@ -130,7 +130,7 @@ export default {
 </script>
 
 <template>
-    <div class="mt-2 d-flex calendar__container">
+    <div class="d-flex calendar__container" id="calendar">
         <!--calendar button-->
         <div class="calendar__btn align-items-center justify-content-center fs-2" @click="handleShowCalendarBtn"
             v-bind:style="{
@@ -139,7 +139,7 @@ export default {
                 'background-color': isCalendarShow ? '#00B733' : 'black'
             }">
             <font-awesome-icon :icon="['fas', 'arrow-right']" v-if="!isCalendarShow" />
-            <font-awesome-icon :icon="['fas', 'arrow-left']" v-if="isCalendarShow" />
+            <font-awesome-icon :icon="['fas', 'arrow-left']" v-if="isCalendarShow" class="text-black" />
         </div>
 
         <div class="bg-primary calendar--left d-flex flex-column align-items-center justify-content-center" v-bind:style="!isCalendarShow && isResponsive ?
@@ -150,14 +150,14 @@ export default {
             }
             ">
             <!--team calendar-->
-            <p class=" my-2 fs-3">TEAM CALENDAR</p>
+            <p class=" my-2 fs-3 text-black">TEAM CALENDAR</p>
             <!--current date-->
-            <div class="mb-4 mt-2">
+            <div class="mb-4 mt-2 text-black">
                 <p class="fs-2">{{ currentMonthAndDateInWeek }}</p>
                 <p class="fs-1 text-center">{{ currentDate }}</p>
             </div>
             <!--TEAM SCHEDULE-->
-            <div class="calendar__teamSchedule">
+            <div class="calendar__teamSchedule text-black">
                 <p class=" mb-4 text-center fs-5">TEAM SCHEDULE</p>
                 <div v-if="teamSchedule" v-for=" schedule  in  teamSchedule ">
                     <div class="d-flex align-items-center my-4">

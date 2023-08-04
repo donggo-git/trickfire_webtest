@@ -10,7 +10,7 @@
     height: 100vh;
 
     #projects_header__background {
-        background-image: url(../assets/images/unslanted_lunar_surface.jpg);
+        background-image: url(../assets/Trickfire_image/original_image/project/unslanted_lunar_surface.jpg);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -45,6 +45,7 @@
         @media screen and (max-width:1000px) {
             text-align: center;
             font-size: 16px;
+            width: 90%;
         }
     }
 
@@ -52,6 +53,14 @@
     h1 {
         margin: 0 auto;
         margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 22px;
+
+        @media screen and (max-width:1000px) {
+            font-size: 18px;
+        }
     }
 
 }

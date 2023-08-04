@@ -75,7 +75,8 @@
     margin-left: 200px;
 }
 
-.text-container p {
+.text-container p,
+.text-container a {
     margin-top: 40px;
     width: 700px;
     font-size: 19px;
@@ -110,6 +111,7 @@
         display: flex;
         flex-direction: column;
         box-shadow: 20px 20px 1px rgb(39, 198, 39);
+        width: fit-content;
     }
 
     .words-on-background {

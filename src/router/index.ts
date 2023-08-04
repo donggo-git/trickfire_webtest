@@ -6,6 +6,15 @@ import join_us from '../components/join_us.vue'
 import projects from '../components/projects.vue'
 import sponsorships from '../components/sponsorships.vue'*/
 
+import { newFetchData } from '@/ultility/fetchData'
+
+const SHEET_ID = '1rmibTT-UsrZfB9X58mcfgwKb8inYeoKoxYo3RletQ_s'
+const SHEET_TITLE = 'Sheet1'
+const SHEET_RANGE = 'A2:E10'
+const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`
+
+const data = await newFetchData(FULL_URL)
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -13,7 +22,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => import('../components/homePage.vue'),
-      props: true
+      props: { calendarSchedule: await data.calendarSchedule }
     },
     {
       path: '/about_us',
@@ -24,6 +33,7 @@ const router = createRouter({
       path: '/join_us',
       name: 'join_us',
       component: () => import('../components/join_us.vue'),
+      props: { deadline: await data.deadline }
     },
     {
       path: '/projects',

@@ -1,0 +1,89 @@
+@import './variable.scss';
+
+
+.sponsorship__header {
+    position: relative;
+    height: 100vh;
+
+    .sponsorship__header__background {
+        background-image: url(../assets/Trickfire_image/original_image/sponsorship/club_fair.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $fadeBlack;
+        }
+
+        .sponsorship__header__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 70%;
+
+            /*tablet*/
+            @media screen and (max-width:1000px) {
+                width: 90%;
+            }
+
+            h1 {
+
+                /*phone*/
+                @media screen and (max-width:850px) {
+                    width: fit-content;
+                }
+            }
+
+            p {
+                font-size: 22px;
+
+                @media screen and (max-width:1000px) {
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+.sponsorship__howToSponsor {
+    width: fit-content;
+}
+
+.sponsorship__ourPartner {
+    .sponsorship__ourPartner__sponsorList {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width:1000px) {
+            grid-template-columns: 150px 150px 150px;
+            width: 90%;
+        }
+
+        @media screen and (max-width:800px) {
+            grid-template-columns: 150px 150px;
+            width: 90%;
+        }
+
+        img {
+            max-height: 150px;
+            max-width: 150px;
+        }
+    }
+}

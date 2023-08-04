@@ -22,7 +22,8 @@ export default {
         <header id="projects_header">
             <div id="projects_header__background">
                 <div id="projects_header__content">
-                    <h1>PROJECT
+                    <h1 class="fw-semibold">
+                        PROJECT
                     </h1>
                     <p style="color: white;">
                         In six years, we have built four rovers for the NASA Robotics Mining

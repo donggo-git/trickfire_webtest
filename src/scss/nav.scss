@@ -9,7 +9,7 @@ nav {
     .nav__burger {
         display: none;
 
-        @media screen and (max-width:850px) {
+        @media screen and (max-width:500px) {
             display: block;
         }
     }
@@ -36,6 +36,7 @@ nav {
         /* the underline of active page*/
         .navBar-activePage {
             position: relative;
+            font-weight: 600;
         }
 
         .navBar-activePage::before {
@@ -45,7 +46,7 @@ nav {
             left: 0;
             height: 3px;
             width: 100%;
-            background-color: $white;
+            background-color: $black;
 
             @media screen and (max-width:850px) {
                 display: none;

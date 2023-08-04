@@ -66,25 +66,27 @@ export default {
 </script>
 
 <template>
-    <nav class="fs-5 position-fixed" v-on:scroll="showHideNavHandle" v-bind:style="{
+    <nav class="fs-5 position-fixed navbar-expand-md" v-on:scroll="showHideNavHandle" v-bind:style="{
         top: navTop
     }">
         <!--burger icon button-->
-        <div class="pt-3 pb-2 px-1 mx-3 fs-2 nav__burger" data-toggle="collapse" data-target="#navBar__link">
+        <div class="pt-3 pb-2 px-1 mx-3 fs-2 nav__burger text-black navbar-toggle" data-toggle="collapse"
+            data-target="#navBar__link">
             <font-awesome-icon :icon="['fas', 'bars']" />
         </div>
 
         <!--nav link-->
-        <ul class="m-0 p-0" :class="isResponsive ? 'collapse' : ''" id="navBar__link">
+        <div class="collapse navbar-collapse" id="navBar__link">
+            <ul class="m-0 p-0" :class="isResponsive ? 'navbar-nav' : ''">
 
-            <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3" :key="navLink.linkTitle" :class="(currentRouteName == navLink.linkRouteName) ||
-                (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage' : ''">
-                <router-link :to="navLink.linkRouteName">
-                    {{ navLink.linkTitle }}
-                </router-link>
-            </li>
-        </ul>
-
+                <li v-for="navLink in navLinkList" class="py-3 px-1 mx-3 nav-item" :key="navLink.linkTitle" :class="(currentRouteName == navLink.linkRouteName) ||
+                    (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage' : ''">
+                    <router-link :to="navLink.linkRouteName" class="text-black nav-link">
+                        {{ navLink.linkTitle }}
+                    </router-link>
+                </li>
+            </ul>
+        </div>
     </nav>
 </template>
 
