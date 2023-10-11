@@ -1,6 +1,6 @@
 import type { sectionsDisplayObject } from "./sectionDisplay_interface";
 
-const basePath = './src/assets/Trickfire_image/slanted_image/project/'
+const basePath = 'https://raw.githubusercontent.com/TrickfireRobotics/TrickfireRobotics.github.io/dev/src/assets/Trickfire_image/slanted_image/project/'
 const baseResponsivePath = './src/assets/Trickfire_image/original_image/project/'
 
 const projectsSectionData: sectionsDisplayObject[] = [{
