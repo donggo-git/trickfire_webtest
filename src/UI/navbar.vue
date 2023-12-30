@@ -54,7 +54,16 @@ export default {
                 this.navTop = '0%'
             }
             this.prevScrollPos = currentScrollPos;
+        },
+
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: undefined
+            });
         }
+
     },
     created() {
         window.addEventListener('scroll', this.showHideNavHandle)
@@ -76,7 +85,7 @@ export default {
                 <li v-for="navLink in navLinkList" :key="navLink.linkTitle" :class="(currentRouteName == navLink.linkRouteName) ||
                     (currentRouteName == 'home' && navLink.linkTitle == 'HOME') ? 'navBar-activePage py-2 px-1 mx-3 nav-item' :
                     'py-2 px-1 mx-3 nav-item'">
-                    <router-link :to="navLink.linkRouteName" class="text-black nav-link">
+                    <router-link :to="navLink.linkRouteName" class="text-black nav-link" @click.native="scrollToTop">
                         {{ navLink.linkTitle }}
                     </router-link>
                 </li>

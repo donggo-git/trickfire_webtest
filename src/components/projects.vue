@@ -26,8 +26,8 @@ export default {
                         PROJECT
                     </h1>
                     <p style="color: white;">
-                        In six years, we have built four rovers for the NASA Robotics Mining
-                        Competition - A competition hosted by NASA, where fifty teams across
+                        In six years, we have built four rovers for the NASA RMC and URC Competition
+                        where fifty teams across
                         the United States compete to build the best rover that can mine under a
                         simulated surface of the moon. A rover starts at the home base,
                         navigates through obstacles, and then reaches a mining zone where it
