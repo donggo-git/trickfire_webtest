@@ -178,10 +178,10 @@ export default {
                 <p class=" mb-4 text-center fs-5">TEAM SCHEDULE</p>
                 <div v-if="teamSchedule" v-for=" schedule  in  teamSchedule ">
                     <div class="d-flex align-items-center my-4">
-                        <div class="mr-5 teamSchedule__colorMark" :style="{
+                        <div class="me-3 teamSchedule__colorMark" :style="{
                             'background-color': schedule.color,
-                            height: '20px',
-                            width: '20px'
+                            height: '15px',
+                            width: '15px'
                         }
                             "></div>
                         <p class="my-0 fs-5">

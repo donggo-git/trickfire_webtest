@@ -31,6 +31,10 @@ const router = createRouter({
       props: { calendarSchedule: await calendarSchedule }
     },
     {
+      path: '/dist/index.html',
+      redirect: '/'
+    },
+    {
       path: '/about_us',
       name: 'about_us',
       component: () => import('../components/about_us.vue'),

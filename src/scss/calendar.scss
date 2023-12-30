@@ -12,7 +12,7 @@
 
     .calendar--left {
         width: 40%;
-        height: 100vh;
+        height: 105vh;
         transition: all 0.4s;
 
         //responsive style for calendar--left
@@ -40,7 +40,7 @@
 
     .calendar--right {
         width: 60%;
-        height: 100vh;
+        height: 105vh;
 
         //responsive style for calendar--right
         @media screen and (max-width: 1000px) {

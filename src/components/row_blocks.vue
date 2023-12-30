@@ -1,5 +1,4 @@
 <script lang="ts">
-import { aboutUsSectionData } from '../data/about_us_data';
 import '../scss/row_blocks.scss';
 
 
@@ -11,13 +10,11 @@ export default {
         text: String,
         image__left__responsive: String,
         link: String,
-        linkName: String
+        linkName: String,
+        isFifthBlock: Boolean
     },
     computed: {
-        // bullet points in the last block
-        isFifthBlock() {
-            return this.title === aboutUsSectionData[4].title;
-        },
+
         listItems() {
             // Define the bullet point items for the fifth block
             if (this.text) {

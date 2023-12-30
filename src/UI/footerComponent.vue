@@ -4,7 +4,7 @@ export default {}
 </script>
 
 <template>
-    <footer class="d-flex flex-column justify-content-center align-items-center py-4">
+    <footer class="d-flex flex-column justify-content-center align-items-center mt-5 py-4">
         <!--footer email-->
         <div class="footer__email">
             <font-awesome-icon :icon="['fas', 'envelope']" />

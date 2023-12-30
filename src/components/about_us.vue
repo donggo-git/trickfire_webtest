@@ -1,8 +1,6 @@
 <script lang="ts">
 import aboutUs from '../components/row_blocks.vue';
 import '../scss/AboutUs.scss';
-import { aboutUsSectionData } from '../data/about_us_data';
-
 export default {
     name: 'MyComponent',
     components: {
@@ -10,7 +8,6 @@ export default {
     },
     data() {
         return {
-            aboutUsSectionData: aboutUsSectionData
         }
     },
     props: {
@@ -53,7 +50,8 @@ export default {
             <div id="about_us_rows">
                 <div v-if="calendarSchedule" v-for="(teamData) in calendarSchedule">
                     <aboutUs :image__left="teamData.slantedImage" :title="`${teamData.team.toUpperCase()} TEAM`"
-                        :text="teamData.description" :image__left__responsive="teamData.originalImage" />
+                        :text="teamData.description" :image__left__responsive="teamData.originalImage"
+                        :isFifthBlock="true" />
                 </div>
 
             </div>

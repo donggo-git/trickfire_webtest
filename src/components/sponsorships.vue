@@ -45,7 +45,8 @@ export default {
             image__left="https://raw.githubusercontent.com/TrickfireRobotics/TrickfireRobotics.github.io/dev/src/assets/Trickfire_image/slanted_image/sponsorship/slanted_teaching_new_member.png"
             image__left__responsive="https://github.com/TrickfireRobotics/TrickfireRobotics.github.io/blob/dong/sponsorship/src/assets/Trickfire_image/original_image/unused/unslanted_teaching_new_member.jpg?raw=true"
             text="Please contact us at tfrbtcs@uw.edu if you are interested in sponsoring TrickFire Robotics. All donated funds go through our UW Foundation fund. Donate by going to the link below and searching for the “UW Bothell Robotics Program Support Fund”."
-            link="https://www.washington.edu/giving/make-a-gift/" linkName="UW's Make a Gift page" title="HOW TO SPONSOR" />
+            link="https://www.washington.edu/giving/make-a-gift/" linkName="UW's Make a Gift page" title="HOW TO SPONSOR"
+            :isFifthBlock="false" />
 
     </div>
 
