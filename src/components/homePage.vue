@@ -33,8 +33,7 @@ export default {
                     <span class="text-primary ">TRICKFIRE</span>
                     ROBOTICS
                 </h1>
-                <img src="../assets/Trickfire_image/original_image/logo/android-chrome-512x512.png"
-                    class="homePage__header__image" />
+                <img src="https://www.trickfirerobotics.org/assets/images/front_logo.svg" class="homePage__header__image" />
                 <p class="m-0 text-white">
                     TrickFire Robotics is a student-led robotics team focused on providing a unique educational experience
                     through hands-on work on large scale projects. Since 2016 the team has traveled to the Kennedy Space

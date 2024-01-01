@@ -18,12 +18,12 @@ export default {
 <template>
     <header class="sponsorship__header">
         <div class="sponsorship__header__background">
-            <div class="d-flex flex-column justify-content-center align-items-center sponsorship__header__content">
+            <div class="sponsorship__header__content">
                 <h1 class="fw-semibold" style="color: white;">
                     SPONSORSHIP
                 </h1>
                 <p style="color: white;">
-                    TTrickFire relies on generous grants and sponsorships to purchase the necessary materials and equipment
+                    TrickFire relies on generous grants and sponsorships to purchase the necessary materials and equipment
                     to build the rover and travel to the competition. Ordering what we need through university funding can
                     take weeks. For the vast majority of our parts and materials budget, we must submit a list of what we
                     need a year in advance; purchases must be made from that list. With your donation, you will directly
