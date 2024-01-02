@@ -37,7 +37,7 @@ export default {
             <img src="../assets/Trickfire_image/slanted_image/row_block/fixed_index_header_left.png" />
 
             <div class="text-container">
-                <span class="fs-3" v-if="title">{{ title }}</span>
+                <h5 class="fs-3" v-if="title">{{ title }}</h5>
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>
                     <ul>
@@ -62,7 +62,7 @@ export default {
             </div>
 
             <div class="words-on-background responsive">
-                <span class="fs-3 my-3">{{ title }}</span>
+                <h5 class="fs-3 my-3">{{ title }}</h5>
 
                 <template v-if="isFifthBlock">
                     <p>{{ listItems[0] }}</p>
