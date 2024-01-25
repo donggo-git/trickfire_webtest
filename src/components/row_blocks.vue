@@ -40,7 +40,7 @@ export default {
                 <div class="text-container">
                     <h5 class="fs-3" v-if="title">{{ title }}</h5>
                     <template v-if="isFifthBlock">
-                        <p class="my-2">{{ listItems[0] }}</p>
+                        <p>{{ listItems[0] }}</p>
                         <ul>
                             <li v-for="(item, index) in listItems.slice(1)" :key="index"
                                 :class="{ 'bullet-point': index !== 0 && item.startsWith('• ') }">
