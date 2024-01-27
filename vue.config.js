@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/trickfire_webtest/dist/index.html#/',
+    publicPath: process.env.NODE_ENV === "production" ? "/trickfire_webtest/" : "/",
 };
