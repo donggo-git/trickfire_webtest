@@ -19,10 +19,11 @@ const rawData = await fetchData(FULL_URL);
 const calendarSchedule = await data.calendarSchedule;
 const deadline = await data.deadline;
 
-console.log(rawData);
+console.log(window.location.href);
+
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -38,7 +39,7 @@ const router = createRouter({
       path: '/about_us',
       name: 'about_us',
       component: () => import('../components/about_us.vue'),
-      props: { calendarSchedule: await calendarSchedule }
+      props: { calendarSchedule: await calendarSchedule },
     },
     {
       path: '/join_us',
