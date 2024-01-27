@@ -23,7 +23,7 @@ console.log(window.location.href);
 
 
 const router = createRouter({
-  history: createWebHashHistory('/dist/index.html/'),
+  history: createWebHistory('/dist/index.html/'),
   routes: [
     {
       path: '/',
